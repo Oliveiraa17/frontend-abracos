@@ -19,7 +19,7 @@ function App() {
   
   return (
     <>
-      <Router>
+      <Router basename='/frontend-abracos'>
         <GTranslate></GTranslate>
         <Header />
         <Routes>
