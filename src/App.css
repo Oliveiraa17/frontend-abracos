@@ -1,0 +1,132 @@
+/*Parte do footer*/
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-central {
+    width: 165px;
+    margin-bottom: 20px;
+}
+
+.logos {
+    display: flex;
+    gap: 10px;
+}
+
+.logos img {
+    width: 35px;
+
+}
+
+.footer-links h3, .footer-contacts h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-links ul, .footer-contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li, .footer-contacts ul li {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.footer-links ul li:hover, .footer-contacts ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-contacts  {
+    margin-top: 20px;
+    width: 120px;
+}
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 3px solid #fff;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 14px;
+}
+.footer-image {
+    margin-top: 50px;
+    width: 20%;
+}
+
+/*Final*/
+
+/*Parte dos cards da home*/
+.parte-baixo-cards {
+    text-align: center;
+}
+.sec-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.sec-principal h1 {
+    font-size: 2em;
+    margin: 20px 0 20px 0;
+}
+.gifs-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.gifs-home img {
+    width: 200px;
+}
+.gifs-home p {
+    font-size: 1.6em;
+    width: 60%;
+}
+.sec-principal .gifs-home {
+    margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*Finalização*/
+
+/*Parte dos slides*/
+
+.slide-item {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+}

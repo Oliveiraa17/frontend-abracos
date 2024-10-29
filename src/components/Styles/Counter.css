@@ -1,0 +1,28 @@
+.counter {
+    background-color: #FF6926;
+    padding: 40px;
+    width: 330px;
+    height: 200px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 1s ease, transform 1s ease;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #000;
+}
+.counter h1 {
+    font-size: 3em;
+}
+.counter p {
+    font-size: 1.2em;
+}
+
+.counter.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.coounter {
+    margin: 40px;
+}
