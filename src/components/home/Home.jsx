@@ -11,8 +11,17 @@ function Home() {
     ];
     return(
         <>
+        <div className="div-imgfundo">
+
+            <div>
+                <h1>Acolhendo <span style={{color: '#FF6926'}}>imigrantes</span> e <span style={{color: '#FF6926'}}>refugiados</span> com abraços de habilidades e <span style={{color: '#4B92DB'}}>esperança.</span>
+                </h1>
+                <p>Um novo começo, uma nova esperança.</p>
+            </div>
+
+        </div>
         
-        <Slide slideData={firstSliderData}></Slide>
+        {/* <Slide slideData={firstSliderData}></Slide> */}
         
             <section className='sec-principal'>
             <h1 className="titulo-home-page">Explore nossas categorias: </h1>

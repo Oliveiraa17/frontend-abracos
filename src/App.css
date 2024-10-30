@@ -6,7 +6,28 @@ footer {
     color: white;
     font-family: Arial, sans-serif;
 }
-
+.div-imgfundo {
+    color: #fff;
+    background: url(../public/assets/images/imagem-garoto.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-imgfundo div {
+    margin-left: 60px;
+    margin-bottom: 170px;
+}
+.div-imgfundo h1 {
+    width: 50%;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.div-imgfundo p {
+    font-size: 1.3em;
+}
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -129,4 +150,20 @@ main {
     width: 100%;
     height: 580px;
     object-fit: cover;
+}
+
+@media (width <= 455px) {
+    .div-imgfundo {
+        background-size: cover;
+        background-position: center center;
+    }
+    .div-imgfundo h1 {
+        width: 100%;
+        font-weight: bolder;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+    .div-imgfundo div {
+        margin-left: 25px;
+    }
 }
