@@ -7,25 +7,25 @@ import '../../App.css'
 function Home() {
     const firstSliderData = [
         { id: '1', image: 'assets/images/fundo-home.svg' },
-        
-    ];
-    return(
-        <>
-        <div className="div-imgfundo">
 
-            <div>
-                <h1>Acolhendo <span style={{color: '#FF6926'}}>imigrantes</span> e <span style={{color: '#FF6926'}}>refugiados</span> com abraços de habilidades e <span style={{color: '#4B92DB'}}>esperança.</span>
-                </h1>
-                <p>Um novo começo, uma nova esperança.</p>
+    ];
+    return (
+        <>
+            <div className="div-imgfundo">
+
+                <div>
+                    <h1>Acolhendo <span style={{ color: '#FF6926' }}>imigrantes</span> e <span style={{ color: '#FF6926' }}>refugiados</span> com abraços de habilidades e <span style={{ color: '#4B92DB' }}>esperança.</span>
+                    </h1>
+                    <p>Um novo começo, uma nova esperança.</p>
+                </div>
+
             </div>
 
-        </div>
-        
-        {/* <Slide slideData={firstSliderData}></Slide> */}
-        
+            {/* <Slide slideData={firstSliderData}></Slide> */}
+
             <section className='sec-principal'>
-            <h1 className="titulo-home-page">Explore nossas categorias: </h1>
-            
+                <h1 className="titulo-home-page">Explore nossas categorias: </h1>
+
                 <div className='gifs-home'>
                     <div className="parte-baixo-cards">
                         <img src="assets/gifs/documento.gif" alt="Gif do documento" />
@@ -56,13 +56,13 @@ function Home() {
                 </div>
             </section>
             <Testemunhas></Testemunhas>
-            <main>
+            <main className="contador-numeros">
                 <Counter endValue={67} text="Nacionalidades atendidas" />
                 <Counter endValue={100} text="Atendimentos em 2024" />
                 <Counter endValue={1200} text="Alunos de português" />
             </main>
             <AreaRefugio></AreaRefugio>
-            
+
         </>
     )
 }

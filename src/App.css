@@ -69,7 +69,7 @@ footer {
 }
 
 .footer-links ul li, .footer-contacts ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #ccc;
 }
 
@@ -156,9 +156,10 @@ main {
     .div-imgfundo {
         background-size: cover;
         background-position: center center;
+        height: 400px;
     }
     .sec-principal h1 {
-        font-size: 1em;
+        font-size: 1.3em;
         
     }
     .gifs-home {
@@ -168,11 +169,11 @@ main {
         gap: 20px;
     }
     .gifs-home img {
-        width: 100px;
+        width: 110px;
     }
     .gifs-home p {
-        font-size: 0.8em;
-        width: 50%;
+        font-size: 1em;
+        width: 60%;
     }
     .parte-baixo-cards h2 {
         font-size: 0.9em;
@@ -186,4 +187,25 @@ main {
     .div-imgfundo div {
         margin-left: 25px;
     }
+    .logos img {
+        width: 20px;
+        
+    }
+    .logo-central {
+        width: 115px;
+        margin-bottom: 20px;
+    }
+    .footer-links {
+        margin-top: 20px;
+    }
+    .footer-links h3, .footer-contacts h3 {
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 12px;
+    }
+    .footer-links ul li, .footer-contacts ul li {
+        margin-bottom: 4px;
+        color: #ccc;
+    }
+    
 }

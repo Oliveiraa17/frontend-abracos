@@ -26,3 +26,19 @@
 .coounter {
     margin: 40px;
 }
+@media (width <= 455px) {
+    .counter {
+        width: 230px;
+        height: 200px;
+    }
+    .coounter {
+        margin-top: 10px;
+    }
+    .counter h1 {
+        font-size: 2.6em;
+    }
+    .contador-numeros {
+        display: flex;
+        flex-direction: column;
+    }
+}

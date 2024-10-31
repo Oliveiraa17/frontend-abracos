@@ -1,4 +1,3 @@
-
 .testimonials-section {
     background-color: #FF6926;
     padding: 40px 20px;
@@ -48,7 +47,7 @@
 .stars {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #FFD700; 
+    color: #FFD700;
 }
 
 .testimonial p {
@@ -56,7 +55,8 @@
     color: white;
 }
 
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
     background-color: white;
     color: #FF6926;
     border: none;
@@ -71,7 +71,8 @@
     align-items: center;
 }
 
-.prev-btn:hover, .next-btn:hover {
+.prev-btn:hover,
+.next-btn:hover {
     background-color: #e64b16;
 }
 
@@ -82,12 +83,14 @@
 .next-btn {
     margin-left: 10px;
 }
+
 .teste {
     margin: 5%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
 .teste div {
     background-color: var(--primary-color);
     padding: 50px;
@@ -96,7 +99,8 @@
     color: #fff;
     text-align: center;
 }
-.teste div h1{ 
+
+.teste div h1 {
     font-size: 3em;
 }
 
@@ -105,7 +109,8 @@
     background-size: cover;
     height: 620px;
 }
-.baix2 > h1 {
+
+.baix2>h1 {
     background-color: #0000009f;
     color: #fff;
     text-align: center;
@@ -116,6 +121,7 @@
     margin-top: 50px;
     width: 700px;
 }
+
 .emprego .button-secondary {
     padding: 13px;
     cursor: pointer;
@@ -128,9 +134,11 @@
     transition: transform 0.2s ease;
     font-size: 1.3em;
 }
+
 .emprego .button-secondary:hover {
     transform: scale(1.03);
 }
+
 .emprego .button-primary {
     border: none;
     font-size: 1.3em;
@@ -143,15 +151,18 @@
     background-color: #1A5276;
     transition: transform 0.2s ease;
 }
+
 .emprego .button-primary:hover {
     transform: scale(1.03);
 }
+
 .emprego {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 150px;
 }
+
 .preparadoo-ok {
     background-color: var(--primary-color);
     color: #fff;
@@ -163,9 +174,9 @@
     gap: 30px;
     border-radius: 10px;
     padding: 10px;
-    margin: 200px auto ;
-    
+    margin: 200px auto;
 }
+
 .preparadoo-ok p {
     font-size: 1.3em;
     background-color: var(--terciary-color);
@@ -175,8 +186,92 @@
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s ease;
-    
+
 }
-.preparadoo-ok p:hover{
+
+.preparadoo-ok p:hover {
     transform: scale(1.05);
+}
+
+@media (width <=455px) {
+    .testimonials-section h2 {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .testimonial {
+        max-width: 100px;
+        height: 200px;
+        text-align: left;
+    }
+    .testimonial-img {
+        width: 40px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+    
+    .testimonial-content h3 {
+        font-size: 0.4em;
+        margin: 10px 0;
+    }
+    .testimonial-content p {
+        font-size: 0.2em;
+    }
+    .testimonials-section {
+        background-color: #FF6926;
+        padding: 40px 20px;
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .baix2>h1 {
+        background-color: #0000009f;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5em;
+        width: 320px;
+    }
+    .preparadoo-ok {
+        background-color: var(--primary-color);
+        color: #fff;
+        width: 90%;
+        height: 60px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        margin: 230px auto;
+    }
+    .preparadoo-ok p{
+        font-size: 1em;
+        border: 1px solid black;
+        
+    }
+    .preparadoo-ok h1 {
+        font-size: 0.9em;
+        padding: 6px;
+        width: 100%;
+    }
+    .emprego .button-secondary {
+        padding: 10px;
+        cursor: pointer;
+        border-top-left-radius: 100px;
+        width: 50%;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    .emprego .button-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        font-size: 1em;
+        padding: 10px;
+        width: 50%;
+        margin-left: 10px;
+    }
+    
 }
