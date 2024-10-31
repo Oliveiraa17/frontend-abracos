@@ -157,6 +157,26 @@ main {
         background-size: cover;
         background-position: center center;
     }
+    .sec-principal h1 {
+        font-size: 1em;
+        
+    }
+    .gifs-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .gifs-home img {
+        width: 100px;
+    }
+    .gifs-home p {
+        font-size: 0.8em;
+        width: 50%;
+    }
+    .parte-baixo-cards h2 {
+        font-size: 0.9em;
+    }
     .div-imgfundo h1 {
         width: 100%;
         font-weight: bolder;

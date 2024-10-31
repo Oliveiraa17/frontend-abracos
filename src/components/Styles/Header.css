@@ -133,7 +133,6 @@ a {
     .List {
         display: flex;
         left: 1%;
-        flex-wrap: nowrap;
         color: #fff;
         font-size: 1.2rem;
         font-weight: 500;
