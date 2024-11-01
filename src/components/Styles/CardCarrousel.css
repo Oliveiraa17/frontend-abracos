@@ -154,6 +154,15 @@
         height: 400px;
         background-position: center center;
     }
+    .img-fundo h1 {
+        font-size: 1.6em;
+    }
+    mark {
+        background-color: #FF6926;
+        color: #fff;
+        padding: 3px;
+        border-radius: 10px;
+    }
     .card {
         display: flex;
         flex-direction: column;
@@ -171,11 +180,11 @@
         margin-bottom: 10px;
     }
     .img-cards img {
-        width: 130px;
+        width: 100px;
     }
     .img-cards {
-        width: 200px; 
-        height: 300px;
+        width: 170px; 
+        height: 250px;
     }
     .parte-cards-cima {
         display: flex;
