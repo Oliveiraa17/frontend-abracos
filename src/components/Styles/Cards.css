@@ -76,8 +76,16 @@ iframe {
 }
 
 .foto-cards-home {
-    background: url(../../../public/assets/images/capaMulheres.svg) no-repeat;
+    background: url(../../../public/assets/images/CapaMulheres.svg) no-repeat;
     width: 100%;
     height: 500px;
+    display: flex;
+    align-items: center;
     background-size: cover;
+}
+.foto-cards-home h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-left: 100px;
+    width: 46%;
 }

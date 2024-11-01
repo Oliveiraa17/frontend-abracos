@@ -152,7 +152,7 @@ main {
     object-fit: cover;
 }
 
-@media (width <= 455px) {
+@media (width <= 500px) {
     .div-imgfundo {
         background-size: cover;
         background-position: center center;
@@ -204,8 +204,17 @@ main {
         font-size: 12px;
     }
     .footer-links ul li, .footer-contacts ul li {
+        font-size: 0.7em;
         margin-bottom: 4px;
         color: #ccc;
     }
-    
+    .footer-container .footer-image {
+        display: none;
+    }
+    .footer-bottom p {
+        font-size: 0.7em;
+    }
+    .footer-container {
+        gap: 32px;
+    }
 }

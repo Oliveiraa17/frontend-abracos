@@ -1,7 +1,7 @@
 const Card = ({ image, label }) => {
     return (
         <div className="card">
-            <div className="icon">
+            <div>
                 {image ? (
                     <img className="img-card" src={image} alt={label} />
                 ) : (

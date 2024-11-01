@@ -26,9 +26,9 @@
 .coounter {
     margin: 40px;
 }
-@media (width <= 455px) {
+@media (width <= 500px) {
     .counter {
-        width: 230px;
+        width: 350px;
         height: 200px;
     }
     .coounter {

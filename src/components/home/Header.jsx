@@ -10,6 +10,10 @@ function Header() {
         setMode(!active);
     };
 
+    const handleLinkClick = () => {
+        setMode(false); // Fecha o menu ao clicar em um link
+    };
+
     return (
         <>
             <header>
@@ -22,13 +26,13 @@ function Header() {
                 <nav className={active ? 'menu menuOpen' : 'menu menuClose'}>
                     <div className='List'>
                         <ul>
-                            <li className='nav-link'><Link to='/'>Home</Link></li>
-                            <li className='nav-link'><Link to='Psicologos'>Psicólogos</Link></li>
-                            <li className='nav-link'><Link to='Cursos'>Cursos</Link></li>
-                            <li className='nav-link'><Link to='cards'>Cards</Link></li>
-                            <li className='nav-link'><Link to='Documentacao'>Documentação</Link></li>
-                            <li className='nav-link'><Link to='SobreNos'>Sobre</Link></li>
-                            <li className='nav-link'><Link to='Doe'>Doe</Link></li>
+                            <li className='nav-link'><Link to='/' onClick={handleLinkClick}>Home</Link></li>
+                            <li className='nav-link'><Link to='Psicologos' onClick={handleLinkClick}>Psicólogos</Link></li>
+                            <li className='nav-link'><Link to='Cursos' onClick={handleLinkClick}>Cursos</Link></li>
+                            <li className='nav-link'><Link to='cards' onClick={handleLinkClick}>Cards</Link></li>
+                            <li className='nav-link'><Link to='Documentacao' onClick={handleLinkClick}>Documentação</Link></li>
+                            <li className='nav-link'><Link to='SobreNos' onClick={handleLinkClick}>Sobre</Link></li>
+                            <li className='nav-link'><Link to='Doe' onClick={handleLinkClick}>Doe</Link></li>
                         </ul>
                     </div>
                 </nav>

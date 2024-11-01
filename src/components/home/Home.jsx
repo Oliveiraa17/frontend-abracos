@@ -1,19 +1,14 @@
 import Testemunhas from "./Testemunhas"
 import Counter from "./Counter"
 import AreaRefugio from "./AreaRefugio"
-import Slide from "./Slide"
 import '../../App.css'
 
 function Home() {
-    const firstSliderData = [
-        { id: '1', image: 'assets/images/fundo-home.svg' },
-
-    ];
     return (
         <>
             <div className="div-imgfundo">
 
-                <div>
+                <div className="div-segundary-text">
                     <h1>Acolhendo <span style={{ color: '#FF6926' }}>imigrantes</span> e <span style={{ color: '#FF6926' }}>refugiados</span> com abraços de habilidades e <span style={{ color: '#4B92DB' }}>esperança.</span>
                     </h1>
                     <p>Um novo começo, uma nova esperança.</p>

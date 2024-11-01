@@ -116,20 +116,35 @@ a {
     background: var(--secondary-color);
     box-shadow: 10px 0px 69px 0px rgba(0, 0, 0, 0.59);
 }
+.menu {
+    display: none;
+}
+@media (width >= 755px) {
+    .menu {
+        display: flex;
+    }
+}
 
-@media (width <= 455px) {
+@media (width <= 500px) {
     .menu.menuOpen {
-        display: block;
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-start;
         position: absolute;
-        height: 70vh;
-        top: 0%;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: var(--secondary-color);
         z-index: 4;
-        left: 0%;
+        padding-top: 20px;
     }
     .hamburguer {
         display: block;
-        left: 15%;
+        position: relative;
+        left: 20px; 
     }
+    
     .List {
         display: flex;
         left: 1%;
@@ -145,14 +160,19 @@ a {
         display: none;
     }
     header {
-        justify-content: space-evenly;
-    }
-    .logo img {
-        max-width: 250px;
-
+        display: flex;
+        background-color: var(--secondary-color);
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
     }
     .logo {
-        margin-left: 120px;
+        margin-left: 30%;
+    }
+    .logo img {
+        content: url('../../../public/assets/images/Logo-Abraços-Branco.png');
+        max-width: 90px;
+        margin-left: 100%;
     }
 
 }

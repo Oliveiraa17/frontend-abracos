@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Slide from "../home/Slide";
 import '../Styles/Cards.css';
 import CardCarousel from "./CardCarrousel";
 import CardCarousel1 from "./CardCarrousel1";
@@ -8,18 +7,15 @@ import CardCarousel2 from "./CardCarrousel2";
 
 function Cards() {
     const [showCover, setShowCover] = useState(true);
-    const data = [
-        {id: '1', image: 'assets/images/capaMulheres.svg'},
-    ];
+    
 
     const playVideo = () => {
         setShowCover(false);
     };
-
     return(
         <>
             <div className='foto-cards-home'>
-                
+                <h1><span style={{color: '#FF6926'}}>Aprender</span> é uma aventura e o conhecimento é a <span style={{color: '#4B92DB'}}>chave.</span></h1>
             </div>
             <section className="laranja">
                 <h1>Categorias: </h1>
