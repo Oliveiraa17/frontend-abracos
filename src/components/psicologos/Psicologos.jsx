@@ -73,8 +73,9 @@ function Psicologos() {
                     <img src="assets/images/Apertodemao.svg" alt="Aperto de mão" />
                     <div className='envolta'>
                         <div className='ladoaperto'>
-                            <h1>Preencha o formulário</h1>
-                            <p>Para que possamos entender melhor o seu caso e oferecer a assistência adequada</p>
+                            <h1>Seja a Mudança!</h1>
+                            <p>Torne-se um Psicólogo
+                            Voluntário!</p>
                         </div>
                         <div className='preparadolaranja'>
                             <p className='preparado'>Preparado para começar?</p>
