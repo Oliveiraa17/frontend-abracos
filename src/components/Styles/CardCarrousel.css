@@ -195,4 +195,7 @@
     .img-cards h3 {
         font-size: 1em;
     }
+    .swiper-container {
+        width: 95%; /* Ajuste a largura para telas menores */
+    }
 }
