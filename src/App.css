@@ -153,14 +153,13 @@ main {
 }
 
 @media (width <= 500px) {
-    .div-imgfundo {
+    .div-imgfundo { 
         background-size: cover;
         background-position: center center;
         height: 400px;
     }
     .sec-principal h1 {
         font-size: 1.3em;
-        
     }
     .gifs-home {
         display: flex;

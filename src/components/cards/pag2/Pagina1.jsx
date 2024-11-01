@@ -42,7 +42,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Saudações' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Saudações</h1>
+                        <h1>Saudações:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <div onClick={() => playAudio('assets/audio/Olá.mp3')}>
@@ -64,7 +64,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Hospital' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Hospital</h1>
+                        <h1>Hospital:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <div onClick={() => playAudio('assets/audio/hospi.mp3')}>
@@ -80,7 +80,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Mercado' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Mercado</h1>
+                        <h1>Mercado:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/carrinhoCards.png' text='Onde posso encontrar um mercado?' />
@@ -94,7 +94,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Transporte' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Transporte</h1>
+                        <h1>Transporte:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/localizacaoCards.png' text='Qual o caminho mais rápido ao centro com transporte público?' />
@@ -108,7 +108,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Alimentação' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Transporte</h1>
+                        <h1>Alimentação:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/restauranteCards.png' text='Onde fica o Transporte?' />
@@ -122,7 +122,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Banco' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Transporte</h1>
+                        <h1>Banco:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/localizacaoCards.png' text='Onde fica o Transporte?' />
@@ -135,7 +135,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Polícia' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Transporte</h1>
+                        <h1>Polícia:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/localizacaoCards.png' text='Onde fica o Transporte?' />
@@ -149,7 +149,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Compras' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Transporte</h1>
+                        <h1>Compras:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/localizacaoCards.png' text='Onde fica o Transporte?' />
@@ -162,7 +162,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Escola' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Transporte</h1>
+                        <h1>Escola:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/localizacaoCards.png' text='Onde fica o Transporte?' />
@@ -175,7 +175,7 @@ function Pagina1() {
             {categoriaSelecionada === 'Documentos' && (
                 <>
                     <div className='titulo-card'>
-                        <h1>Transporte</h1>
+                        <h1>Documentos:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/localizacaoCards.png' text='Onde fica o Transporte?' />
