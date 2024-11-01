@@ -24,7 +24,7 @@ function Pagina1() {
     return (
         <>
             <div className="img-fundo">
-                <h1 className='fra_efeito'> <span className='conectarr'>Conecte-se</span> de forma rápida e <br /> simples em qualquer <span className='idiomaa'>idioma.</span></h1>
+                <h1 className='fra_efeito'> <span className='conectarr'><mark>Conecte-se</mark></span> de forma rápida e <br /> simples em qualquer <span className='idiomaa'>idioma.</span></h1>
             </div>
             <div className='button'>
                 <button onClick={mudarCondicao} name='Saudações' className={categoriaSelecionada === 'Saudações' ? 'selecionado' : ''}>Saudações</button>
