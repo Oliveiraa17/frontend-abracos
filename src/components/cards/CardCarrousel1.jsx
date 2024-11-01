@@ -21,11 +21,20 @@ const CardCarousel = () => {
 
     return (
         <Swiper
+        className="custom-swiper"
             spaceBetween={10}
             slidesPerView={3}
             navigation
             loop={true}
-            style={{ width: '80%', margin: '0 auto' }}
+
+            breakpoints={{
+                768: {
+                    slidesPerView: 3, 
+                },
+                500: {
+                    slidesPerView: 2, 
+                },
+            }}
         >
             {cards.map((card, index) => (
                 <SwiperSlide

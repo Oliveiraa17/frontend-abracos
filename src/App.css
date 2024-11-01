@@ -216,4 +216,7 @@ main {
     .footer-container {
         gap: 32px;
     }
+    .img-card {
+        width: 40px;
+    }
 }

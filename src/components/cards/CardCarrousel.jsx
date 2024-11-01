@@ -22,14 +22,17 @@ const CardCarousel = () => {
 
     return (
         <Swiper
+            className="custom-swiper"
             spaceBetween={10}
             slidesPerView={3}
             navigation
             loop={true}
-            style={{ width: '80%', margin: '0 auto' }}
             breakpoints={{
+                768: {
+                    slidesPerView: 3,
+                },
                 500: {
-                    slidesPerView: 2, // Ajusta para 2 slides por vez em telas de até 500px
+                    slidesPerView: 2,
                 },
             }}
         >

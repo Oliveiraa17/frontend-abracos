@@ -13,7 +13,7 @@ const CardCarousel = () => {
         { image: 'assets/images/compras.gif', label: 'Compras', route: '/Compras' },
         { image: 'assets/images/escola.gif', label: 'Escola', route: '/Escola' },
         { image: 'assets/images/documento.gif', label: 'Documentos', route: '/Documentos' },
-        { image: null, label: 'Alimentacao' }, 
+        { image: null, label: 'Alimentacao' },
     ];
 
     const onCardClick = (route, label) => {
@@ -22,17 +22,25 @@ const CardCarousel = () => {
 
     return (
         <Swiper
+            className="custom-swiper"
             spaceBetween={10}
             slidesPerView={3}
             navigation
             loop={true}
-            style={{ width: '80%', margin: '0 auto' }}
+            breakpoints={{
+                768: {
+                    slidesPerView: 3,
+                },
+                500: {
+                    slidesPerView: 2,
+                },
+            }}
         >
             {cards.map((card, index) => (
-                <SwiperSlide 
-                key={index}
-                onClick={() => onCardClick(card.route, card.label)}
-                style={{cursor: 'pointer'}}
+                <SwiperSlide
+                    key={index}
+                    onClick={() => onCardClick(card.route, card.label)}
+                    style={{ cursor: 'pointer' }}
                 >
                     <Card image={card.image} label={card.label} />
                 </SwiperSlide>

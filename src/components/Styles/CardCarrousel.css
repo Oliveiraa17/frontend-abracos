@@ -47,6 +47,11 @@
     color: #fff;
 }
 
+.custom-swiper {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /*Pagina dos cards*/
 
 .fra_efeito {
@@ -149,20 +154,28 @@
     margin-bottom: 70px;
 }
 
+.swiper-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 @media (width <=500px) {
     .img-fundo {
         height: 400px;
         background-position: center center;
     }
+
     .img-fundo h1 {
         font-size: 1.6em;
     }
+
     mark {
         background-color: #FF6926;
         color: #fff;
         padding: 3px;
         border-radius: 10px;
     }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -170,11 +183,13 @@
         padding: 40px;
         border-radius: 8px;
     }
+
     .Sobre-cards {
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
     }
+
     .icon {
         font-size: 50px;
         margin-bottom: 10px;
@@ -183,19 +198,39 @@
         width: 100px;
     }
     .img-cards {
-        width: 170px; 
+        width: 170px;
         height: 250px;
     }
     .parte-cards-cima {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px; 
+        gap: 20px;
     }
-    .img-cards h3 {
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .custom-swiper .swiper-button-next {
+        transform: translateX(5px);
+    }
+    .custom-swiper {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .custom-swiper .swiper-slide .card {
+        width: 270px;
+        height: auto;
+    }
+    .img-card {
+        width: 100px;
+    }
+    .card h1 {
         font-size: 1em;
     }
-    .swiper-container {
-        width: 95%; /* Ajuste a largura para telas menores */
+    .card {
+        padding-right: 100px;
+        padding-left: 80px;
     }
 }
