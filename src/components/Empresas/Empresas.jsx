@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../Styles/Empresas.css';
 import botao from '../../../public/assets/images/botaovoltar.svg';
 import bolas from '../../../public/assets/images/bolas.svg';
-import Doe from '../../../public/assets/images/Imagemdoe.svg';
 import { Link } from 'react-router-dom';
 
 function Empresas() {

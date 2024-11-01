@@ -71,6 +71,43 @@
     margin-left: 67px;
 }
 
+@media (max-width: 500px) {
+    .bolas_empresas {
+        flex-direction: column; 
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    .bolas_empresas h1 {
+        font-size: 1.8em; 
+        margin-left: 0;
+    }
+
+    .texto_empresas,
+    .texto_preencher,
+    .texto_atua {
+        font-size: 1em; 
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .bloco_azul1,
+    .bloco_azul2 {
+        width: 100px; 
+        margin-left: 10px;
+    }
+
+    .texto_servicos {
+        font-size: 1em; 
+        margin-left: 10px;
+    }
+
+    .topicos {
+        font-size: 14px; 
+        margin-left: 10px;
+    }
+}
+
 /* PARTE DO DOE */
 
 /* .imagemdoe {
@@ -127,3 +164,5 @@
     transform: scale(1.05);
     background-color: var(--terciary-color);
 } */
+
+
