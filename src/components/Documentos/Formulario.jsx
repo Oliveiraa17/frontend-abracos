@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Formulario() {
   const [formData, setFormData] = useState({
@@ -6,6 +6,15 @@ function Formulario() {
     email: '',
     mensagem: ''
   });
+  
+  // Estado para controlar a largura da tela e ajustar estilos
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 500);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleChange = (e) => {
     setFormData({
@@ -22,44 +31,43 @@ function Formulario() {
 
   return (
     <>
-      <h1 style={styles.title}>Entre em contato com a regularização:</h1>
-      <div style={styles.container}>
+      <h1 style={isMobile ? {...styles.title, fontSize: '24px', margin: '20px'} : styles.title}>
+        Entre em contato com a regularização:
+      </h1>
+      <div style={isMobile ? {...styles.container, width: '90%', padding: '10px', height: 'auto'} : styles.container}>
         <form onSubmit={handleSubmit} style={styles.form}>
-          <div style={styles.jhow}>
+          <div style={isMobile ? {...styles.jhow, flexDirection: 'column', gap: '10px'} : styles.jhow}>
             <div style={styles.inputGroup}>
-              {/* <label style={{color: '#fff'}}>Nome:</label> */}
               <input
                 placeholder='Nome:'
                 type="text"
                 name="nome"
                 value={formData.nome}
                 onChange={handleChange}
-                style={styles.input}
+                style={isMobile ? {...styles.input, width: '82vw', margin: '5px 0'} : styles.input}
               />
             </div>
             <div style={styles.inputGroup}>
-              {/* <label style={{color: '#fff'}}>E-mail:</label> */}
               <input
-                placeholder='E-mail::'
+                placeholder='E-mail:'
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                style={styles.input}
+                style={isMobile ? {...styles.input, width: '82vw', margin: '5px 0'} : styles.input}
               />
             </div>
           </div>
           <div style={styles.inputGroup}>
-            {/* <label style={{color: '#fff'}}>Mensagem:</label> */}
-            <textarea
-              name="mensagem"
-              placeholder='Mensagem:'
-              value={formData.mensagem}
-              onChange={handleChange}
-              style={styles.textarea}
-            />
-          </div>
-          <div style={styles.buttonContainer}>
+  <textarea
+    name="mensagem"
+    placeholder="Mensagem:"
+    value={formData.mensagem}
+    onChange={handleChange}
+    style={isMobile ? {...styles.textarea, width: '100%', height: '200px', resize: 'none'} : {...styles.textarea, resize: 'none'}}
+  />
+</div>
+          <div style={isMobile ? {...styles.buttonContainer, position: 'static', marginTop: '10px', justifyContent: 'center'} : styles.buttonContainer}>
             <button type="submit" style={styles.button}>Enviar</button>
           </div>
         </form>
@@ -97,7 +105,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-
   },
   input: {
     padding: '15px',
@@ -105,7 +112,6 @@ const styles = {
     border: '1px solid #ccc',
     width: '400px',
     margin: '10px 0px',
-
   },
   textarea: {
     padding: '10px',
@@ -135,7 +141,6 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-evenly',
   }
-
 };
 
 export default Formulario;
