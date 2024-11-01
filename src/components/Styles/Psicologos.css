@@ -271,7 +271,7 @@
 
     .Laranja {
         width: 95%;
-        height: 1350px;
+        height: 1400px;
         padding: 20px 0;
         margin-bottom: 50px;
         margin: 40px 0 80px 20px;
@@ -302,6 +302,7 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 50px;
+            margin-left: 20px;
         }
         
         .juncao {
