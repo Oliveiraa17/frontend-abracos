@@ -6,8 +6,7 @@ function Formulario() {
     email: '',
     mensagem: ''
   });
-  
-  // Estado para controlar a largura da tela e ajustar estilos
+
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
 
   useEffect(() => {
@@ -31,7 +30,7 @@ function Formulario() {
 
   return (
     <>
-      <h1 style={isMobile ? {...styles.title, fontSize: '24px', margin: '20px'} : styles.title}>
+      <h1 style={isMobile ? {...styles.title, fontSize: '20px', margin: '20px'} : styles.title}>
         Entre em contato com a regularização:
       </h1>
       <div style={isMobile ? {...styles.container, width: '90%', padding: '10px', height: 'auto'} : styles.container}>

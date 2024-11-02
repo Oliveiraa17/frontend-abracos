@@ -2,7 +2,6 @@ import '../Styles/Documentos.css';
 import Regularizacao from './Regularizacao';
 import Formulario from './Formulario';
 import Processo from './Processo';
-import Mapa from './Mapa'
 
 
 function Documentos(){
@@ -12,10 +11,9 @@ function Documentos(){
 
             </div>
             <div>
-                <Regularizacao></Regularizacao>+
+                <Regularizacao></Regularizacao>
                 <Formulario></Formulario>
                 <Processo></Processo> 
-                {/* <Mapa></Mapa> */}
             </div>
         </section>
     )

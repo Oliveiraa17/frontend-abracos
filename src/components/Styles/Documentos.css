@@ -63,13 +63,14 @@ ol {
 
 li {
   margin-bottom: 10px;
-  text-align: left; /* Alinha o texto das listas à esquerda */
+  text-align: left; 
 }
 
 @media (max-width: 500px) {
   .run {
-    height: 300px; /* Reduz o tamanho da imagem de fundo */
-    background-size: contain;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
   }
 
   .regularizacao {
@@ -81,20 +82,25 @@ li {
     margin-top: 20px;
     padding: 15px;
   }
+  .regularizacao > div > img {
+    width: 100%;
+  }
 
   .bom {
     gap: 10px;
   }
 
   .ruim {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0px;
+    margin-top: 20px;
     width: 90%;
+    padding-bottom: 10px;
   }
 
   .baixo-fomrs {
     padding: 20px;
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    font-size: 1.5rem;
   }
 
   .baixo-fomrs h1 {
