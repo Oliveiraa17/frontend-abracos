@@ -63,22 +63,24 @@ function Cursos(){
                         <p className='p_beneficios'>Benefícios que você ira querer!</p>
                         <button className='ComeceAq' title='Comece Aqui' alt='Comece_Aqui'><Link to='/Videoaulas'>Comece Aqui</Link></button>
             </div>
-            <div className='div_azul' title='Diferenciais' alt='Diferenciais'>
-                <div className='div_diferenciais'>
-                    <img className='img_diferenciais' src={cofrinho} alt="" />
-                    <p className='parag_dif'>Estudo sem</p> <p className='parag_dif'>custo</p>
-                </div>
-                <div className='div_diferenciais'>
-                    <img className='img_diferenciais' src={curriculo} alt="" />
-                    <p className='parag_dif'>Turbine seu</p> <p className='parag_dif'>currículo</p>
-                </div>
-                <div className='div_diferenciais'>
-                    <img className='img_diferenciais' src={certificado} alt="" />
-                    <p className='parag_dif'>conquiste o seu</p> <p className='parag_dif'>certificado</p>
-                </div>
-                <div className='div_diferenciais'>
-                    <img className='img_diferenciais' src={resultados} alt="" />
-                    <p className='parag_dif'>tenha os melhores</p> <p className='parag_dif'>resultados</p>
+            <div className='colocar_displayy'>
+                <div className='div_azul' title='Diferenciais' alt='Diferenciais'>
+                    <div className='div_diferenciais'>
+                        <img className='img_diferenciais' src={cofrinho} alt="" />
+                        <p className='parag_dif'>Estudo sem</p> <p className='parag_dif'>custo</p>
+                    </div>
+                    <div className='div_diferenciais'>
+                        <img className='img_diferenciais' src={curriculo} alt="" />
+                        <p className='parag_dif'>Turbine seu</p> <p className='parag_dif'>currículo</p>
+                    </div>
+                    <div className='div_diferenciais'>
+                        <img className='img_diferenciais' src={certificado} alt="" />
+                        <p className='parag_dif'>conquiste o seu</p> <p className='parag_dif'>certificado</p>
+                    </div>
+                    <div className='div_diferenciais'>
+                        <img className='img_diferenciais' src={resultados} alt="" />
+                        <p className='parag_dif'>tenha os melhores</p> <p className='parag_dif'>resultados</p>
+                    </div>
                 </div>
             </div>
         </section>

@@ -247,15 +247,16 @@
 /*Visualização Smartphone*/
 @media (width <= 500px){
     .fundo_cursos{
-        height: 41.431vw;
+        height: 55vw;
     }
     .barra_laranja_pesquisa{
-        height: 3.586vw;
+        height: 5.586vw;
         padding-right: 9vw;
     }
     .lup{
-        width: 2vw;
-        height: 2vw;
+        width: 3vw;
+        height: 3vw;
+        margin-top: 0.2vw;
     }
     .buscar{
         width: 14.403vw;
@@ -264,7 +265,7 @@
         border: 0vw;
     }
     .buscar::placeholder{
-        font-size: 1.7vw;
+        font-size: 2vw;
     }
     .fundo_cursos{
         display: flex;
@@ -273,73 +274,77 @@
         margin-top: 8.403vw
     }
     .palavra_aprender{
-        font-size: 30px;
-        padding-top: 17vw;
+        font-size: 6vw;
+        padding-top: 21vw;
     }
     .ptt{
         font-size: 25px;
     }
 
     .div_branca{
-        width: 250px;
-        height: 90px;
-        margin-top: 17vw
+        width: 50vw;
+        height: 18vw;
+        margin-top: 21vw
     }
     .O_que_você_quer_aprender{
         margin-top: 5px;
         font-size: 15px;
     }
     .lupa2{
-        width: 25px;
-        margin: 15px 10px 25px 20px;
+        width: 5vw;
+        margin: 3vw 2vw 5vw 4vw;
     }
     .buscarr{
-        width: 170px;
-        height: 20px;
-        margin-bottom: 10px;
+        width: 34vw;
+        height: 4vw;
+        margin-bottom: 2vw;
     }
     .buscarr::placeholder{
         color: #555;
-        font-size: 15px;
+        font-size: 3vw;
     }
 
+    /*bandeira*/
     .fundo_bandeira{
-        width: 100%;
-        height: 900px;
-        margin-bottom: 40px;
+        width: 90%;
+        height: 140vw;
+        margin-bottom: 8vw;
     }
     .aproveitar{
         color: #fff;
-        margin: 7.24vw 5.171vw 5.818vw 7.757vw;
-        font-size: 25px;
+        margin: 7.2vw 5.1vw 5.8vw 7.7vw;
+        font-size: 4.6vw;
     }
     .display_branca{
         flex-direction: column;
         align-items: center;
     }
     .div_brancona{
-        width: 240px;
-        height: 200px;
+        width: 42vw;
+        height: 32vw;
         background-color: #fff;
         border-radius: 2vw;
-        margin: 22px;
+        margin: 2.4vw;
     }
     .img_branca{
-        width: 140px;
+        width: 17vw;
     }
     .paragrafo_branco{
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .fundo_bandeira{
-        border-radius: 20px;
+        border-radius: 4vw;
     }
+
+
+
     .diferenciais{
         width: 100%;
         margin-left: 0px;
     }
     .h1_diferenciais{
-        font-size: 45px;
+        font-size: 7.4vw;
         font-weight: bold;
         display: flex;
         justify-content: center;
@@ -348,27 +353,27 @@
         flex-direction: column;
     }
     .p_beneficios{
-        font-size: 30px;
+        font-size: 4vw;
     }
     .ComeceAq{
-        width: 350px;
-        height: 50px;
-        border-radius: 16px;
-        font-size: 25px;
-        margin-top: 10px;
+        width: 50vw;
+        height: 9.6vw;
+        border-radius: 3.2vw;
+        font-size: 5vw;
+        margin-top: 2vw;
     }
 
     .div_azul{
-        width: 100%;
-        height: 1800px;
+        width: 85%;
+        height: 200vw;
         flex-direction: column;
-        border-radius: 30px;
+        border-radius: 6vw;
     }
     .img_diferenciais{
-        width: 220px;
+        width: 28vw;
     }
     .parag_dif{
-        font-size: 35px;
+        font-size: 4vw;
     }
     .div_diferenciais{
         display: flex;
@@ -380,19 +385,19 @@
 
             /* OBJETIVOS: */
     .img_laranja1{
-        width: 90px;
-        height: 100px;
+        width: 18vw;
+        height: 20vw;
     }
     .img_laranja2{
-        width: 90px;
-        height: 100px;
+        width: 18vw;
+        height: 20vw;
     }
     .h1_obj{
-        font-size: 20px;
+        font-size: 4vw;
     }
     .p_obj{
         width: 54%;
-        font-size: 10px;
+        font-size: 2.2vw;
         margin-left: 2vw;
     }
 
@@ -405,12 +410,12 @@
     }
     .paragrafo1_obj{
         width: 30%;
-        font-size: 15px;
+        font-size: 2.6vw;
         align-items: center;
     }
     .paragrafo2_obj{
         width: 30%;
-        font-size: 15px;
+        font-size: 2.6vw;
         align-items: center;
     }
 }
