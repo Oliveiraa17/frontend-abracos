@@ -179,6 +179,7 @@ a {
     .List > ul {
         flex-direction: column;
         margin-top: 80px;
+        font-size: 2em;
     }
     .area_cadastro {
         display: none;
@@ -197,6 +198,12 @@ a {
         content: url('../../../public/assets/images/Logo-Abraços-Branco.png');
         max-width: 90px;
         margin-left: 100%;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 800;
     }
 
 }
