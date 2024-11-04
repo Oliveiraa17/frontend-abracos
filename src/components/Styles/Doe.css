@@ -1,0 +1,119 @@
+.sec_doe {
+    margin-bottom: 100px;
+}
+
+.dife {
+    color: var(--primary-color);
+    font-size: 1.7em;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dou {
+    background-color: var(--terciary-color);
+    width: 40%;
+    height: 50px;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picchildren {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_frase h1 {
+    background-color: var(--terciary-color);
+    width: 40%;
+    height: 70px;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_frase p {
+    font-size: 1.3em;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.inicia {
+    color: var(--primary-color);
+    font-size: 1.7em;
+    margin: 50px 0 0 10px;
+}
+
+.images_ladoo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.sames_log {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.boton_doe {
+    width: 40%; 
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: var(--primary-color);
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    animation: pulse 2s infinite;
+    text-align: center; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.boton_doe:hover {
+    background-color: var(--terciary-color);
+    transform: scale(1.1);
+    animation: none;
+    box-shadow: 0 0 20px rgba(253, 7, 7, 0.893);
+}
