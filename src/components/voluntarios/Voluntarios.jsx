@@ -3,7 +3,7 @@ import '../Styles/Voluntarios.css';
 function Voluntarios() {
     return (
         <section className="voluntarios-sec">
-            <div className="voluntarios-header">
+            <div className="frase_he">
                 <h1>Sua experiência pode transformar vidas!</h1>
                 <p>Contribua como psicólogo(a) voluntário(a)!</p>
             </div>
