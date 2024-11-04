@@ -30,7 +30,7 @@
     justify-content: center;
 }
 
-.content_frase h1 {
+.content_frase h3 {
     background-color: var(--terciary-color);
     width: 40%;
     height: 70px;
@@ -126,8 +126,12 @@ a {
         margin: 20px;
     }
 
-    .dou, .content_frase h1 {
+    .dou, .content_frase h3 {
         width: 90%;
+    }
+
+    .dou h3{
+        font-size: 1em;
     }
 
     .inicia h1{

@@ -29,7 +29,7 @@ function Doe() {
             </div>
 
             <div className='content_frase'>
-                <h1>Quer salvar uma vida?</h1>
+                <h3>Quer salvar uma vida?</h3>
                 <p>Ajude imigrantes e refugiados a recomeçar suas vidas. Sua doação pode proporcionar abrigo, alimentação e oportunidades de integração em um novo país. Com sua generosidade, você transforma histórias de luta em histórias de esperança. Doe hoje e faça a diferença na vida de quem mais precisa!</p>
             </div>
 
