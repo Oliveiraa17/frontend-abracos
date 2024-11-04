@@ -3,6 +3,7 @@ import Beneficios from './Beneficios';
 import Trabalhadores from './trabalhadores';
 import Modal from './Modal';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Psicologos() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -79,7 +80,7 @@ function Psicologos() {
                         </div>
                         <div className='preparadolaranja'>
                             <p className='preparado'>Preparado para começar?</p>
-                            <p className='preparadoazul'>Preparado</p>
+                            <Link to="/form" className='preparadoazul'>Preparado</Link>
                         </div>
                     </div>
                 </div>

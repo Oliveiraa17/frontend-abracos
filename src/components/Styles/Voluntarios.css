@@ -1,0 +1,99 @@
+.voluntarios-sec {
+    max-width: 900px;
+    margin: 70px auto;
+    background-color: #1c4d6b;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.voluntarios-header {
+    background-image: url(../../../public/assets/images/formg.svg); /* colocar imagem certa */
+    background-size: cover;
+    height: 200px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.voluntarios-header h1 {
+    font-size: 30px;
+    padding: 100px 0 0 0;
+}
+
+.voluntarios-header p {
+    font-size: 15px;
+}
+
+.voluntarios-formulario {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.voluntarios-formulario h2 {
+    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+    margin: 40px;
+    text-align: center;
+}
+
+.voluntarios-formulario label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.voluntarios-formulario input,
+.voluntarios-formulario textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.voluntarios-formulario input[type="date"],
+.voluntarios-formulario input[type="tel"],
+.voluntarios-formulario input[type="email"],
+.voluntarios-formulario input[type="text"] {
+    background-color: #f9f9f9;
+}
+
+.voluntarios-formulario textarea {
+    height: 80px;
+    resize: none;
+}
+
+.button_voluntario {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1c4d6b; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button_voluntario:hover {
+    background-color: #163a53; 
+}
+
+/* Imagem de fundo */
+.voluntarios-sec::before {
+    content: '';
+    background: url('../../../public/assets/images/Apertodemao.svg') no-repeat center center; /* colocar imagem certa */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 15px;
+}

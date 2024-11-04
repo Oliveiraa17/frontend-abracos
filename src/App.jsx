@@ -14,6 +14,8 @@ import Videoaulas from './components/videoaulas/Videoaulas';
 import Documentos from './components/Documentos/Documentos';
 import Doe from './components/Doe/Doe';
 import GTranslate from './components/GTranslate';
+import Voluntarios from './components/voluntarios/Voluntarios';
+import Acolhimento from './components/Acolhimento/Acolhimento';
 function App() {
 
   
@@ -43,6 +45,8 @@ function App() {
           <Route path='Empresas' element={<Empresas/>}/>
           <Route path='Videoaulas' element={<Videoaulas/>}/>
           <Route path='Documentacao' element={<Documentos/>}/>
+          <Route path='form' element={<Voluntarios/>}/>
+          <Route path='Acolhimento' element={<Acolhimento/>}/>
         </Routes>
         <Footer />
       </Router>

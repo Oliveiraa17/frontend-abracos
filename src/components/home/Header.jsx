@@ -5,13 +5,15 @@ import '../styles/Header.css';
 
 function Header() {
     const [active, setMode] = useState(false);
+    const [showSubmenu, setShowSubmenu] = useState(false);
 
     const ToggleMode = () => {
         setMode(!active);
     };
 
     const handleLinkClick = () => {
-        setMode(false); // Fecha o menu ao clicar em um link
+        setMode(false);
+        setShowSubmenu(false);
     };
 
     return (
@@ -32,7 +34,19 @@ function Header() {
                             <li className='nav-link'><Link to='cards' onClick={handleLinkClick}>Cards</Link></li>
                             <li className='nav-link'><Link to='Documentacao' onClick={handleLinkClick}>Documentação</Link></li>
                             <li className='nav-link'><Link to='SobreNos' onClick={handleLinkClick}>Sobre</Link></li>
-                            <li className='nav-link'><Link to='Doe' onClick={handleLinkClick}>Doe</Link></li>
+                            <li 
+                                className='nav-link apoio' 
+                                onMouseEnter={() => setShowSubmenu(true)} 
+                                onMouseLeave={() => setShowSubmenu(false)}
+                            >
+                                Apoio
+                                {showSubmenu && (
+                                    <ul className='submenu'>
+                                        <li><Link to='Doe' onClick={handleLinkClick}>Doe</Link></li>
+                                        <li><Link to='Acolhimento' onClick={handleLinkClick}>Acolhimento</Link></li>
+                                    </ul>
+                                )}
+                            </li>
                         </ul>
                     </div>
                 </nav>
