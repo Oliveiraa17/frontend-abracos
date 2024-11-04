@@ -8,20 +8,22 @@
 }
 
 .voluntarios-header {
-    background-image: url(../../../public/assets/images/formg.svg); /* colocar imagem certa */
+    background-image: url(../../../public/assets/images/maosforms.svg); /* colocar imagem certa */
     background-size: cover;
-    height: 200px;
+    width: 100%;
+    height: 350px;
     color: white;
     margin-bottom: 20px;
 }
 
 .voluntarios-header h1 {
     font-size: 30px;
-    padding: 100px 0 0 0;
+    padding: 190px 0 0 0;
 }
 
 .voluntarios-header p {
     font-size: 15px;
+    padding: 10px 0 0 0;
 }
 
 .voluntarios-formulario {
@@ -87,13 +89,18 @@
 /* Imagem de fundo */
 .voluntarios-sec::before {
     content: '';
-    background: url('../../../public/assets/images/Apertodemao.svg') no-repeat center center; /* colocar imagem certa */
+    background: url('../../../public/assets/images/imagem4bolls.svg') no-repeat center center; /* colocar imagem certa */
     background-size: cover;
     position: absolute;
+    height: 2500px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
     border-radius: 15px;
+}
+
+@media (max-width: 500px) {
+
 }
