@@ -278,7 +278,7 @@
         padding-top: 21vw;
     }
     .ptt{
-        font-size: 25px;
+        font-size: 5vw;
     }
 
     .div_branca{
@@ -287,8 +287,8 @@
         margin-top: 21vw
     }
     .O_que_você_quer_aprender{
-        margin-top: 5px;
-        font-size: 15px;
+        margin-top: 1vw;
+        font-size: 3vw;
     }
     .lupa2{
         width: 5vw;
@@ -330,7 +330,7 @@
         width: 17vw;
     }
     .paragrafo_branco{
-        font-size: 17px;
+        font-size: 3.4vw;
     }
 
     .fundo_bandeira{
@@ -357,7 +357,7 @@
     }
     .ComeceAq{
         width: 50vw;
-        height: 9.6vw;
+        height: 11.5vw;
         border-radius: 3.2vw;
         font-size: 5vw;
         margin-top: 2vw;
@@ -373,7 +373,7 @@
         width: 28vw;
     }
     .parag_dif{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .div_diferenciais{
         display: flex;
