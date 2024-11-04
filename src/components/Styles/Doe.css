@@ -117,3 +117,38 @@ a {
     animation: none;
     box-shadow: 0 0 20px rgba(253, 7, 7, 0.893);
 }
+
+
+/* RESPONSIVO MOBILE */
+@media (max-width: 500px) {
+    .dife, .inicia {
+        font-size: 1.5em;
+        margin: 20px;
+    }
+
+    .dou, .content_frase h1 {
+        width: 90%;
+    }
+
+    .inicia h1{
+        font-size: 1em;
+    }
+
+    .picchildren img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .images_ladoo {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .sames_log {
+        width: 100%;
+    }
+
+    .boton_doe {
+        width: 70%;
+    }
+}
