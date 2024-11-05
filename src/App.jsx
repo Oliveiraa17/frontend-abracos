@@ -16,6 +16,7 @@ import Doe from './components/Doe/Doe';
 import GTranslate from './components/GTranslate';
 import Voluntarios from './components/voluntarios/Voluntarios';
 import Acolhimento from './components/Acolhimento/Acolhimento';
+import Cadastro from './components/Cadastro/Cadastro';
 function App() {
 
   
@@ -47,6 +48,7 @@ function App() {
           <Route path='Documentacao' element={<Documentos/>}/>
           <Route path='form' element={<Voluntarios/>}/>
           <Route path='Acolhimento' element={<Acolhimento/>}/>
+          <Route path='cad' element={<Cadastro/>}/>
         </Routes>
         <Footer />
       </Router>

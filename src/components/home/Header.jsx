@@ -52,7 +52,7 @@ function Header() {
                 </nav>
                 <div className='area_cadastro'>
                     <div className='login'><Link to='login'>Entrar</Link></div>
-                    <div className='cadastro'><Link to='Cadastro'>Cadastre-se</Link></div>
+                    <div className='cadastro'><Link to='cad'>Cadastre-se</Link></div>
                 </div>
             </header>
         </>
