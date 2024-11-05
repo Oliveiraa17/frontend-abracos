@@ -6,6 +6,9 @@
     background-position: top bottom;
     background-size: cover;
 }
+.psicoo {
+    width: 100%; 
+}
 
 .fundo_psicologos p{
     font-size: 2.5em;

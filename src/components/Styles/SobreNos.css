@@ -39,6 +39,9 @@
     margin: auto;
     overflow: hidden;
 }
+.sectchones{
+    width: 100%;
+}
 
 .devs {
     display: flex;

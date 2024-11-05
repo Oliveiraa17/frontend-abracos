@@ -1,9 +1,9 @@
-import '../Styles/Psicologos.css';
-import Beneficios from './Beneficios';
-import Trabalhadores from './trabalhadores';
-import Modal from './Modal';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../Styles/Psicologos.css';
+import Beneficios from './Beneficios';
+import Modal from './Modal';
+import Trabalhadores from './trabalhadores';
 
 function Psicologos() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -39,7 +39,7 @@ function Psicologos() {
 
     return (
         <>
-            <section>
+            <section className='psicoo'>
                 <div className="fundo_psicologos">
                     <p>Abraçando sonhos, construindo futuros. Cada<br /> <span className='passo'>passo</span> é um caminho para um novo <span className='recomeço'>recomeço.</span></p>
                 </div>

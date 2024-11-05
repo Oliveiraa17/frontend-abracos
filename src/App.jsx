@@ -1,30 +1,35 @@
-import SobreNos from './components/SobreNos/SobreNos';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import './App.css';
-import Header from './components/home/Header';
-import Psicologos from './components/psicologos/Psicologos';
-import Footer from './components/home/Footer';
-import Home from './components/home/Home';
+import Acolhimento from './components/Acolhimento/Acolhimento';
+import Cadastro from './components/Cadastro/Cadastro';
 import Cards from './components/cards/Cards';
 import Pagina1 from './components/cards/pag2/pagina1';
 import Cursos from './components/Cursos/Cursos';
-import Empregabilidade from './components/Empregados/Empregabilidade'
-import Empresas from './components/Empresas/Empresas';
-import Videoaulas from './components/videoaulas/Videoaulas';
 import Documentos from './components/Documentos/Documentos';
 import Doe from './components/Doe/Doe';
+import Empregabilidade from './components/Empregados/Empregabilidade';
+import Empresas from './components/Empresas/Empresas';
 import GTranslate from './components/GTranslate';
+import Footer from './components/home/Footer';
+import Header from './components/home/Header';
+import Home from './components/home/Home';
+import Login from './components/Login/Login';
+import Psicologos from './components/psicologos/Psicologos';
+import SobreNos from './components/SobreNos/SobreNos';
+import Videoaulas from './components/videoaulas/Videoaulas';
 import Voluntarios from './components/voluntarios/Voluntarios';
-import Acolhimento from './components/Acolhimento/Acolhimento';
-import Cadastro from './components/Cadastro/Cadastro';
-function App() {
+
+function AppContent() {
+
+  const location = useLocation();
+
+  const isFrequenciaRoute = location.pathname === '/cad' || location.pathname === '/login';
 
   
   return (
     <>
-      <Router basename='/frontend-abracos'>
+    {!isFrequenciaRoute && <Header/>}
         <GTranslate></GTranslate>
-        <Header />
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='cards' element={<Cards />} />
@@ -49,11 +54,21 @@ function App() {
           <Route path='form' element={<Voluntarios/>}/>
           <Route path='Acolhimento' element={<Acolhimento/>}/>
           <Route path='cad' element={<Cadastro/>}/>
+          <Route path='login' element={<Login/>}/>
         </Routes>
-        <Footer />
-      </Router>
+      {!isFrequenciaRoute && <Footer />}
     </>
   );
+}
+
+function App(){
+  return(
+    <main className='container-principal'>
+        <Router basename='/frontend-abracos'>
+          <AppContent />
+        </Router>
+    </main>
+  )
 }
 
 export default App;

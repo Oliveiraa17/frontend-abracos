@@ -1,22 +1,22 @@
-import '../Styles/Cursos.css'
 import { Link } from 'react-router-dom'
-import lupa from '../../../public/assets/images/lupa.png'
-import produtividade from '../../../public/assets/gifs/produtividade.gif'
-import desenvolvimento from '../../../public/assets/gifs/desenvolvimento.gif'
-import metodologias from '../../../public/assets/gifs/metodologias.gif'
+import certificado from '../../../public/assets/gifs/certificado.gif'
 import cofrinho from '../../../public/assets/gifs/cofrinho.gif'
 import curriculo from '../../../public/assets/gifs/curriculo.gif'
-import certificado from '../../../public/assets/gifs/certificado.gif'
+import desenvolvimento from '../../../public/assets/gifs/desenvolvimento.gif'
+import metodologias from '../../../public/assets/gifs/metodologias.gif'
+import produtividade from '../../../public/assets/gifs/produtividade.gif'
 import resultados from '../../../public/assets/gifs/resultados.gif'
+import lupa from '../../../public/assets/images/lupa.png'
+import '../Styles/Cursos.css'
 
-import quadrado_laranja from '../../../public/assets/images/quadrado_laranja.png'
 import azul from '../../../public/assets/images/img_azul_cursos.png'
+import quadrado_laranja from '../../../public/assets/images/quadrado_laranja.png'
 
 function Cursos(){
     return(
         <>
             {/* IMAGEM DE FUNDO */}
-        <section>
+        <section className='contentPrincipal'>
             <div className='barra_laranja_pesquisa'>
                 <input type="text" name="buscar" className='buscar' placeholder='Busque aqui' title='buscar'/>
                 <img src={lupa} alt="lupa" className='lup'/>

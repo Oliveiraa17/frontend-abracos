@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+.contentPrincipal{
+    width: 100%;
+}
+
     /* IMAGEM DE FUNDO */  /* RESOLUÇÃO FEITA COM 1547px */
 .lup{
     width: 1.616vw;
@@ -94,6 +99,7 @@
     border-radius: 1.939vw;
 }
 .colocar_displayy{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,8 +134,7 @@
 
     /* DIFERENCIAIS: */
 .diferenciais{
-    width: 88.3%;
-    margin-left: 6.464vw;
+    width: 88%;
 }
 .h1_diferenciais{
     font-size: 2.456vw;
@@ -193,6 +198,7 @@
 
     /* OBJETIVOS: */
 .objetivos{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }

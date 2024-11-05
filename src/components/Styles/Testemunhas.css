@@ -1,8 +1,13 @@
+.baixo-depoimentos {
+    width: 100%;
+}
+
 .testimonials-section {
     background-color: #FF6926;
     padding: 40px 20px;
     text-align: center;
     color: white;
+    width: 100%;
 }
 
 .testimonials-section h2 {
