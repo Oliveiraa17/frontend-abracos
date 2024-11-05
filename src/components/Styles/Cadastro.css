@@ -1,0 +1,30 @@
+.sec_cad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_cad{
+    margin: 40px 0 40px 0;
+    background-color: #2d6283;
+    border-radius: 15px;
+    height: 700px;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_cad{
+    background-color: white;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+h2{
+    margin-top: 20px;
+}
+.colocar_margin{
+    margin: 10px 0 10px 30px;
+}
+input{
+    width: 700px;
+}
