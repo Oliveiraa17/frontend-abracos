@@ -38,8 +38,7 @@ function Header() {
                                 className='nav-link apoio' 
                                 onMouseEnter={() => setShowSubmenu(true)} 
                                 onMouseLeave={() => setShowSubmenu(false)}
-                            >
-                                Apoio
+                            >Apoio
                                 {showSubmenu && (
                                     <ul className='submenu'>
                                         <li><Link to='Doe' onClick={handleLinkClick}>Doe</Link></li>

@@ -204,6 +204,11 @@ a {
         left: 20px; 
     }
     
+    .apoio{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    
     .List {
         display: flex;
         left: 1%;
