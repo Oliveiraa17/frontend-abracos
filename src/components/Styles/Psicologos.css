@@ -164,7 +164,7 @@
 
 .juncao img{
     width: 50%;
-    height: 400px;
+    height: 380px;
     margin-left: 35px;
 }
 
@@ -209,13 +209,13 @@
 
 .preparadoazul{
     position: absolute;
-    left: 230px;
-    bottom: 3px;
+    left: 225px;
+    bottom: 4px;
     padding-left: 10px;
     padding-top: 4px;
     border-radius: 5px;
     background-color: #1A5276;
-    width: 40%;
+    width: 45%;
     height: 30px;
     transition: transform 0.3s ease;
 }
@@ -237,12 +237,13 @@
         padding: 110px 0 0 10px;
     }
 
-    .we{
-        font-size: 1em;
+    .we h1{
+        font-size: 1.3rem;
+        width: 100%;
     }
 
     .borda{
-        width: 70%;
+        width: 56%;
         align-items: center;
         margin: 0 0 0 50px;
     }
@@ -250,7 +251,7 @@
     .bordaa{
         gap: 20px;
         flex-direction: column;
-        margin: 0 0 0 60px;
+        margin: 0 0 0 160px;
     }
 
     .foto img{
@@ -267,7 +268,7 @@
     .estrela{
         border-radius: 5px;
         width: 20%;
-        margin: 50px 10px 0 0;
+        margin: 50px 70px 0 0;
     }
 
     .especificacao p{
@@ -280,7 +281,7 @@
         height: 1400px;
         padding: 20px 0;
         margin-bottom: 50px;
-        margin: 40px 0 80px 30px;
+        margin: 40px 0 80px 0;
     }
 
     .textinho h1 {
