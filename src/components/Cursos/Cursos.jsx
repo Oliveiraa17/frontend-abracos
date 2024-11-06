@@ -6,15 +6,10 @@ import desenvolvimento from '../../../public/assets/gifs/desenvolvimento.gif'
 import metodologias from '../../../public/assets/gifs/metodologias.gif'
 import produtividade from '../../../public/assets/gifs/produtividade.gif'
 import resultados from '../../../public/assets/gifs/resultados.gif'
-<<<<<<< Updated upstream
 import lupa from '../../../public/assets/images/lupa.png'
 import '../Styles/Cursos.css'
-
-=======
 import quadrado_laranja from '../../../public/assets/images/quadrado_laranja.png'
->>>>>>> Stashed changes
 import azul from '../../../public/assets/images/img_azul_cursos.png'
-import quadrado_laranja from '../../../public/assets/images/quadrado_laranja.png'
 
 function Cursos(){
     return(
