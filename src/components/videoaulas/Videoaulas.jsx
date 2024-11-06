@@ -44,23 +44,23 @@ function Videoaulas() {
     <section className="videos_section">
     <div className="video_list">
         <div className="video_item">
-            <img src="https://via.placeholder.com/300x200" alt="Aula 1" className="video_thumbnail" />
+            <img src="public/assets/images/thumb.svg" alt="Aula 1" className="video_thumbnail" />
             <p className="video_hashtag">#aula 1</p>
         </div>
         <div className="video_item">
-            <img src="https://via.placeholder.com/300x200" alt="Aula 2" className="video_thumbnail" />
+            <img src="public/assets/images/thumb.svg" alt="Aula 2" className="video_thumbnail" />
             <p className="video_hashtag">#aula 2</p>
         </div>
         <div className="video_item">
-            <img src="https://via.placeholder.com/300x200" alt="Aula 3" className="video_thumbnail" />
+            <img src="public/assets/images/thumb.svg" alt="Aula 3" className="video_thumbnail" />
             <p className="video_hashtag">#aula 3</p>
         </div>
         <div className="video_item">
-            <img src="https://via.placeholder.com/300x200" alt="Aula 4" className="video_thumbnail" />
+            <img src="public/assets/images/thumb.svg" alt="Aula 4" className="video_thumbnail" />
             <p className="video_hashtag">#aula 4</p>
         </div>
         <div className="video_item">
-            <img src="https://via.placeholder.com/300x200" alt="Aula 5" className="video_thumbnail" />
+            <img src="public/assets/images/thumb.svg" alt="Aula 5" className="video_thumbnail" />
             <p className="video_hashtag">#aula 5</p>
         </div>
     </div>
