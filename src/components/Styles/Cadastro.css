@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .sec_cad{
     width: 100%;
     display: flex;
@@ -29,3 +30,10 @@ h2{
 input{
     width: 700px;
 }
+=======
+.meu_cadastro{
+    color: blue;
+    width: 70%;
+    height: 200px;
+} 
+>>>>>>> Stashed changes
