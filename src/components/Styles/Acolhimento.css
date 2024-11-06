@@ -1,0 +1,74 @@
+.acolher{
+    background-image: url(../../../public/assets/images/amagacolher.svg);
+    background-size: cover;
+    height: 900px;
+}
+
+.acolher h1{
+    color: #fff;
+    font-size: 3rem;
+    padding: 600px 0 0 15px;
+}
+
+.acolher span{
+    color: var(--primary-color);
+}
+
+.naci{
+    margin: 60px 0 30px 10px;
+    color: var(--primary-color);
+    font-size: 1.7rem;
+}
+
+.paiband{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.same_band{
+    transition: transform 0.3s ease;
+}
+
+.same_band img:hover{
+    transform: scale(1.05);
+}
+
+.same_band h4{
+    font-size: 1.3rem;
+}
+
+.sect_acolher3{
+    margin-top: 140px;
+}
+
+.abri{
+    margin: 60px 0 30px 10px;
+    color: var(--primary-color);
+    font-size: 1.7rem;
+}
+
+.inf_ongs {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
+}
+
+.same_inf {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 45px;
+    margin: 0 0 0 40px; 
+}
+
+
+
+.same_inf h6 {
+    font-size: 1rem;
+    color: #333;
+    width: 50%;
+}
