@@ -5,6 +5,12 @@
     padding: 40px;
     border-radius: 8px;
 }
+mark {
+    background-color: #FF6926;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+}
 
 .icon {
     font-size: 50px;
