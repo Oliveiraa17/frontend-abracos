@@ -19,10 +19,14 @@
     height: 1.3vw;
     background-color: #FF6926;
     border: 0vw;
+    
 }
 .buscar::placeholder{
     color: #ffffff;
     font-size: 0.903vw;
+}
+.colocar_display input {
+    outline: none;
 }
 
 
@@ -151,12 +155,11 @@
 }
 .ComeceAq{
     background: var(--primary-color);
-    width: 10.343vw;
-    height: 2.586vw;
+    padding: 7px;
     border-radius: 0.646vw;
     border: none;
     color: #fff;
-    font-size: 0.905vw;
+    font-size: 1em;
     font-weight: bolder;
     transition: transform 0.3s ease;
 }

@@ -54,7 +54,7 @@ function Home() {
             <main className="contador-numeros">
                 <Counter endValue={67} text="Nacionalidades atendidas" />
                 <Counter endValue={100} text="Atendimentos em 2024" />
-                <Counter endValue={1200} text="Alunos de português" />
+                <Counter endValue={448} text="Alunos de português" />
             </main>
             <AreaRefugio></AreaRefugio>
 
