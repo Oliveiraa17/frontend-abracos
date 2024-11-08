@@ -18,8 +18,9 @@
     width: 8.403vw;
     height: 1.3vw;
     background-color: #FF6926;
+    color: #FFF;
     border: 0vw;
-    
+    padding-left: 10px;
 }
 .buscar::placeholder{
     color: #ffffff;
@@ -88,7 +89,7 @@
 }
 .buscarr::placeholder{
     color: #333;
-    font-size: 1.293vw;
+    font-size: 1.3vw;
 }
 
 

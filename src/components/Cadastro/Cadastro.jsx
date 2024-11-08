@@ -1,16 +1,30 @@
 import '../Styles/Cadastro.css'
+import { Link } from 'react-router-dom'
+
+import voltar from '../../../public/assets/images/voltar_cad.png'
+import bola_lar from '../../../public/assets/images/bola_laranja_cad.png'
+import bola_azul from '../../../public/assets/images/bola_azul_cad.png'
 
 
 function Cadastro() {
-    return( <>
+    return(
+                <>
         <section className='sec_cad'>
+                <div className='barra_lateral'>
+                    <button className='botao_voltar' title='Voltar pra Home' alt='Home'><Link to='/'><img className='voltar_cad' src={voltar} /></Link></button>
+
+                    <img className='bola_lar' src={bola_lar} alt="bolinha_laranja" />
+                </div>
+
             <nav className='h1_cad'>
             <div className='colocar_displa'>
+
                 <h2 className='bem_vindo_cad'>Seja bem vindo!</h2>
-                <p className='p1_cad'>Crie a sua primeira conta para continuar</p>
+                <p className='p1_cad'>Crie a sua conta para continuar</p>
             </div>
                 <nav className='nav_cad'> 
                 <nav className='div_cad'>
+                    
                     <div className='colocar_margin'>
 
 
@@ -24,8 +38,6 @@ function Cadastro() {
 
                         <h2 className='h2_cad'>Número de telefone:</h2> 
                         <div className='colocar_display_cad'>
-
-
                             <p className='p_cad'>+55</p>
                                 <input type="number" name="telefone" className="telefone_cad" maxLength={11} alt='telefone' placeholder='11959520248'/>
                         </div>
@@ -45,6 +57,7 @@ function Cadastro() {
                     </nav>
                 </nav>
             </nav>
+            <img className='bola_azul' src={bola_azul} alt="bolinha_azul" />
         </section>
         </>
     )
