@@ -71,7 +71,7 @@ function Psicologos() {
 
             <section className='Formulario'>
                 <div className='juncao'>
-                    <img src="public/assets/images/fomsal.svg" alt="Formulário" />
+                    <img src="assets/images/fomsal.svg" alt="Formulário" />
                     <div className='envolta'>
                         <div className='ladoaperto'>
                             <h1>Seja a Mudança!</h1>
