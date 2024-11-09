@@ -57,7 +57,6 @@ function Home() {
                 <Counter endValue={448} text="Alunos de português" />
             </main>
             <AreaRefugio></AreaRefugio>
-
         </>
     )
 }

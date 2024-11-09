@@ -1,4 +1,5 @@
 import Desenvolvedores from "./Desenvolvedores"
+
 import Descricao from "./Descricao"
 function SobreNos() {
     return (

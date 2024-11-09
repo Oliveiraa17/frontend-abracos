@@ -9,7 +9,7 @@ import Documentos from './components/Documentos/Documentos';
 import Doe from './components/Doe/Doe';
 import Empregabilidade from './components/Empregados/Empregabilidade';
 import Empresas from './components/Empresas/Empresas';
-import GTranslate from './components/GTranslate';
+import GTranslate from './components/Util/GTranslate';
 import Footer from './components/home/Footer';
 import Header from './components/home/Header';
 import Home from './components/home/Home';
@@ -18,6 +18,7 @@ import Psicologos from './components/psicologos/Psicologos';
 import SobreNos from './components/SobreNos/SobreNos';
 import Videoaulas from './components/videoaulas/Videoaulas';
 import Voluntarios from './components/voluntarios/Voluntarios';
+import ScrollToTop from './components/Util/ScrollToTop';
 
 function AppContent() {
 
@@ -30,6 +31,8 @@ function AppContent() {
     <>
     {!isFrequenciaRoute && <Header/>}
         <GTranslate></GTranslate>
+        <ScrollToTop></ScrollToTop>
+
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='cards' element={<Cards />} />
@@ -47,7 +50,7 @@ function AppContent() {
           <Route path='Saudações' element={<Pagina1/>}/>
           <Route path='SobreNos' element={<SobreNos/>}/>
           <Route path='Cursos' element={<Cursos/>}/>
-          <Route path='Empregar' element={<Empregabilidade/>}/>
+          <Route path='/Empregar' element={<Empregabilidade/>}/>
           <Route path='Empresas' element={<Empresas/>}/>
           <Route path='Videoaulas' element={<Videoaulas/>}/>
           <Route path='Documentacao' element={<Documentos/>}/>

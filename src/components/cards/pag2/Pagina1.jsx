@@ -46,7 +46,7 @@ function Pagina1() {
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <div onClick={() => playAudio('assets/audio/hillary.opus')}>
-                            <Cards2 icon='assets/images/ola.png' text='Hillary' />
+                            <Cards2 icon='assets/images/ola.png' text='Identificação' />
                         </div>
                         <div onClick={() => playAudio('assets/audio/Bomdia.mp3')}>
                             <Cards2 icon='assets/images/ensolarado.png' text='Bom dia' />

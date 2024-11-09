@@ -170,8 +170,6 @@ function Empresas() {
           <button>Doe</button>
         </div>
       </div> */}
-
-
     </section>
   );
 }
