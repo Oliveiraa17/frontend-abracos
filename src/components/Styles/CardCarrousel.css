@@ -137,7 +137,11 @@ mark {
     font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px;
+    margin: 15px;
+    
+}
+.button button * {
+    pointer-events: none;
 }
 
 .button {

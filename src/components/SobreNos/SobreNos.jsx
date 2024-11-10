@@ -27,13 +27,12 @@ function SobreNos() {
                     texto='Inclusão & Diversidade: Valorizamos a riqueza cultural e social trazida por diferentes culturas. Acreditamos que todos, independentemente de sua origem, têm o direito de se sentir incluso e parte da sociedade.  Crescimento: Valorizar o desenvolvimento pessoal e profissional dos imigrantes, fornecendo os recursos para que alcancem seu potencial. Esperança: Ser um farol de esperança para aqueles que buscam um novo começo, oferecendo ferramentas para o sucesso e a reintegração.'
                 />
             </div>
+
             <div className="titulodev">
                 <h1>Desenvolvedores:</h1>
-
             </div>
             <section className="sectchones">
                 <div className="devs">
-
                     <div>
                         <Desenvolvedores
                             imagens='assets/images/iarley.svg'
@@ -45,8 +44,6 @@ function SobreNos() {
                             LLink='https://github.com/IarleySouza'
 
                         /></div>
-
-
                     <div>
                         <Desenvolvedores
                             imagens='assets/images/hugo.svg'
@@ -123,17 +120,16 @@ function SobreNos() {
                 </div>
 
                 <div className="ryan">
-                        <Desenvolvedores
-                            imagens='assets/images/ryan.svg'
-                            titulo='Ryan Honorato'
-                            texto=' “Construindo pontes e usando o conhecimento que nos aproximam e abrem caminhos para um futuro mais humano!"'
-                            texto2='Financeiro & Front-end'
-                            foto1='assets/images/githublogo.svg'
-                            foto2='assets/images/LinkedynLogo.svg'
-                            LLink='https://github.com/Dragaod'
-                        />
-
-                    </div>
+                    <Desenvolvedores
+                        imagens='assets/images/ryan.svg'
+                        titulo='Ryan Honorato'
+                        texto=' “Construindo pontes e usando o conhecimento que nos aproximam e abrem caminhos para um futuro mais humano!"'
+                        texto2='Financeiro & Front-end'
+                        foto1='assets/images/githublogo.svg'
+                        foto2='assets/images/LinkedynLogo.svg'
+                        LLink='https://github.com/Dragaod'
+                    />
+                </div>
             </section>
         </>
     )
