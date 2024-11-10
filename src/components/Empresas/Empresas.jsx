@@ -37,17 +37,15 @@ function Empresas() {
   };
 
   return (
-    <section className='section_fundo'>
-      <div className='voltar_button'>
-        <Link to="/">
-          <img src={botao} alt="Botão Voltar" />
-        </Link>
-      </div>
-
+    <section className='section_fundou'>
+      <section className='unf_r'>
       <div className='bolas_empresas'>
-        <img src={bolas} alt="Bola azul e laranja" />
-        <h1>Empresas</h1>
+        <div className='dv_bola'>
+          <img src={bolas} alt="Bola azul e laranja" />
+          <h1>Empresas</h1>
+        </div>
       </div>
+      </section>
 
       <div className='texto_empresas'>
         <p>A Abraços conta com um banco de currículos de profissionais de todas as idades e áreas de atuação, possibilitando a recolocação deles em diversos tipos de empresas e organizações. Os profissionais cadastrados possuem todos os documentos necessários para trabalhar legalmente no Brasil.</p>
@@ -64,26 +62,26 @@ function Empresas() {
         <p className='juridicas'>1.Cadastramos apenas pessoas juridicas (empresas)</p>
       </div>
 
-      <div className='bloco_azul1'></div>
-
-      <div className='texto_servicos'>
-        <h1>Serviços prestados</h1>
+      <div className='fund_y'>
+        <div className='junt_s'>
+          <div className='texto_servicos'>
+            <h1>Serviços prestados</h1>
+          </div>
+          <div className='topicos'>
+            <li>Sensibilização da equipe e alta liderança;</li>
+            <li>Triagem personalizada de currículos;</li>
+            <li>Acompanhamento e acesso aos serviços.</li>
+          </div>
+        </div>
       </div>
 
-      <div className='topicos'>
-        <li>Sensibilização da equipe e alta liderança;</li>
-        <li>Triagem personalizada de currículos;</li>
-        <li>Acompanhamento e acesso aos serviços.</li>
-      </div>
-
-
-      <div className='bloco_azul2'></div>
-
-      <section className="form-section">
-        <h1 className='titulo-form'>Preencha o formulário</h1>
-        <p className='paragrafo-form'>
+      <div>
+      <h1 className='titulo-formm'>Preencha o formulário</h1>
+      <p className='paragrafo-formm'>
           Envie as informações e entraremos em contato.
         </p>
+      </div>
+      <section className="form-sectionn">
         <form className="cadastro-form" onSubmit={handleSubmit}>
           <div className="input-group">
             <label htmlFor="razaoSocial"></label>
@@ -160,16 +158,6 @@ function Empresas() {
         </form>
         
       </section>
-
-{/* PARTE DO DOE */}
-
-      {/* <div className='imagemdoe'>
-        <img src={Doe} alt="Doe" />
-        <div className="conteudo-imagem">
-          <h1>Junte-se a nós e faça a <span>diferença!</span></h1>
-          <button>Doe</button>
-        </div>
-      </div> */}
     </section>
   );
 }

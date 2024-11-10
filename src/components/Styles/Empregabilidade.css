@@ -120,12 +120,14 @@
 
 .submit-btn:hover {
   transform: scale(1.05);
-  background-color: #1A5276;
+  background-color: var(--secondary-color);
 }
 
 @media (max-width: 500px) {
   .section_fundo {
     padding: 20px 0;
+    background-size: cover;
+    width: 100%;
   }
 
   .voltar_button img {
@@ -144,18 +146,16 @@
   .titulo-form {
     font-size: 1.8em;
     padding: 10px;
-    text-align: center;
   }
 
   .paragrafo-form {
     font-size: 1.2em;
     padding: 10px;
-    text-align: center;
   }
 
   .alert {
-    font-size: 1em;
-    text-align: center;
+    font-size: 0.7em;
+    width: 100%;
     padding: 10px;
   }
 
@@ -178,5 +178,13 @@
     width: 100%;
     padding: 10px;
     font-size: 1em;
+  }
+
+  @media (max-width: 500px) {
+    .infs_2 {
+      width: 90%;
+      padding: 15px;
+      margin: 10px 0 0 20px;
+    }
   }
 }
