@@ -1,19 +1,36 @@
+
+
 .bolas_empresas{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    margin-top: 40px;
     margin-left: 30px;
     color: var(--primary-color);
+    flex-direction: row;
+}
+
+.dv_bola{
+    margin-top: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unf_r{
+    background-image: url(../../../public/assets/images/fundoempregabilidade.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
 }
 
 .bolas_empresas h1{
+    color: #ffffff;
     margin-left: 20px;
     font-size: 3em;
 }
 
 .texto_empresas{
-    font-size: 1.3em;
+    font-size: 1.7em;
     margin-top: 30px;
     margin-left: 40px;
     padding: 20px;
@@ -41,128 +58,182 @@
     margin-top: 5px;
 }
 
-.bloco_azul1{
-    width: 150px;
-    height: 15px;
-    background-color: var(--terciary-color);
-    margin-left: 60px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.fund_y{
+    background-image: url(../../../public/assets/images/fundoservicos.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 800px;
+    margin-top: 200px;
 }
 
-.bloco_azul2{
-    width: 150px;
-    height: 15px;
-    background-color: var(--terciary-color);
-    margin-left: 60px;
-    margin-top: 50px;
-    margin-bottom: 150px;
+.junt_s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 130px;
 }
 
 .texto_servicos{
-    font-size: 1.3em;
+    font-size: 1.7em;
     color: var(--primary-color);
     margin-left: 60px;
+    margin-top: 90px;
     margin-bottom: 25px;
 }
 
-.topicos{
-    font-size: 17px;
-    margin-left: 67px;
+.form-sectionn{
+    width: 56%;
+    margin: 40px auto;
+    padding: 20px;
+    padding-top: 20px;
+    top: 20px;
+    gap: 50px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.538);
+
 }
 
-@media (max-width: 500px) {
-    .bolas_empresas {
-        flex-direction: column; 
-        align-items: flex-start;
-        margin-left: 10px;
-    }
-
-    .bolas_empresas h1 {
-        font-size: 1.8em; 
-        margin-left: 0;
-    }
-
-    .texto_empresas,
-    .texto_preencher,
-    .texto_atua {
-        font-size: 1em; 
-        margin-left: 10px;
-        padding: 10px;
-    }
-
-    .bloco_azul1,
-    .bloco_azul2 {
-        width: 100px; 
-        margin-left: 10px;
-    }
-
-    .texto_servicos {
-        font-size: 1em; 
-        margin-left: 10px;
-    }
-
-    .topicos {
-        font-size: 14px; 
-        margin-left: 10px;
-    }
-}
-
-/* PARTE DO DOE */
-
-/* .imagemdoe {
+.titulo-formm{
+    color: var(--primary-color);
+    font-size: 2em;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-}
-
-.imagemdoe img {
-    width: 100%;
-    height: auto;
-}
-
-.conteudo-imagem {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    text-align: center;
-}
-
-.conteudo-imagem h1 {
-    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.conteudo-imagem span {
-    color: var(--primary-color);
+.paragrafo-formm{font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.conteudo-imagem button {
-    padding: 10px 20px;
+.topicos{
+    font-size: 1.5em;
+    margin-left: 67px;
+}
+
+
+@media (max-width: 500px) {
+    .bolas_empresas {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    }
+
+    .dv_bola {
+    margin-top: 140px;
+    margin-right: 140px;
+    }
+
+    .bolas_empresas h1 {
+    font-size: 2em;
+    margin-left: 0;
+    }
+
+    .unf_r {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    }
+
+    /* Texto de introdução */
+    .texto_empresas {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    }
+
+    .texto_preencher {
+    font-size: 1.1em;
+    padding: 10px;
+    margin-left: 10px;
+    }
+
+    .texto_atua {
+    font-size: 1em;
+    padding: 10px;
+    margin-left: 10px;
+    }
+
+    .juridicas {
+    font-size: 0.9em;
+    margin-left: 5px;
+    }
+
+    /* Serviços prestados */
+    .fund_y {
+        background-image: url(../../../public/assets/images/fundoservimobile.svg);
+    background-size: cover;
+    height: 400px;
+    margin: 70px 0 70px 0;
+    }
+
+    .junt_s {
+    margin-right: 0;
+    padding: 20px;
+    }
+
+    .texto_servicos {
+    font-size: 1.5em;
+    margin-left: 0;
+    margin-top: 80px;
+    }
+
+    .topicos {
+    font-size: 1.2em;
+    margin-left: 0;
+    padding: 0 20px;
+    text-align: left;
+    }
+
+    /* Formulário */
+    .form-sectionn {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
     background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .titulo-formm {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+
+    .paragrafo-formm {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
+    .input-group {
+    width: 100%;
+    margin-bottom: 15px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
     border: none;
-    width: 300px;
-    border-radius: 10px;
-    color: white;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
+    }
 }
-
-.conteudo-imagem button:hover {
-    transform: scale(1.05);
-    background-color: var(--terciary-color);
-} */
-
-

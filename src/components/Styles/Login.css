@@ -1,0 +1,325 @@
+.bot {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    z-index: 10;
+}
+
+.login__botaoVoltar {
+    background-color: #ffffff;
+    border: 0px;
+    padding: 0;
+    display: flex;
+}
+
+.login__voltarImagem {
+    width: 80px; 
+    height: auto; 
+}
+
+
+
+.login__section,
+.login__container,
+.login__left,
+.login__right,
+.login__inputGroup,
+.login__inputIcon,
+.login__btnAccess,
+.login__createAccount,
+.login__footer {
+    all: unset;
+}
+
+
+.login__section {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.login__container {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login__left {
+    flex: 1;
+    background: url('../../../public/assets/images/Group 131.svg') center center / cover no-repeat;
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login__left h1 {
+    font-size: 2.5rem;
+}
+
+.login__left p {
+    font-size: 1rem;
+}
+
+.login__right {
+    flex: 1;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login__right h2 {
+    margin-bottom: 20px;
+}
+
+
+.login__inputGroup {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.login__inputGroup input {
+    width: 100%;
+    padding: 10px 45px 10px 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    color: #fff !important;
+    outline: none;
+}
+
+.login__inputGroup input:focus {
+    color: #fff !important; 
+}
+
+.login__inputGroup input::placeholder {
+    color: #fff !important;
+}
+
+
+
+.login__inputIcon {
+    position: absolute;
+    left: 330px;
+    top: 32%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 20px;
+}
+
+
+.login__btnAccess {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--terciary-color);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.login__btnAccess:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.login__createAccount {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.login__createAccount a {
+    color: #fff;
+}
+
+.login__createAccount span {
+    color: var(--terciary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.login__createAccount span:hover{
+    color: var(--secondary-color);
+}
+
+
+.login__footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__footer a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.login__footer a:hover{
+    color: var(--secondary-color);
+}
+
+@media (max-width: 500px) {
+    .login__section {
+        margin: 90px 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .login__container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .login__left {
+        flex: none;
+        height: 200px;
+        background: url('../../../public/assets/images/Group 131.svg') center center / cover no-repeat;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+
+    .login__left h1 {
+        font-size: 1.8rem;
+    }
+
+    .login__left p {
+        font-size: 0.9rem;
+    }
+
+    .login__right {
+        flex: none;
+        background-color: var(--primary-color);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .login__right h2 {
+        margin-bottom: 15px;
+        font-size: 1.3em;
+        margin-right: 20px;
+    }
+
+    .login__inputGroup {
+        position: relative;
+        margin-bottom: 12px;
+        width: 90%;
+    }
+
+    .login__inputGroup input {
+        width: 90%;
+        padding: 10px 35px 10px 10px;
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+        color: #fff !important;
+        outline: none;
+    }
+
+    .login__inputGroup input:focus {
+        color: #fff !important;
+    }
+
+    .login__inputGroup input::placeholder {
+        color: #fff !important;
+    }
+
+    .login__inputIcon {
+        position: absolute;
+        left: 350px;
+        top: 32%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 15px;
+    }
+
+    .login__btnAccess {
+        width: 40%;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--terciary-color);
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .login__btnAccess:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .login__createAccount {
+        margin-bottom: 12px;
+        font-size: 9px;
+    }
+
+    .login__createAccount a {
+        color: #fff;
+    }
+
+    .login__createAccount span {
+        color: var(--terciary-color);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .login__createAccount span:hover {
+        color: var(--secondary-color);
+    }
+
+    .login__footer {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .login__footer a {
+        color: #fff;
+        text-decoration: underline;
+        margin: 0;
+    }
+
+    .login__footer a:hover {
+        color: var(--secondary-color);
+    }
+
+    .bot {
+        top: 10px;
+        left: 10px;
+    }
+
+    .login__voltarImagem {
+        width: 60px;
+        height: auto;
+    }
+}
+

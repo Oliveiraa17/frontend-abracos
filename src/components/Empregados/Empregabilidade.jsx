@@ -45,15 +45,17 @@ function Empregabilidade() {
           <img src={botao} alt="Voltar" />
         </Link>
       </div>
-
-      <section className="form-section">
+      <div className='infs_2'>
         <h1 className='titulo-form'>Faça seu cadastro</h1>
-        <p className='paragrafo-form'>
-          Envie uma mensagem e entraremos em contato para ajudar a encontrar o emprego que mais combina com seu perfil e habilidades.
-        </p>
-        <p className="alert">
-          <strong>*No momento atuamos apenas na grande São Paulo</strong>
-        </p>
+          <p className='paragrafo-form'>
+            Envie uma mensagem e entraremos em contato para ajudar a encontrar o emprego que mais combina com seu perfil e habilidades.
+          </p>
+          <p className="alert">
+            <strong>*No momento atuamos apenas na grande São Paulo</strong>
+          </p>
+      </div>
+      <section className="form-section">
+
         <form className="cadastro-form" onSubmit={handleSubmit}>
           <div className="input-group">
             <label htmlFor="nome"></label>
