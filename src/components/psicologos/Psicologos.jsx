@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Styles/Psicologos.css';
 import Beneficios from './Beneficios';
 import Modal from './Modal';
-import Trabalhadores from './trabalhadores';
+import Trabalhadores from './Trabalhadores';
 
 function Psicologos() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -41,7 +41,7 @@ function Psicologos() {
         <>
             <section className='psicoo'>
                 <div className="fundo_psicologos">
-                    <p>Abraçando sonhos, construindo futuros. Cada<br /> <span className='passo'>passo</span> é um caminho para um novo <span className='recomeço'>recomeço.</span></p>
+                    <p>Cuidar da mente é o primeiro passo para recomeçar uma nova<span className='passo'> vida.</span></p>
                 </div>
             </section>
 
@@ -63,9 +63,9 @@ function Psicologos() {
                     <p>Acompanhe os privilégios de nossos serviços</p>
                 </div>
                 <div className='imagens'>
-                    <Beneficios foto='assets/images/Consultas.svg' texto='Consultas sem custo' />
-                    <Beneficios foto='assets/images/atendimento.svg' texto='Atendimentos online' />
-                    <Beneficios foto='assets/images/Tratamento.svg' texto='Tratamento acompanhado' />
+                    <Beneficios foto='assets/images/beneficios1.svg' texto='Consultas sem custo' />
+                    <Beneficios foto='assets/images/beneficios2.svg' texto='Atendimentos online' />
+                    <Beneficios foto='assets/images/beneficios3.svg' texto='Tratamento acompanhado' />
                 </div>
             </section>
 
