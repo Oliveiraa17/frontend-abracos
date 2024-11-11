@@ -7,23 +7,63 @@
 }
 .regularizacao{
     width: 80%;
-    height: 550px;
+    height: 330px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 1.3rem;
     margin-top: 30px;
-    gap: 50px;
     margin: auto;
+    gap: 50px;
+}
+.regularizacao div img {
+  width: 300px;
+  margin: auto;
+  display: block;
+}
+.regularizacao div {
+  margin: auto;
+
+}
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
 }
 
+.accordion-title {
+    font-size: 16px;
+}
+
+.accordion-content {
+    padding: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.open {
+    transform: rotate(180deg); /* Roda a seta para cima */
+}
+.regu-h1 h1{
+  text-align: left;
+  margin-left: 170px;
+  margin-top: 50px;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
 .bom{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    
+}
+.bom p {
+  width: 100%;
 }
 .ruim{
   text-align: center;
@@ -43,21 +83,19 @@
   justify-content: center;
   align-items: center;
   min-height: 100%;
+  width: 50%;
   text-align: center;
   padding: 100px;
   font-size: 2rem; /* Aumentando o tamanho da fonte no contêiner */
 }
-.baixo-fomrs h1 {
-  font-size: 1em;
-  margin-bottom: 50px;
-}
+
 
 
 
 ol {
   list-style-position: outside; /* Deixa os números alinhados fora da área de texto */
   padding-left: 40px; /* Adiciona espaçamento entre os números e o texto */
-  font-size: 2rem; /* Aumentando o tamanho da fonte das listas */
+  font-size: 20px; /* Aumentando o tamanho da fonte das listas */
   text-align: left; /* Garante que o texto fique alinhado à esquerda */
 }
 

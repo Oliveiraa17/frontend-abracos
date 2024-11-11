@@ -30,12 +30,12 @@ function Formulario() {
 
   return (
     <>
-      <h1 style={isMobile ? {...styles.title, fontSize: '20px', margin: '20px'} : styles.title}>
+      <h1 style={isMobile ? { ...styles.title, fontSize: '20px', margin: '20px' } : styles.title} >
         Entre em contato com a regularização:
       </h1>
-      <div style={isMobile ? {...styles.container, width: '90%', padding: '10px', height: 'auto'} : styles.container}>
+      <div style={isMobile ? { ...styles.container, width: '90%', padding: '10px', height: 'auto' } : styles.container}>
         <form onSubmit={handleSubmit} style={styles.form}>
-          <div style={isMobile ? {...styles.jhow, flexDirection: 'column', gap: '10px'} : styles.jhow}>
+          <div style={isMobile ? { ...styles.jhow, flexDirection: 'column', gap: '10px' } : styles.jhow}>
             <div style={styles.inputGroup}>
               <input
                 placeholder='Nome:'
@@ -43,7 +43,7 @@ function Formulario() {
                 name="nome"
                 value={formData.nome}
                 onChange={handleChange}
-                style={isMobile ? {...styles.input, width: '82vw', margin: '5px 0'} : styles.input}
+                style={isMobile ? { ...styles.input, width: '82vw', margin: '5px 0' } : styles.input}
               />
             </div>
             <div style={styles.inputGroup}>
@@ -53,20 +53,20 @@ function Formulario() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                style={isMobile ? {...styles.input, width: '82vw', margin: '5px 0'} : styles.input}
+                style={isMobile ? { ...styles.input, width: '82vw', margin: '5px 0' } : styles.input}
               />
             </div>
           </div>
           <div style={styles.inputGroup}>
-  <textarea
-    name="mensagem"
-    placeholder="Mensagem:"
-    value={formData.mensagem}
-    onChange={handleChange}
-    style={isMobile ? {...styles.textarea, width: '100%', height: '200px', resize: 'none'} : {...styles.textarea, resize: 'none'}}
-  />
-</div>
-          <div style={isMobile ? {...styles.buttonContainer, position: 'static', marginTop: '10px', justifyContent: 'center'} : styles.buttonContainer}>
+            <textarea
+              name="mensagem"
+              placeholder="Mensagem:"
+              value={formData.mensagem}
+              onChange={handleChange}
+              style={isMobile ? { ...styles.textarea, width: '100%', height: '200px', resize: 'none' } : { ...styles.textarea, resize: 'none' }}
+            />
+          </div>
+          <div style={isMobile ? { ...styles.buttonContainer, position: 'static', marginTop: '10px', justifyContent: 'center' } : styles.buttonContainer}>
             <button type="submit" style={styles.button}>Enviar</button>
           </div>
         </form>
@@ -77,20 +77,20 @@ function Formulario() {
 
 const styles = {
   container: {
-    backgroundColor: '#FF6600', 
+    backgroundColor: '#1A5276',
     padding: '20px',
     borderRadius: '10px',
-    width: '1000px', 
-    height: '650px', 
+    width: '1000px',
+    height: '650px',
     margin: '0 auto',
     textAlign: 'center',
-    position: 'relative', 
+    position: 'relative',
   },
   title: {
-    color: '#000000', 
-    fontSize: '30px', 
+    color: '#000000',
+    fontSize: '26px',
     marginBottom: '20px',
-    textAlign: 'center', 
+    textAlign: 'center',
     margin: '50px'
   },
   form: {
@@ -98,7 +98,7 @@ const styles = {
     flexDirection: 'column',
     gap: '20px',
     height: '100%',
-    paddingBottom: '50px', 
+    paddingBottom: '50px',
   },
   inputGroup: {
     display: 'flex',
@@ -128,13 +128,16 @@ const styles = {
     right: '20px',
   },
   button: {
-    backgroundColor: '#1a5276',
+    backgroundColor: '#FF6926',
     color: '#fff',
     padding: '10px 20px',
     borderRadius: '5px',
     border: 'none',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    fontSize: '1em',
+
   },
+
   jhow: {
     display: 'flex',
     alignItems: 'center',
