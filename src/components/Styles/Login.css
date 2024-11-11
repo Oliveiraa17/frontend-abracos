@@ -31,6 +31,11 @@
     all: unset;
 }
 
+.colory{
+    background-color: #ffffff;
+    width: 100%;
+}
+
 
 .login__section {
     margin: 100px auto;
