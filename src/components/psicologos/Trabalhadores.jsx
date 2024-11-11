@@ -18,6 +18,7 @@ function Trabalhadores ({foto, titulo, paragrafo, trabalhador}) {
                     </div>
                     <div className='especificacao'>
                         <p className='resumo'>{paragrafo}</p>
+                        <button>Quero conhecer!</button>
                     </div>
                 </div>
             </section>
