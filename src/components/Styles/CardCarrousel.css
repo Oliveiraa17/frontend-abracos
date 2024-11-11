@@ -59,10 +59,31 @@ mark {
 }
 
 /*Pagina dos cards*/
-
 .fra_efeito {
+    margin-top: 160px;
     color: #fff;
+    overflow: hidden;
+    border-right: .1em solid black;
+    white-space: nowrap;
+    width: 0;
+    max-width: 40%;
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 
 .conectarr {
     color: var(--primary-color);

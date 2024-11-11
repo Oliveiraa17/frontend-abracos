@@ -1,13 +1,13 @@
 .acolher{
     background-image: url(../../../public/assets/images/amagacolher.svg);
     background-size: cover;
-    height: 900px;
+    height: 600px;
 }
 
 .acolher h1{
     color: #fff;
     font-size: 3rem;
-    padding: 600px 0 0 15px;
+    padding: 300px 0 0 15px;
 }
 
 .acolher span{

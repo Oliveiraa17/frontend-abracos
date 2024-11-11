@@ -7,11 +7,6 @@ function Pagina1() {
     const location = useLocation();
     const [categoriaSelecionada, setCategoriaSelecionada] = React.useState(location.state?.categoriaSelecionada || 'Hospital');
 
-    // const speakText = (text) => {
-    //     const utterance = new SpeechSynthesisUtterance(text);
-    //     speechSynthesis.speak(utterance);
-    // };
-
     const playAudio = (audioFile) => {
         const audio = new Audio(audioFile);
         audio.play();
@@ -24,7 +19,11 @@ function Pagina1() {
     return (
         <>
             <div className="img-fundo">
-                <h1 className='fra_efeito'> <span className='conectarr'><mark>Conecte-se</mark></span> de forma rápida e <br /> simples em qualquer <span className='idiomaa'>idioma.</span></h1>
+                <h1 className='fra_efeito'>
+                    <span className='conectarr'>
+                        <mark>Conecte-se </mark>
+                    </span>de forma rápida e <br /> simples em qualquer <span className='idiomaa'>idioma.</span>
+                </h1>
             </div>
             <div className='button'>
                 <button onClick={mudarCondicao} name='Saudações' className={categoriaSelecionada === 'Saudações' ? 'selecionado' : ''}>Saudações</button>

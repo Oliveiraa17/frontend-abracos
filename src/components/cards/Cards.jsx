@@ -15,7 +15,7 @@ function Cards() {
     return(
         <>
             <div className='foto-cards-home'>
-                <h1><span style={{color: '#FF6926'}}>Aprender</span> é uma aventura e o conhecimento é a <span style={{color: '#4B92DB'}}>chave.</span></h1>
+                <h1> O <span style={{color: '#FF6926'}}>conhecimento</span> é a <span style={{color: '#4B92DB'}}>chave</span> que abre portas para um futuro melhor.</h1>
             </div>
             <section className="laranja">
                 <h1>Categorias: </h1>

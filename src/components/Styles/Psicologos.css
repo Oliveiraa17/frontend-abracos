@@ -10,9 +10,10 @@
 
 .fundo_psicologos p{
     font-size: 2.3em;
-    margin: 130px 0 0 0;
+    margin: 30px 0 0 0;
     font-weight: bold;
     color: #fff;
+    width: 60%;
     padding: 150px 0 0 70px;
 }
 
@@ -71,8 +72,8 @@
     background-color: var(--primary-color);
     color: #fff;
     border: none;
-    width: 140px;
-    height: 30px;
+    padding: 10px;
+    font-size: 1em;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
@@ -96,14 +97,15 @@
 }
 
 .cards_psicologos{
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
-    gap: 190px;
+    gap: 130px;
 }
 
 .cards_psicologos h4{
     font-weight: bold;
     font-size: 15px;
+    width: 100%;
 }
 
 .estrela{
@@ -113,15 +115,16 @@
     border-radius: 5px;
     color: #FFFF;
     padding-left: 6px;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-right: 15px;
     margin-right: 10px;
     margin-bottom: 20px;
 }
 
 .resumo{
+    width: 100%;
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* SECTION 4 */

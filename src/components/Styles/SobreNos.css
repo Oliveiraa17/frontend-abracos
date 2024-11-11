@@ -6,6 +6,10 @@
     width: 70%;
     gap: 50px;
 }
+.dentro-laranja div a {
+    width: 25px;
+    margin-top: 0px;
+}
 
 .SobreNos > div p {
     font-size: 20px;
