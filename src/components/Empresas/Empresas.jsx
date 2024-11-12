@@ -91,7 +91,7 @@ function Empresas() {
               name="razaoSocial"
               value={formData.razaoSocial}
               onChange={handleChange}
-              placeholder="Razão Social*"
+              placeholder="Ramo*"
               required
             />
           </div>
