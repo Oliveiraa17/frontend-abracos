@@ -19,6 +19,7 @@ import SobreNos from './components/SobreNos/SobreNos';
 import Videoaulas from './components/videoaulas/Videoaulas';
 import Voluntarios from './components/voluntarios/Voluntarios';
 import ScrollToTop from './components/Util/ScrollToTop';
+import ChatbotWidget from './components/ChatbotWidget/ChatbotWidget';
 
 function AppContent() {
 
@@ -32,6 +33,7 @@ function AppContent() {
     {!isFrequenciaRoute && <Header/>}
         <GTranslate></GTranslate>
         <ScrollToTop></ScrollToTop>
+        <ChatbotWidget />
 
         <Routes>
           <Route path='/' element={<Home/>} />
