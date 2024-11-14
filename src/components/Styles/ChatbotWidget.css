@@ -81,9 +81,9 @@
     animation: blink 1s infinite;
 }
 
-@keyframes blink {
+/* @keyframes blink {
     50% { opacity: 0; }
-}
+} */
 
 .chatbot-widget__perguntas {
     padding: 10px;

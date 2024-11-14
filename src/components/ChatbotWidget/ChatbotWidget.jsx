@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
-import "../Styles/ChatbotWidget.css";
+import React, { useEffect, useRef, useState } from "react";
 import HugImage from "../../../public/assets/images/Hug.png";
+import "../Styles/ChatbotWidget.css";
 
 const perguntasERespostas = [
     { pergunta: "Qual seu nome?", resposta: "Eu sou o Hug, um assistente virtual criado para ajudar você em nosso site." },
@@ -24,13 +24,13 @@ const ChatbotWidget = () => {
 
     const responderPergunta = (perguntaIndex) => {
         const { pergunta, resposta } = perguntasERespostas[perguntaIndex];
-        setConversa((prev) => [...prev, { remetente: "Você", texto: pergunta }, { remetente: "Hug", texto: "Pensando..." }]);
+        setConversa((prev) => [...prev, { remetente: "Você", texto: pergunta }, { remetente: "Hug", texto: "Digitando..." }]);
         setCarregando(true);
 
         setTimeout(() => {
             setConversa((prev) => [...prev.slice(0, -1), { remetente: "Hug", texto: resposta }]);
             setCarregando(false);
-        }, 1000);
+        }, 2000);
 
         setPerguntaAtual(perguntaAtual + 1);
     };

@@ -2,7 +2,7 @@ import '../Styles/Documentos.css';
 import Regularizacao from './Regularizacao';
 import Formulario from './Formulario';
 import Processo from './Processo';
-import LocalizadorMapa from './LocalizadorMapa';
+// import LocalizadorMapa from './LocalizadorMapa';
 
 
 function Documentos(){
@@ -15,7 +15,7 @@ function Documentos(){
                 <Regularizacao></Regularizacao>
                 <Processo></Processo> 
                 <Formulario></Formulario>
-                <LocalizadorMapa></LocalizadorMapa>
+                {/* <LocalizadorMapa></LocalizadorMapa> */}
             </div>
         </section>
     )

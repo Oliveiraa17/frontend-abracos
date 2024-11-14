@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
+
 
 function LocalizadorMapa() {
     const [userLocation, setUserLocation] = useState(null);
