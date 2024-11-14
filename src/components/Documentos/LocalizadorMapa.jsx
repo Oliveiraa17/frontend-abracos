@@ -6,7 +6,7 @@ function LocalizadorMapa() {
     const [nearestLocation, setNearestLocation] = useState(null);
 
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: 'YOUR_GOOGLE_MAPS_API_KEY', // por a chave do api
+        googleMapsApiKey: '', // por a chave do api
     });
 
     const locations = [
