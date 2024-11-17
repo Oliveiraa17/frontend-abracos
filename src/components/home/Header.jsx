@@ -33,19 +33,31 @@ function Header() {
                             <li className='nav-link'><Link to='Cursos' onClick={handleLinkClick}>Cursos</Link></li>
                             <li className='nav-link'><Link to='cards' onClick={handleLinkClick}>Cards</Link></li>
                             <li className='nav-link'><Link to='Documentacao' onClick={handleLinkClick}>Documentação</Link></li>
+
                             <li className='nav-link'><Link to='SobreNos' onClick={handleLinkClick}>Sobre</Link></li>
-                            <li 
-                                className='nav-link apoio' 
-                                onMouseEnter={() => setShowSubmenu(true)} 
+
+                            <li
+                                className="item-principal ajuda"
+                                onMouseEnter={() => setShowSubmenu(true)}
                                 onMouseLeave={() => setShowSubmenu(false)}
-                            >Apoio
+                            >
+                                <span className="texto-item">Apoio</span>
                                 {showSubmenu && (
-                                    <ul className='submenu'>
-                                        <li><Link to='Doe' onClick={handleLinkClick}>Doe</Link></li>
-                                        <li><Link to='Acolhimento' onClick={handleLinkClick}>Acolhimento</Link></li>
+                                    <ul className="lista-secundaria">
+                                        <li>
+                                            <Link to="Doe" onClick={handleLinkClick} className="link-secundario">
+                                                Doe
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="Acolhimento" onClick={handleLinkClick} className="link-secundario">
+                                                Acolhimento
+                                            </Link>
+                                        </li>
                                     </ul>
                                 )}
                             </li>
+
                         </ul>
                     </div>
                 </nav>

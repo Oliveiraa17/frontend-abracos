@@ -11,6 +11,10 @@ mark {
     padding: 3px;
     border-radius: 10px;
 }
+.azull {
+    background-color: var(--terciary-color);
+    padding: 3px;
+}
 
 .icon {
     font-size: 50px;
@@ -63,11 +67,11 @@ mark {
     margin-top: 160px;
     color: #fff;
     overflow: hidden;
-    border-right: .1em solid black;
+    border-right: .1em solid #000;
     white-space: nowrap;
     width: 0;
     max-width: 42%;
-    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    animation: typing 3s steps(30) 1s forwards, blink 1s step-end infinite;
 }
 
 @keyframes typing {

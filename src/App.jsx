@@ -3,7 +3,7 @@ import './App.css';
 import Acolhimento from './components/Acolhimento/Acolhimento';
 import Cadastro from './components/Cadastro/Cadastro';
 import Cards from './components/cards/Cards';
-import Pagina1 from './components/cards/pag2/pagina1';
+import Pagina1 from './components/cards/pag2/Pagina1';
 import Cursos from './components/Cursos/Cursos';
 import Documentos from './components/Documentos/Documentos';
 import Doe from './components/Doe/Doe';
@@ -48,8 +48,10 @@ function AppContent() {
           <Route path='Transporte' element={<Pagina1/>}/>
           <Route path='Alimentação' element={<Pagina1/>}/>
           <Route path='MainSection' element={<Pagina1/>}/>
+          <Route path='escola' element={<Pagina1/>}/>
           <Route path='Alimentação' element={<Pagina1/>}/>
           <Route path='Saudações' element={<Pagina1/>}/>
+          <Route path='documentos' element={<Pagina1/>}/>
           <Route path='SobreNos' element={<SobreNos/>}/>
           <Route path='Cursos' element={<Cursos/>}/>
           <Route path='/Empregar' element={<Empregabilidade/>}/>

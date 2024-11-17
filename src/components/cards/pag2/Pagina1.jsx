@@ -22,7 +22,7 @@ function Pagina1() {
                 <h1 className='fra_efeito'>
                     <span className='conectarr'>
                         <mark>Conecte-se </mark>
-                    </span>de forma rápida e <br /> simples em qualquer <span className='idiomaa'>idioma.</span>
+                    </span>de forma rápida e <br /> simples em qualquer <span className='idiomaa'><mark className='azull'>idioma.</mark></span>
                 </h1>
             </div>
             <div className='button'>
@@ -125,7 +125,7 @@ function Pagina1() {
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <Cards2 icon='assets/images/contabancariaCards.png' text='Como posso abrir uma conta bancária como imigrante?' />
-                        <Cards2 icon='assets/images/transferenciaCards.png' text='Qual o banco que oferece as melhores taxas para transferências internacionais?' />
+                        <Cards2 icon='assets/images/banco-suporte.svg' text='Nesse banco tem algum suporte?' />
                         <Cards2 icon='assets/images/caixaeletrCards.png' text='Este caixa eletrônico aceita cartões de fora do Brasil?' />
                         <Cards2 icon='assets/images/cartao-de-identidade.png' text='Quais documentos são necessários para usar os serviços bancários aqui?' />
                     </section>
@@ -137,10 +137,10 @@ function Pagina1() {
                         <h1>Polícia:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/localizacaoCards.png' text='Onde é a delegacia de polícia mais próxima?' />
-                        <Cards2 icon='assets/images/ambulanciaCards.png' text='Como faço para registrar uma ocorrência?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Preciso de ajuda, você pode chamar a polícia?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Existe um canal de apoio da polícia para imigrantes na minha situação?' />
+                        <Cards2 icon='assets/images/sireneCards.png' text='Onde é a delegacia de polícia mais próxima?' />
+                        <Cards2 icon='assets/images/ocorrenciaCards.png' text='Como faço para registrar uma ocorrência?' />
+                        <Cards2 icon='assets/images/telefoneCards.png' text='Preciso de ajuda, você pode chamar a polícia?' />
+                        <Cards2 icon='assets/images/apoio-suporte.png' text='Existe um canal de apoio da polícia para imigrantes na minha situação?' />
                     </section>
                 </>
 
@@ -151,10 +151,10 @@ function Pagina1() {
                         <h1>Compras:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/localizacaoCards.png' text='Onde posso encontrar uma loja de roupas com preços acessíveis?' />
-                        <Cards2 icon='assets/images/ambulanciaCards.png' text='Qual o melhor lugar para comprar móveis usados?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Este shopping aceita moedas internacionais?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Quais são os melhores shoppings ou lojas de rua nesta região?' />
+                        <Cards2 icon='assets/images/camisetaCards.png' text='Onde posso encontrar uma loja de roupas com preços acessíveis?' />
+                        <Cards2 icon='assets/images/moveisCards.png' text='Qual o melhor lugar para comprar móveis usados?' />
+                        <Cards2 icon='assets/images/moedasCards.png' text='Este shopping aceita moedas internacionais?' />
+                        <Cards2 icon='assets/images/localizacao.png' text='Quais são os melhores shoppings ou lojas de rua nesta região?' />
                     </section>
                 </>
             )}
@@ -164,10 +164,10 @@ function Pagina1() {
                         <h1>Escola:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/localizacaoCards.png' text='Quais escolas públicas aceitam matrículas de crianças imigrantes?' />
-                        <Cards2 icon='assets/images/ambulanciaCards.png' text='Existe algum curso de português oferecido por essa escola?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Como faço para matricular meu filho nesta escola?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Como posso inscrever meus filhos em aulas de reforço escolar?' />
+                        <Cards2 icon='assets/images/escolaCards.png' text='Quais escolas públicas aceitam matrículas de crianças imigrantes?' />
+                        <Cards2 icon='assets/images/cursoportuguesCards.png' text='Existe algum curso de português oferecido por essa escola?' />
+                        <Cards2 icon='assets/images/matriculaCards.png' text='Como faço para matricular meu filho nesta escola?' />
+                        <Cards2 icon='assets/images/aprendizagem-por-reforco.png' text='Como posso inscrever meus filhos em aulas de reforço escolar?' />
                     </section>
                 </>
             )}
@@ -177,10 +177,10 @@ function Pagina1() {
                         <h1>Documentos:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/localizacaoCards.png' text='Onde posso tirar meu CPF?' />
-                        <Cards2 icon='assets/images/ambulanciaCards.png' text='Qual o procedimento para solicitar a residência permanente?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Como posso legalizar meus documentos estrangeiros aqui?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Quais são os prazos para solicitar visto de trabalho ou residência?' />
+                        <Cards2 icon='assets/images/cpfCards.png' text='Onde posso tirar meu CPF?' />
+                        <Cards2 icon='assets/images/residenciaCards.png' text='Qual o procedimento para solicitar a residência permanente?' />
+                        <Cards2 icon='assets/images/marteloCards.png' text='Como posso legalizar meus documentos estrangeiros aqui?' />
+                        <Cards2 icon='assets/images/prazo-final.png' text='Quais são os prazos para solicitar visto de trabalho ou residência?' />
                     </section>
                 </>
             )}
