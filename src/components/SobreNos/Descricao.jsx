@@ -9,7 +9,7 @@ function Descricao({ imagem, texto, titulo }) {
 
             <div className='sobreNos-h1'>
                 <h1>{titulo}</h1>
-                <p>{texto}</p>
+                <p dangerouslySetInnerHTML={{ __html: texto }}></p>
             </div>
         </section>
     )
