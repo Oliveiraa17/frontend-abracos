@@ -44,16 +44,16 @@ function Pagina1() {
                         <h1>Saudações:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/hillary.opus')}>
+                        <div onClick={() => playAudio('assets/audio/hillary.mp3')}>
                             <Cards2 icon='assets/images/ola.png' text='Identificação' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/Bomdia.mp3')}>
+                        <div onClick={() => playAudio('assets/audio/bomdia1.mp3')}>
                             <Cards2 icon='assets/images/ensolarado.png' text='Bom dia' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/Boatarde.mp3')}>
+                        <div onClick={() => playAudio('assets/audio/boatarde1.mp3')}>
                             <Cards2 icon='assets/images/nascer-do-sol.png' text='Boa tarde' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/Boanoite.mp3')}>
+                        <div onClick={() => playAudio('assets/audio/boanoite1.mp3')}>
                             <Cards2 icon='assets/images/lua-crescente.png' text='Boa noite' />
                         </div>
                     </section>
