@@ -51,7 +51,7 @@ function Psicologos() {
 
             <section className='bordaa'>
                 {psicologos.map((psicologo, index) => (
-                    <div key={index} onClick={() => openModal(psicologo)}>
+                    <div className='div-princiii' key={index} onClick={() => openModal(psicologo)}>
                         <Trabalhadores foto={psicologo.foto} titulo={psicologo.titulo} paragrafo={psicologo.paragrafo} />
                     </div>
                 ))}

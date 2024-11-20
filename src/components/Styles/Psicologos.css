@@ -258,7 +258,7 @@
     }
 
     .fundo_psicologos p{
-        font-size: 1.3em;
+        font-size: 1.5em;
         width: 90%;
         padding: 40px 0 0 10px;
     }
@@ -267,17 +267,23 @@
         font-size: 1.3rem;
         width: 100%;
     }
-
     .borda{
-        width: 56%;
+        width: 80%;
+        margin: auto;
+        height: auto;
         align-items: center;
-        margin: 0 0 0 50px;
+        justify-content: center;
+    }
+    .div-princiii {
+        width: 100%;
+        margin: auto;
     }
 
     .bordaa{
-        gap: 20px;
-        flex-direction: column;
-        margin: 0 0 0 160px;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        gap: 30px;
     }
 
     .foto img{
@@ -285,21 +291,33 @@
         height: auto;
     }
 
+    .cards_psicologos {
+        gap: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .especificacao button {
+        margin-bottom: 20px;
+    
+    }
+
     .cards_psicologos h4{
         font-size: 14px;
-        width: 200px;
-        padding: 50px 0 0 0;
+        width: 50%;
+        padding: 0;
     }
 
     .estrela{
         border-radius: 5px;
-        width: 20%;
-        margin: 50px 70px 0 0;
+        width: 30%;
+        margin: 0;
     }
 
     .especificacao p{
         font-size: 13px;
-        padding: 20px 0 0 0;
+        padding: 20px 0px 0 14px;
     }
 
     .Laranja {
@@ -324,88 +342,80 @@
     }
 
     .especificacoes {
-        width: 60%;
+        width: 100%;
         margin-left: 40px;
     }
+    .Formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .juncao {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .juncao img {
+        width: 85%;
+        border: black solid 1px;
+        height: auto;
+        margin-left: 0;
+    }
+    .envolta {
+        width: 85%;
+        height: 330px;
+        margin: 0;
+        border-radius: 0 0 100px 0;
+        padding: 20px;
+    }
+    .preparadoazul {
+        position: absolute;
+        width: 70%;
+        height: 40px;
+        top: 60px;
+        left: 50px;
+        font-size: 0.8em;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .ladoaperto {
+        padding: 20px;
+    }
 
-    @media (max-width: 500px) {
-        .Formulario {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
-        
-        .juncao {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        .juncao img {
-            width: 85%;
-            border: black solid 1px;
-            height: auto;
-            margin-left: 0;
-        }
-    
-        .envolta {
-            width: 85%;
-            height: 330px;
-            margin: 0;
-            border-radius: 0 0 100px 0;
-            padding: 20px;
-        }
-    
-        .ladoaperto {
-            padding: 20px;
-        }
-    
-        .ladoaperto h1 {
-            font-size: 1.4em;
-            margin-left: 0;
-            text-align: center;
-        }
-    
-        .ladoaperto p {
-            font-size: 1em;
-            margin-top: 20px;
-            margin-left: 0;
-            text-align: center;
-            width: 100%;
-        }
-    
-        .preparadolaranja {
-            width: 90%;
-            height: 50px;
-            font-size: 1em;
-            margin: 20px 0 0 10px;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .ladoaperto h1 {
+        font-size: 1.4em;
+        margin-left: 0;
+        text-align: center;
+    }
 
-        .preparado{
-            font-size: 14px;
-            width: 190%;
-            padding-left: 10px;
-            margin-left: 50px;
-        }
-    
-        .preparadoazul {
-            position: absolute;
-            width: 70%;
-            height: 40px;
-            top: 60px;
-            left: 50px;
-            font-size: 10px;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-        }
+    .ladoaperto p {
+        font-size: 1em;
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .preparadolaranja {
+        width: 90%;
+        height: 50px;
+        font-size: 1em;
+        margin: 20px 0 0 10px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .preparado{
+        font-size: 14px;
+        width: 190%;
+        padding-left: 10px;
+        margin-left: 50px;
     }
 }
