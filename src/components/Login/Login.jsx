@@ -2,8 +2,20 @@ import React from 'react';
 import '../Styles/Login.css';
 import { Link } from 'react-router-dom'
 import voltar from '../../../public/assets/images/voltar_cad.png';
+import api from '../../services/api';
+import { useEffect } from 'react';
 
 function Login() {
+    let users = []
+
+    async function getUsers() {
+        users = await api.get('/api/users')
+    }
+
+    useEffect(() => {
+        getUsers()
+    }, [])
+
     return (
         <>
             <section className='colory'>

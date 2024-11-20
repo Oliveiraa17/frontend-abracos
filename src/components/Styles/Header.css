@@ -164,6 +164,9 @@ a {
     margin: 2px 8px;
 
 }
+.area_cadastro_menu {
+    display: none;
+}
 .icon.iconActive .hamburguer{
     background: transparent;
     box-shadow: 0 2px 5px transparent;
@@ -233,6 +236,11 @@ a {
 }
 
 @media (width <= 500px) {
+
+    .item-principal .texto-item {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
     .menu.menuOpen {
         display: flex; 
         flex-direction: column;
@@ -256,7 +264,6 @@ a {
         font-size: 1.6rem;
         font-weight: bold;
     }
-    
     .List {
         display: flex;
         left: 1%;
@@ -271,6 +278,34 @@ a {
     }
     .area_cadastro {
         display: none;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        width: 200px;
+        gap: 40px;
+        margin-top: 20px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .cadastro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-color);
+        width: 200%;
+        font-size: 0.6em;
+        border-radius: 10px;
+        padding: 0 5px;
+    }
+    
+    .login {
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.6em;
+        margin: 0px 9px;
     }
     header {
         display: flex;

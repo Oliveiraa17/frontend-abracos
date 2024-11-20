@@ -33,9 +33,7 @@ function Header() {
                             <li className='nav-link'><Link to='Cursos' onClick={handleLinkClick}>Cursos</Link></li>
                             <li className='nav-link'><Link to='cards' onClick={handleLinkClick}>Cards</Link></li>
                             <li className='nav-link'><Link to='Documentacao' onClick={handleLinkClick}>Documentação</Link></li>
-
                             <li className='nav-link'><Link to='SobreNos' onClick={handleLinkClick}>Sobre</Link></li>
-
                             <li
                                 className="item-principal ajuda"
                                 onMouseEnter={() => setShowSubmenu(true)}
@@ -57,8 +55,11 @@ function Header() {
                                     </ul>
                                 )}
                             </li>
-
                         </ul>
+                    </div>
+                    <div className="List area_cadastro_menu">
+                        <div className='login'><Link to='login'>Entrar</Link></div>
+                        <div className='cadastro'><Link to='cad'>Cadastre-se</Link></div>
                     </div>
                 </nav>
                 <div className='area_cadastro'>
