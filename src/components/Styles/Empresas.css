@@ -1,239 +1,210 @@
-
-
-.bolas_empresas{
+.secao-empresas {
     display: flex;
-    align-items: center;
-    margin-left: 30px;
-    color: var(--primary-color);
-    flex-direction: row;
+    background-color: #e85b20;
+    color: #fff;
+}
+.secao-empresas .chave {
+    width: 50%;
 }
 
-.dv_bola{
-    margin-top: 340px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.secao-imagem {
+    flex: 1;
+    position: relative;
 }
-
-.unf_r{
-    background-image: url(../../../public/assets/images/fundoempregabilidade.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.voltar-imagem {
+    background-color: transparent;
+}
+.imagem-principal {
     width: 100%;
-    height: 600px;
+    height: 100%;
+    object-fit: cover;
 }
-
-.bolas_empresas h1{
-    color: #ffffff;
-    margin-left: 20px;
-    font-size: 3em;
-}
-
-.texto_empresas{
-    font-size: 1.7em;
-    margin-top: 30px;
-    margin-left: 40px;
+.secao-texto {
+    flex: 1;
+    gap: 20px;
     padding: 20px;
-}
-
-.texto_preencher{
-    font-size: 1.3em;
-    padding: 20px;
-    margin-left: 40px;
-}
-
-.form-section{
-    margin-bottom: 150px;
-}
-
-.texto_atua{
-    font-size: 1.3em;
-    padding: 20px;
-    margin-left: 40px;
-}
-
-.juridicas{
-    font-size: 15px;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-
-.fund_y{
-    background-image: url(../../../public/assets/images/fundoservicos.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 500px;
-    margin-top: 100px;
-}
-
-.junt_s{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
     flex-direction: column;
-    margin-right: 130px;
 }
 
-.texto_servicos{
-    font-size: 1.7em;
-    color: var(--primary-color);
-    margin-left: 60px;
-    margin-top: 90px;
-    margin-bottom: 25px;
-}
-
-.form-sectionn{
-    width: 56%;
-    margin: 40px auto;
-    padding: 20px;
-    padding-top: 20px;
-    top: 20px;
-    gap: 50px;
-    background-color: var(--primary-color);
-    border-radius: 8px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.538);
-
-}
-
-.titulo-formm{
-    color: var(--primary-color);
-    font-size: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.paragrafo-formm{font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.topicos{
-    font-size: 1.5em;
-    margin-left: 67px;
-}
-
-
-@media (max-width: 500px) {
-    .bolas_empresas {
-    flex-direction: column;
-    margin-left: 0;
-    align-items: center;
-    text-align: center;
-    }
-
-    .dv_bola {
-    margin-top: 140px;
-    margin-right: 140px;
-    }
-
-    .bolas_empresas h1 {
-    font-size: 2em;
-    margin-left: 0;
-    }
-
-    .unf_r {
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    }
-
-    /* Texto de introdução */
-    .texto_empresas {
-    font-size: 1.2em;
+.secao-texto h1 {
     margin-top: 20px;
-    margin-left: 10px;
-    padding: 10px;
-    }
-
-    .texto_preencher {
-    font-size: 1.1em;
-    padding: 10px;
-    margin-left: 10px;
-    }
-
-    .texto_atua {
-    font-size: 1em;
-    padding: 10px;
-    margin-left: 10px;
-    }
-
-    .juridicas {
-    font-size: 0.9em;
-    margin-left: 5px;
-    }
-
-    /* Serviços prestados */
-    .fund_y {
-        background-image: url(../../../public/assets/images/fundoservimobile.svg);
-    background-size: cover;
-    height: 400px;
-    margin: 70px 0 70px 0;
-    }
-
-    .junt_s {
-    margin-right: 0;
-    padding: 20px;
-    }
-
-    .texto_servicos {
-    font-size: 1.5em;
-    margin-left: 0;
-    margin-top: 80px;
-    }
-
-    .topicos {
-    font-size: 1.2em;
-    margin-left: 0;
-    padding: 0 20px;
-    text-align: left;
-    }
-
-    /* Formulário */
-    .form-sectionn {
-    width: 90%;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: var(--primary-color);
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    }
-
-    .titulo-formm {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    text-align: center;
-    }
-
-    .paragrafo-formm {
-    font-size: 1em;
     margin-bottom: 20px;
-    text-align: center;
+    width: 100%;
+    font-size: 2em;
+}
+
+.secao-texto p {
+    font-size: 1.4em;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.checklist.animacao {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+ul {
+    list-style-type: none;
+}
+.lista-checklist li {
+    margin-bottom: 60px;
+    font-size: 1.3em;
+    padding-left: 35px;
+    position: relative;
+    animation: slideInUp 1s ease forwards;
+}
+
+.lista-checklist li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
     }
 
-    .input-group {
-    width: 100%;
-    margin-bottom: 15px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    .input-group input,
-    .input-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 0.9em;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    }
-
-    .submit-btn {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
+.botao-cta {
+    color: #000;
+    font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.3em;
     cursor: pointer;
+    width: 60%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    animation: pulse 1.9s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 8px rgba(255, 105, 38, 0.5);
+    }
+
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 16px rgba(255, 105, 38, 0.8);
+    }
+}
+
+.botao-cta:hover {
+    background-color: #e1e1e1;
+}
+
+.sobreposicao-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modall {
+    background-color: #2c557d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 800px;
+    max-height: 80vh;
+    color: #fff;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+.modall h2 {
+    color: #2c557d;
+    margin-bottom: 20px;
+}
+
+/* Parte do formulário */
+.grupo-formulario {
+    margin-bottom: 15px;
+}
+
+.grupo-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.grupo-formulario textarea {
+    resize: none;
+    height: 80px;
+    outline: none;
+}
+
+.botoes-formulario {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes-formulario button {
+    background-color: #ff6926;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botoes-formulario button:hover {
+    background-color: #e85b20;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }

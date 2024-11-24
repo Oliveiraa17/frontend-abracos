@@ -1,125 +1,107 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 import '../Styles/Empregabilidade.css';
-import botao from '../../../public/assets/images/botaovoltar.svg'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import voltar from '../../../public/assets/images/voltar_cad.png';
 
+const Cadastro = () => {
+  const [animate, setAnimate] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-function Empregabilidade() {
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
 
-  const [formData, setFormData] = useState({
-    nome: '',
-    email: '',
-    telefone: '',
-    comoConheceu: '',
-    mensagem: ''
-  });
+  const checklistItems = [
+    "Apoio para Iniciar Sua Carreira no Brasil",
+    "Desenvolvimento Pessoal e Profissional",
+    "Vagas Para Todos os Níveis de Experiência",
+    "Apoio a Imigrantes e Diversidade",
+  ];
 
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+  const openModal = () => {
+    setIsModalOpen(true);
   };
 
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Dados do formulário:', formData);
-    alert('Formulário enviado com sucesso!');
-    setFormData({
-
-      nome: '',
-      email: '',
-      telefone: '',
-      comoConheceu: '',
-      mensagem: ''
-    });
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
-    <section className='section_fundo'>
-      <div className='voltar_button'>
-        <Link to="/">
-          <img src={botao} alt="Voltar" />
-        </Link>
-      </div>
-      <div className='infs_2'>
-        <h1 className='titulo-form'>Faça seu cadastro</h1>
-          <p className='paragrafo-form'>
-            Envie uma mensagem e entraremos em contato para ajudar a encontrar o emprego que mais combina com seu perfil e habilidades.
-          </p>
-          <p className="alert">
-            <strong>*No momento atuamos apenas na grande São Paulo</strong>
-          </p>
-      </div>
-      <section className="form-section">
+    <div className="container">
+      <div className="image-section">
 
-        <form className="cadastro-form" onSubmit={handleSubmit}>
-          <div className="input-group">
-            <label htmlFor="nome"></label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              value={formData.nome}
-              onChange={handleChange}
-              placeholder="Nome"
-              required
-            />
-          </div>
-          <div className="input-group">
-            <label htmlFor="email"></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="E-mail"
-              required
-            />
-          </div>
-          <div className="input-group">
-            <label htmlFor="telefone"></label>
-            <input
-              type="tel"
-              id="telefone"
-              name="telefone"
-              value={formData.telefone}
-              onChange={handleChange}
-              placeholder="Telefone"
-            />
-          </div>
-          <div className="input-group">
-            <label htmlFor="comoConheceu"></label>
-            <input
-              type="text"
-              id="comoConheceu"
-              name="comoConheceu"
-              value={formData.comoConheceu}
-              onChange={handleChange}
-              placeholder="Como conheceu a Abraços?"
-            />
-          </div>
-          <div className="input-group">
-            <label htmlFor="mensagem"></label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              rows="5"
-              value={formData.mensagem}
-              onChange={handleChange}
-              placeholder="Mensagem"
+        <div>
+          <Link to='/'>
+            <img className='login__voltarImagem' src={voltar} alt="Voltar" />
+          </Link>
+        </div>
 
-            ></textarea>
+        <img
+          src="assets/images/empre.svg"
+          alt="Trabalhadoras"
+          className="main-image"
+        />
+      </div>
+
+      <div className="text-section">
+        <div>
+          <h1>Faça seu cadastro</h1>
+          <p>
+            Queremos te ajudar a encontrar o emprego que mais combina com o seu
+            perfil e habilidades.
+          </p>
+        </div >
+        <ul className={`checklist ${animate ? "animate" : ""}`}>
+          {checklistItems.map((item, index) => (
+            <li key={index} style={{ animationDelay: `${index * 0.3}s` }}>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <button className="cta-button" onClick={openModal}>Começar agora!</button>
+      </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal">
+
+            <form>
+              <div className="form-group">
+                <label htmlFor="name">Nome:</label>
+                <input type="text" id="name" placeholder="Digite seu nome" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="phone">Telefone:</label>
+                <input type="tel" id="phone" placeholder="Digite seu telefone" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="source">Como conheceu a Abraços?</label>
+                <select id="source">
+                  <option value="internet">Internet</option>
+                  <option value="amigo">Amigo</option>
+                  <option value="evento">Evento</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Mensagem:</label>
+                <textarea id="message" placeholder="Digite sua mensagem"></textarea>
+              </div>
+              <div className="form-buttons">
+                <button type="button" onClick={closeModal}>Fechar</button>
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
           </div>
-          <button type="submit" className="submit-btn">Enviar</button>
-        </form>
-      </section>
-    </section>
+        </div>
+      )}
+    </div>
   );
-}
+};
 
-export default Empregabilidade;
+export default Cadastro;
