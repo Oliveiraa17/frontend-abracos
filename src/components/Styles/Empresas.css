@@ -144,12 +144,6 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.3s ease;
 }
-
-.modall h2 {
-    color: #2c557d;
-    margin-bottom: 20px;
-}
-
 /* Parte do formulário */
 .grupo-formulario {
     margin-bottom: 15px;
@@ -206,5 +200,35 @@ ul {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@media (width <= 500px) {
+    .secao-empresas {
+        display: flex;
+        flex-direction: column;
+    }
+    .modall {
+        width: 90%;
+        max-height: 80vh;
+    }
+    .secao-empresas .chave {
+        width: 100%;
+        display: none;
+    }
+    .botao-cta {
+        font-size: 1em;
+        width: 60%;
+        margin: auto;
+        
+    }
+    .secao-texto h1 {
+        font-size: 1.3em;
+    }
+    .secao-texto p {
+        font-size: 1.2em;
+    }
+    .lista-checklist li {
+        font-size: 1.1em;
     }
 }

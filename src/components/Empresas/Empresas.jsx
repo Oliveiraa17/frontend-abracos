@@ -65,27 +65,27 @@ function Empresas() {
             <form onSubmit={handleSubmit}>
               <div className="grupo-formulario">
                 <label htmlFor="razao-social">Razão Social</label>
-                <input type="text" id="razao-social" name="razaoSocial" required />
+                <input type="text" id="razao-social" name="razaoSocial" placeholder="Digite a razão social" required />
               </div>
               <div className="grupo-formulario">
                 <label htmlFor="nome-fantasia">Nome Fantasia</label>
-                <input type="text" id="nome-fantasia" name="nomeFantasia" required />
+                <input type="text" id="nome-fantasia" name="nomeFantasia" placeholder="Digite o nome fantasia" required />
               </div>
               <div className="grupo-formulario">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" required />
+                <label htmlFor="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required />
               </div>
               <div className="grupo-formulario">
                 <label htmlFor="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" required />
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required />
               </div>
               <div className="grupo-formulario">
                 <label htmlFor="endereco">Endereço</label>
-                <input type="text" id="endereco" name="endereco" required />
+                <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required />
               </div>
               <div className="grupo-formulario">
                 <label htmlFor="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
               </div>
               <div className="botoes-formulario">
                 <button type="submit">Enviar</button>
