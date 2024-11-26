@@ -111,3 +111,7 @@
     height: 100%;
     width: 9%;
 }
+
+@media (width <=500px) {
+    
+}
