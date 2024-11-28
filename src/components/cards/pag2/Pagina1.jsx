@@ -150,6 +150,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/cartaoCards.png' text='Este mercado aceita cartões internacionais?' />
                         <Cards2 icon='assets/images/taco.png' text='Como encontrar um mercado com produtos típicos da minha cultura?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/acougueiro.png' text='Onde posso encontrar um açougue por aqui?' />
+                        <Cards2 icon='assets/images/carne.png' text='Qual mercado tem a melhor seção de congelados?' />
+                        <Cards2 icon='assets/images/entrega-rapida.png' text='Esse mercado oferece delivery?' />
+                        <Cards2 icon='assets/images/vegan.png' text='Como posso saber se o mercado tem produtos veganos?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/picking.png' text='Onde posso comprar frutas e verduras recém-colhidas?' />
+                        <Cards2 icon='assets/images/produtos-artesanais.png' text='Esse mercado tem uma área de produtos artesanais?' />
+                        <Cards2 icon='assets/images/preco-baixo.png' text='Como posso encontrar mercados com preços mais acessíveis?' />
+                        <Cards2 icon='assets/images/tempero.png' text='Qual mercado tem maior variedade de temperos e especiarias?' />
+                    </section>
                 </>
             )}
 
