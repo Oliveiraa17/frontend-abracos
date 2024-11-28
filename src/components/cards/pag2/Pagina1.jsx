@@ -118,6 +118,24 @@ function Pagina1() {
                         <Cards2 icon='assets/images/comunicacaoCards.png' text='Como faço para marcar uma consulta com um médico?' />
                         <Cards2 icon='assets/images/injecao.png' text='Podem indicar um hospital especializado?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/health-checkup.png' text='Quais exames preciso fazer para um check-up completo?' />
+                        </div>
+                        <Cards2 icon='assets/images/tratamento.png' text='Pode me explicar como funciona esse tratamento?' />
+                        <Cards2 icon='assets/images/procedimento.png' text='Qual é o procedimento para solicitar um laudo médico?' />
+                        <Cards2 icon='assets/images/dificuldade-ao-respirar.png' text='É normal sentir esses sintomas? O que devo fazer?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/esperando.png' text='Qual é o tempo médio de recuperação para essa condição?' />
+                        </div>
+                        <Cards2 icon='assets/images/pele.png' text='Existe algum cuidado especial que devo tomar após a alta?' />
+                        <Cards2 icon='assets/images/fisioterapia.png' text='Pode me orientar sobre os passos para iniciar uma fisioterapia?' />
+                        <Cards2 icon='assets/images/cuidados-com-a-pele.png' text='Que cuidados devo adotar no dia a dia?' />
+                    </section>
                 </>
             )}
 
