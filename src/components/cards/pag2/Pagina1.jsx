@@ -178,6 +178,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/relogioCards.png' text='Quanto tempo o ônibus demora para passar aqui?' />
                         <Cards2 icon='assets/images/cifrao.png' text='Qual o valor do transporte público?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/metro.png' text='Qual linha de metrô vai direto para o centro?' />
+                        <Cards2 icon='assets/images/ponto-de-onibus.png' text='Onde posso pegar o ônibus mais próximo?' />
+                        <Cards2 icon='assets/images/passagem-de-nivel.png' text='Esse trem faz paradas em todos os bairros principais?' />
+                        <Cards2 icon='assets/images/checar.png' text='Como posso verificar os horários dos transportes públicos?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/aplicativo-movel.png' text='Existe algum aplicativo para planejar trajetos de ônibus?' />
+                        <Cards2 icon='assets/images/sinal-de-transito.png' text='Qual a melhor forma de evitar trânsito no transporte público?' />
+                        <Cards2 icon='assets/images/estacao-ferroviaria.png' text='Há alguma estação de metrô acessível por aqui?' />
+                        <Cards2 icon='assets/images/bilhete-de-trem.png' text='Como recarregar o cartão de transporte na minha cidade?' />
+                    </section>
                 </>
             )}
 
