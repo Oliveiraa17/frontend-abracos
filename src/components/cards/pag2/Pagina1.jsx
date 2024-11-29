@@ -58,31 +58,47 @@ function Pagina1() {
                         </div>
                     </section>
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/hillary.mp3')}>
-                            <Cards2 icon='assets/images/ola.png' text='Desculpa' />
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/entender.png' text='Entendido' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/bomdia1.mp3')}>
-                            <Cards2 icon='assets/images/ensolarado.png' text='Obrigado' />
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/desculpa.png' text='Desculpa' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/boatarde1.mp3')}>
-                            <Cards2 icon='assets/images/nascer-do-sol.png' text='Por favor' />
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/por-favor.png' text='Por Favor' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/boanoite1.mp3')}>
-                            <Cards2 icon='assets/images/lua-crescente.png' text='Com licença' />
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/feliz.png' text='Obrigado' />
                         </div>
                     </section>
+
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/hillary.mp3')}>
-                            <Cards2 icon='assets/images/ola.png' text='Tudo bem?' />
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/confuso.png' text='Não sei' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/bomdia1.mp3')}>
-                            <Cards2 icon='assets/images/ensolarado.png' text='Obrigado' />
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/obrigado.png' text='De nada' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/boatarde1.mp3')}>
-                            <Cards2 icon='assets/images/nascer-do-sol.png' text='Por favor' />
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/estranho.png' text='Não entendi' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/boanoite1.mp3')}>
-                            <Cards2 icon='assets/images/lua-crescente.png' text='Com licença' />
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/pessoa.png' text='Com licença' />
+                        </div>
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/concordar.png' text='Concordo' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/discordo.png' text='Discordo' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/esperando.png' text='Espere' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/sorte.png' text='Boa sorte' />
                         </div>
                     </section>
                 </>
