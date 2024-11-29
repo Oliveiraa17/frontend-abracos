@@ -344,17 +344,17 @@ function Pagina1() {
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/cpfCards.png' text='Onde posso solicitar a carteira de trabalho para estrangeiros?' />
-                        <Cards2 icon='assets/images/residenciaCards.png' text='Como faço para renovar meu visto temporário?' />
-                        <Cards2 icon='assets/images/marteloCards.png' text='Quais órgãos oferecem suporte para regularização de documentos?' />
-                        <Cards2 icon='assets/images/prazo-final.png' text='Há um atendimento específico para emissão de RG para estrangeiros?' />
+                        <Cards2 icon='assets/images/homem-de-negocios.png' text='Onde posso solicitar a carteira de trabalho para estrangeiros?' />
+                        <Cards2 icon='assets/images/visto.png' text='Como faço para renovar meu visto temporário?' />
+                        <Cards2 icon='assets/images/pergunta.png' text='Quais órgãos oferecem suporte para regularização de documentos?' />
+                        <Cards2 icon='assets/images/RG.png' text='Há um atendimento específico para emissão de RG para estrangeiros?' />
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/cpfCards.png' text='Qual o prazo para registrar minha entrada no país?' />
-                        <Cards2 icon='assets/images/residenciaCards.png' text='Onde encontro informações sobre revalidação de diplomas?' />
-                        <Cards2 icon='assets/images/marteloCards.png' text='Posso agendar online para legalizar meus papéis no consulado?' />
-                        <Cards2 icon='assets/images/prazo-final.png' text='Existe algum programa que facilite a naturalização de estrangeiros?' />
+                        <Cards2 icon='assets/images/paises.png' text='Qual o prazo para registrar minha entrada no país?' />
+                        <Cards2 icon='assets/images/diplo.png' text='Onde encontro informações sobre revalidação de diplomas?' />
+                        <Cards2 icon='assets/images/agendamento-on-line.png' text='Posso agendar online para legalizar meus papéis no consulado?' />
+                        <Cards2 icon='assets/images/naturalizacao.png' text='Existe algum programa que facilite a naturalização de estrangeiros?' />
                     </section>
                 </>
             )}
