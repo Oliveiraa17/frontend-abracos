@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import voltar from '../../../public/assets/images/voltar_cad.png';
 import api from '../../services/api';
 import { useEffect } from 'react';
+import Cadastro from '../Cadastro/Cadastro';
 
 function Login() {
     let users = []
@@ -52,9 +53,9 @@ function Login() {
                                         />
                                     </div>
                                     <div className="login__createAccount">
-                                        <a href="#">
-                                            Não tem uma conta? <span>Crie uma conta</span>
-                                        </a>
+                                    <Link to="/Cad">
+                                        Não tem uma conta? <span>Crie uma conta</span>
+                                    </Link>
                                     </div>
                                     <button type="submit" className="login__btnAccess">Acessar</button>
                                 </form>
