@@ -206,6 +206,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/legumesCards.png' text='Existe algum lugar aqui que tenha opções vegetarianas?' />
                         <Cards2 icon='assets/images/barraca-de-comida.png' text='Como posso encontrar alimentos frescos nas proximidades? ' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/prato.png' text='Qual restaurante serve pratos tradicionais daqui?' />
+                        <Cards2 icon='assets/images/vegetariano.png' text='Onde posso comer algo rápido e saudável por aqui?' />
+                        <Cards2 icon='assets/images/comida-organica.png' text='Há algum lugar especializado em comida vegana?' />
+                        <Cards2 icon='assets/images/livre-de-laticinios.png' text='Conhece um café que tenha opções sem lactose? ' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/sem-gluten.png' text='Existe algum restaurante com menu sem glúten nesta área?' />
+                        <Cards2 icon='assets/images/cozinhando.png' text='Onde encontro um bom lugar para experimentar culinária internacional?' />
+                        <Cards2 icon='assets/images/mercearia.png' text='Tem algum mercado com ingredientes típicos para cozinhar em casa?' />
+                        <Cards2 icon='assets/images/organico.png' text='Pode me recomendar um restaurante com opções orgânicas? ' />
+                    </section>
                 </>
             )}
 
