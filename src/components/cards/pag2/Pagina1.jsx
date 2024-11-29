@@ -260,6 +260,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/telefoneCards.png' text='Preciso de ajuda, você pode chamar a polícia?' />
                         <Cards2 icon='assets/images/apoio-suporte.png' text='Existe um canal de apoio da polícia para imigrantes na minha situação?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/alarme.png' text='Qual o número de emergência para chamar a polícia aqui?' />
+                        <Cards2 icon='assets/images/informacoes.png' text='Como posso obter informações sobre uma ocorrência registrada?' />
+                        <Cards2 icon='assets/images/estupro.png' text='Onde fica a delegacia de polícia especializada em casos de violência doméstica?' />
+                        <Cards2 icon='assets/images/vitima.png' text='A polícia oferece algum tipo de assistência a vítimas de crimes?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/boletim-de-noticias.png' text='Como posso solicitar uma cópia do boletim de ocorrência?' />
+                        <Cards2 icon='assets/images/escolha-de-idioma.png' text='A delegacia tem atendimento em outros idiomas para estrangeiros?' />
+                        <Cards2 icon='assets/images/atendimento-ao-cliente.png' text='Quais são os horários de atendimento da delegacia mais próxima?' />
+                        <Cards2 icon='assets/images/servico-de-atendimento-ao-consumidor.png' text='Existe algum centro de apoio legal para imigrantes que precisem de ajuda policial?' />
+                    </section>
                 </>
 
             )}
