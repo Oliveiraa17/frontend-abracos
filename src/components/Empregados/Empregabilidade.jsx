@@ -37,7 +37,7 @@ const Cadastro = () => {
         </div>
 
         <img
-          src="assets/images/empre.svg"
+          src="assets/images/imagempre.svg"
           alt="Trabalhadoras"
           className="main-image"
         />

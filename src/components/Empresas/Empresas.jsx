@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import '../Styles/Empresas.css';
+import voltar from '../../../public/assets/images/voltar_cad.png';
+import { Link } from "react-router-dom";
 
 function Empresas() {
   const [animate, setAnimate] = useState(false);
@@ -52,7 +54,7 @@ function Empresas() {
       </div>
       <div className="chave">
         <img
-          src="assets/images/empresas.svg"
+          src="assets/images/inggpre.png"
           alt="Trabalhadoras"
           className="imagem-principal"
         />
