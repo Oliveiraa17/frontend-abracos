@@ -128,3 +128,96 @@
     margin-top: 20px;
 }
 
+@media (max-width: 500px) {
+    .acolher {
+        height: auto; 
+        padding: 20px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .acolher h1 {
+        font-size: 2rem;
+        padding: 50px 0 0 10px;
+    }
+
+    .naci {
+        margin: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousel-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-grow: 1;
+    }
+
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .carousel-item img {
+        width: 100px;
+        height: auto;
+    }
+
+    .carousel-item h4 {
+        font-size: 1rem;
+    }
+
+    .nav-button {
+        padding: 5px 10px;
+        font-size: 1rem;
+        background-color: #FF6926;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .nav-button:hover {
+        background-color: #3574b5;
+    }
+
+
+    .sect_acolher3 {
+        margin-top: 60px;
+    }
+
+    .abri {
+        margin: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .inf_ongs {
+        gap: 20px;
+        margin: 10px;
+    }
+
+    .same_inf {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 0;
+    }
+
+    .same_inf h6 {
+        font-size: 0.9rem;
+        width: 90%;
+        text-align: center;
+    }
+}
