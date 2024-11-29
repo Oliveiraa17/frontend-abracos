@@ -6,15 +6,34 @@ import { useLocation } from 'react-router-dom';
 function Pagina1() {
     const location = useLocation();
     const [categoriaSelecionada, setCategoriaSelecionada] = React.useState(location.state?.categoriaSelecionada || 'Hospital');
+    const [vozSelecionada, setVozSelecionada] = React.useState('feminina');
 
-    const playAudio = (audioFile) => {
-        const audio = new Audio(audioFile);
+    const playAudio = (baseFileName) => {
+        const audioPath = getAudioPath(baseFileName);
+        const audio = new Audio(audioPath);
         audio.play();
     };
 
-    function mudarCondicao(e) {
+    const mudarCondicao = (e) => {
         setCategoriaSelecionada(e.target.getAttribute('name'));
     }
+
+    const categoriaToFolderMap = {
+        "Saudações": "saudacoes",
+        "Hospital": "hospital",
+        "Mercado": "mercado",
+        "Transporte": "transporte",
+        "Alimentação": "alimentacao",
+        "Banco": "banco",
+        "Polícia": "policia",
+        "Compras": "compras",
+        "Escola": "escola",
+        "Documentos": "documentos",
+    };
+    const getAudioPath = (baseFileName) => {
+        const folderName = categoriaToFolderMap[categoriaSelecionada] || "default";
+        return `assets/audio/${folderName}/${baseFileName}_${vozSelecionada}.mp3`;
+    };
 
     return (
         <>
@@ -24,6 +43,30 @@ function Pagina1() {
                         <mark>Conecte-se </mark>
                     </span>de forma rápida e <br /> simples em qualquer <span className='idiomaa'><mark className='azull'>idioma.</mark></span>
                 </h1>
+            </div>
+
+            <div className="seletor-voz">
+                <label className="voz-label">
+                    <input
+                        type="radio"
+                        name="voz"
+                        value="feminina"
+                        checked={vozSelecionada === 'feminina'}
+                        onChange={(e) => setVozSelecionada(e.target.value)}
+                        className="voz-radio"
+                    />
+                    <span className="voz-texto">Feminina</span>
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="voz"
+                        value="masculina"
+                        checked={vozSelecionada === 'masculina'}
+                        onChange={(e) => setVozSelecionada(e.target.value)}
+                    />
+                    Masculina
+                </label>
             </div>
             <div className='button'>
                 <button onClick={mudarCondicao} name='Saudações' className={categoriaSelecionada === 'Saudações' ? 'selecionado' : ''}>Saudações</button>
@@ -44,60 +87,60 @@ function Pagina1() {
                         <h1>Saudações:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/hillary.mp3')}>
+                        <div onClick={() => playAudio('Ola')}>
                             <Cards2 icon='assets/images/ola.png' text='Olá' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/bomdia1.mp3')}>
+                        <div onClick={() => playAudio('Bomdia')}>
                             <Cards2 icon='assets/images/ensolarado.png' text='Bom dia' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/boatarde1.mp3')}>
+                        <div onClick={() => playAudio('Boatarde')}>
                             <Cards2 icon='assets/images/nascer-do-sol.png' text='Boa tarde' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/boanoite1.mp3')}>
+                        <div onClick={() => playAudio('Boanoite')}>
                             <Cards2 icon='assets/images/lua-crescente.png' text='Boa noite' />
                         </div>
                     </section>
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Entendido')}>
                             <Cards2 icon='assets/images/entender.png' text='Entendido' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Desculpa')}>
                             <Cards2 icon='assets/images/desculpa.png' text='Desculpa' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Porfavor')}>
                             <Cards2 icon='assets/images/por-favor.png' text='Por Favor' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Obrigado')}>
                             <Cards2 icon='assets/images/feliz.png' text='Obrigado' />
                         </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Naosei')}>
                             <Cards2 icon='assets/images/confuso.png' text='Não sei' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Denada')}>
                             <Cards2 icon='assets/images/obrigado.png' text='De nada' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Naoentendi')}>
                             <Cards2 icon='assets/images/estranho.png' text='Não entendi' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Comlicenca')}>
                             <Cards2 icon='assets/images/pessoa.png' text='Com licença' />
                         </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Concordo')}>
                             <Cards2 icon='assets/images/concordar.png' text='Concordo' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Discordo')}>
                             <Cards2 icon='assets/images/discordo.png' text='Discordo' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Espere')}>
                             <Cards2 icon='assets/images/esperando.png' text='Espere' />
                         </div>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('Boasorte')}>
                             <Cards2 icon='assets/images/sorte.png' text='Boa sorte' />
                         </div>
                     </section>

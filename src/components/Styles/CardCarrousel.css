@@ -5,6 +5,10 @@
     padding: 40px;
     border-radius: 8px;
 }
+.seletor-voz label {
+    padding: 10px;
+    font-weight: bold;
+}
 mark {
     background-color: #FF6926;
     color: #fff;
