@@ -83,6 +83,49 @@ function Pagina1() {
                         </div>
                         <div onClick={() => playAudio('assets/audio/boanoite1.mp3')}>
                             <Cards2 icon='assets/images/lua-crescente.png' text='Com licença' />
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/entender.png' text='Entendido' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/desculpa.png' text='Desculpa' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/por-favor.png' text='Por Favor' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/feliz.png' text='Obrigado' />
+                        </div>
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/confuso.png' text='Não sei' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/obrigado.png' text='De nada' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/estranho.png' text='Não entendi' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/pessoa.png' text='Com licença' />
+                        </div>
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/concordar.png' text='Concordo' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/discordo.png' text='Discordo' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/esperando.png' text='Espere' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/sorte.png' text='Boa sorte' />
                         </div>
                     </section>
                 </>
@@ -101,6 +144,24 @@ function Pagina1() {
                         <Cards2 icon='assets/images/comunicacaoCards.png' text='Como faço para marcar uma consulta com um médico?' />
                         <Cards2 icon='assets/images/injecao.png' text='Podem indicar um hospital especializado?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/health-checkup.png' text='Quais exames preciso fazer para um check-up completo?' />
+                        </div>
+                        <Cards2 icon='assets/images/tratamento.png' text='Pode me explicar como funciona esse tratamento?' />
+                        <Cards2 icon='assets/images/procedimento.png' text='Qual é o procedimento para solicitar um laudo médico?' />
+                        <Cards2 icon='assets/images/dificuldade-ao-respirar.png' text='É normal sentir esses sintomas? O que devo fazer?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/')}>
+                            <Cards2 icon='assets/images/esperando.png' text='Qual é o tempo médio de recuperação para essa condição?' />
+                        </div>
+                        <Cards2 icon='assets/images/pele.png' text='Existe algum cuidado especial que devo tomar após a alta?' />
+                        <Cards2 icon='assets/images/fisioterapia.png' text='Pode me orientar sobre os passos para iniciar uma fisioterapia?' />
+                        <Cards2 icon='assets/images/cuidados-com-a-pele.png' text='Que cuidados devo adotar no dia a dia?' />
+                    </section>
                 </>
             )}
 
@@ -115,6 +176,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/cartaoCards.png' text='Este mercado aceita cartões internacionais?' />
                         <Cards2 icon='assets/images/taco.png' text='Como encontrar um mercado com produtos típicos da minha cultura?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/acougueiro.png' text='Onde posso encontrar um açougue por aqui?' />
+                        <Cards2 icon='assets/images/carne.png' text='Qual mercado tem a melhor seção de congelados?' />
+                        <Cards2 icon='assets/images/entrega-rapida.png' text='Esse mercado oferece delivery?' />
+                        <Cards2 icon='assets/images/vegan.png' text='Como posso saber se o mercado tem produtos veganos?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/picking.png' text='Onde posso comprar frutas e verduras recém-colhidas?' />
+                        <Cards2 icon='assets/images/produtos-artesanais.png' text='Esse mercado tem uma área de produtos artesanais?' />
+                        <Cards2 icon='assets/images/preco-baixo.png' text='Como posso encontrar mercados com preços mais acessíveis?' />
+                        <Cards2 icon='assets/images/tempero.png' text='Qual mercado tem maior variedade de temperos e especiarias?' />
+                    </section>
                 </>
             )}
 
@@ -128,6 +203,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/bilheteCards.png' text='Como faço para comprar um bilhete de metrô?' />
                         <Cards2 icon='assets/images/relogioCards.png' text='Quanto tempo o ônibus demora para passar aqui?' />
                         <Cards2 icon='assets/images/cifrao.png' text='Qual o valor do transporte público?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/metro.png' text='Qual linha de metrô vai direto para o centro?' />
+                        <Cards2 icon='assets/images/ponto-de-onibus.png' text='Onde posso pegar o ônibus mais próximo?' />
+                        <Cards2 icon='assets/images/passagem-de-nivel.png' text='Esse trem faz paradas em todos os bairros principais?' />
+                        <Cards2 icon='assets/images/checar.png' text='Como posso verificar os horários dos transportes públicos?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/aplicativo-movel.png' text='Existe algum aplicativo para planejar trajetos de ônibus?' />
+                        <Cards2 icon='assets/images/sinal-de-transito.png' text='Qual a melhor forma de evitar trânsito no transporte público?' />
+                        <Cards2 icon='assets/images/estacao-ferroviaria.png' text='Há alguma estação de metrô acessível por aqui?' />
+                        <Cards2 icon='assets/images/bilhete-de-trem.png' text='Como recarregar o cartão de transporte na minha cidade?' />
                     </section>
                 </>
             )}
