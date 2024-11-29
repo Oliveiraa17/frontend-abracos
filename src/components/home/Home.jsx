@@ -1,6 +1,10 @@
 import Testemunhas from "./Testemunhas"
 import Counter from "./Counter"
 import AreaRefugio from "./AreaRefugio"
+import Docu from "../../../public/assets/gifs/documento.gif"
+import Cards from "../../../public/assets/gifs/cards.gif"
+import Books from "../../../public/assets/gifs/books.gif"
+import Saude from "../../../public/assets/gifs/saude-mental.gif"
 import '../../App.css'
 
 function Home() {
@@ -23,28 +27,28 @@ function Home() {
 
                 <div className='gifs-home'>
                     <div className="parte-baixo-cards">
-                        <img src="assets/gifs/documento.gif" alt="Gif do documento" />
+                        <img src={Docu} alt="Gif do documento" />
                         <h2>Regularização</h2>
                     </div>
                     <p>Suporte para regularização de documentos com segurança e tranquilidade.</p>
                 </div>
                 <div className='gifs-home'>
                     <div className="parte-baixo-cards">
-                        <img src="assets/gifs/cards.gif" alt="" />
+                        <img src={Cards} alt="Gif de cards" />
                         <h2>Cards</h2>
                     </div>
                     <p>Tradução rápida da sua língua nativa para o português brasileiro com os cards.</p>
                 </div>
                 <div className='gifs-home'>
                     <div className="parte-baixo-cards">
-                        <img src="assets/gifs/books.gif" alt="" />
+                        <img src={Books} alt="Gif de Livros" />
                         <h2>Estudos</h2>
                     </div>
                     <p>Cursos para melhorar sua comunicação em português e facilitar sua integração.</p>
                 </div>
                 <div className='gifs-home'>
                     <div className="parte-baixo-cards">
-                        <img src="assets/gifs/saude-mental.gif" alt="" />
+                        <img src={Saude} alt="Gif de duas pessoas." />
                         <h2>Saúde mental</h2>
                     </div>
                     <p>Oferecemos apoio para sua saúde mental, promovendo bem-estar e equilíbrio.</p>

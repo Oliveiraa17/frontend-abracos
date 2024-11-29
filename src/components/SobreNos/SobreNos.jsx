@@ -16,7 +16,7 @@ function SobreNos() {
                 <Descricao
                     imagem='assets/images/olho.svg'
                     titulo='Visão'
-                    texto='Ser a principal trilha para imigrantes e refugiados no Brasil, facilitando sua integração econômica, social e cultural, ao mesmo tempo em que promovemos uma sociedade mais inclusiva, acolhedora e próspera para todos.'
+                    texto='Nossa visão é acreditar na empatia que o ser humano é capaz de ter e que ainda e possível haver abraços.'
                 />
             </div>
 

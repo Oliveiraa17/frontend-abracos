@@ -45,7 +45,7 @@ function Pagina1() {
                     </div>
                     <section className={'Sobre-cards mostrar'}>
                         <div onClick={() => playAudio('assets/audio/hillary.mp3')}>
-                            <Cards2 icon='assets/images/ola.png' text='Identificação' />
+                            <Cards2 icon='assets/images/ola.png' text='Olá' />
                         </div>
                         <div onClick={() => playAudio('assets/audio/bomdia1.mp3')}>
                             <Cards2 icon='assets/images/ensolarado.png' text='Bom dia' />
@@ -55,6 +55,34 @@ function Pagina1() {
                         </div>
                         <div onClick={() => playAudio('assets/audio/boanoite1.mp3')}>
                             <Cards2 icon='assets/images/lua-crescente.png' text='Boa noite' />
+                        </div>
+                    </section>
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/hillary.mp3')}>
+                            <Cards2 icon='assets/images/ola.png' text='Desculpa' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/bomdia1.mp3')}>
+                            <Cards2 icon='assets/images/ensolarado.png' text='Obrigado' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/boatarde1.mp3')}>
+                            <Cards2 icon='assets/images/nascer-do-sol.png' text='Por favor' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/boanoite1.mp3')}>
+                            <Cards2 icon='assets/images/lua-crescente.png' text='Com licença' />
+                        </div>
+                    </section>
+                    <section className={'Sobre-cards mostrar'}>
+                        <div onClick={() => playAudio('assets/audio/hillary.mp3')}>
+                            <Cards2 icon='assets/images/ola.png' text='Tudo bem?' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/bomdia1.mp3')}>
+                            <Cards2 icon='assets/images/ensolarado.png' text='Obrigado' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/boatarde1.mp3')}>
+                            <Cards2 icon='assets/images/nascer-do-sol.png' text='Por favor' />
+                        </div>
+                        <div onClick={() => playAudio('assets/audio/boanoite1.mp3')}>
+                            <Cards2 icon='assets/images/lua-crescente.png' text='Com licença' />
                         </div>
                     </section>
                 </>
