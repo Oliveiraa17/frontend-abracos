@@ -288,6 +288,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/moedasCards.png' text='Este shopping aceita moedas internacionais?' />
                         <Cards2 icon='assets/images/localizacao.png' text='Quais são os melhores shoppings ou lojas de rua nesta região?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/carrinho-de-carrinho.png' text='Existe algum mercado de pulgas por aqui?' />
+                        <Cards2 icon='assets/images/roupass.png' text='Onde encontro lojas especializadas em roupas de segunda mão?' />
+                        <Cards2 icon='assets/images/entrega-rapidaaa.png' text='Tem alguma loja de móveis que faça entrega rápida?' />
+                        <Cards2 icon='assets/images/promocoes.png' text='Quais lojas oferecem promoções nesta época do ano?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/eletronico.png' text='Onde posso encontrar eletrônicos com bons preços?' />
+                        <Cards2 icon='assets/images/mercadooo.png' text='Este shopping tem área de desconto ou outlet?' />
+                        <Cards2 icon='assets/images/artesanal.png' text='Qual loja daqui vende produtos artesanais ou locais?' />
+                        <Cards2 icon='assets/images/pagamento-movel.png' text='Como posso encontrar lojas que aceitem pagamentos digitais?' />
+                    </section>
                 </>
             )}
             {categoriaSelecionada === 'Escola' && (
