@@ -233,6 +233,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/caixaeletrCards.png' text='Este caixa eletrônico aceita cartões de fora do Brasil?' />
                         <Cards2 icon='assets/images/cartao-de-identidade.png' text='Quais documentos são necessários para usar os serviços bancários aqui?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/estrangeiro.png' text='Qual banco é mais recomendado para estrangeiros?' />
+                        <Cards2 icon='assets/images/passapor.png' text='Posso usar meu passaporte para abrir uma conta?' />
+                        <Cards2 icon='assets/images/acesso-a-operacoes-bancarias-via-internet.png' text='Existe algum banco que tenha suporte em inglês ou espanhol?' />
+                        <Cards2 icon='assets/images/dinheiro.png' text='Há algum limite de saque para estrangeiros neste caixa eletrônico?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/troca-de-dinheiro.png' text='Como faço para transferir dinheiro para outro país?' />
+                        <Cards2 icon='assets/images/fatura.png' text='Posso abrir uma conta online ou preciso ir até uma agência?' />
+                        <Cards2 icon='assets/images/agente.png' text='Este banco oferece contas específicas para residentes temporários?' />
+                        <Cards2 icon='assets/images/troca-de-dinhe.png' text='Onde encontro um banco que troque moeda estrangeira?' />
+                    </section>
                 </>
             )}
             {categoriaSelecionada === 'Polícia' && (
