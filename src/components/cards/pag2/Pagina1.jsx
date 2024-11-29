@@ -315,6 +315,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/matriculaCards.png' text='Como faço para matricular meu filho nesta escola?' />
                         <Cards2 icon='assets/images/aprendizagem-por-reforco.png' text='Como posso inscrever meus filhos em aulas de reforço escolar?' />
                     </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/miudo.png' text='Há vagas disponíveis para crianças estrangeiras nesta escola?' />
+                        <Cards2 icon='assets/images/carteira-de-identidade.png' text='Quais documentos preciso apresentar para a matrícula?' />
+                        <Cards2 icon='assets/images/lingua-estrangeira.png' text='Essa escola oferece apoio pedagógico para crianças que não falam português?' />
+                        <Cards2 icon='assets/images/extracurricular.png' text='Existem atividades extracurriculares abertas a todos os alunos?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/transferindo.png' text='Qual o processo para transferir uma criança de outra escola?' />
+                        <Cards2 icon='assets/images/diversidade-cultural.png' text='Essa escola tem programas de integração cultural para alunos imigrantes?' />
+                        <Cards2 icon='assets/images/bilingue.png' text='Há opções de ensino bilíngue ou de idiomas nesta região?' />
+                        <Cards2 icon='assets/images/inclusividade.png' text='Onde encontro informações sobre escolas inclusivas para crianças estrangeiras?' />
+                    </section>
                 </>
             )}
             {categoriaSelecionada === 'Documentos' && (
@@ -327,6 +341,20 @@ function Pagina1() {
                         <Cards2 icon='assets/images/residenciaCards.png' text='Qual o procedimento para solicitar a residência permanente?' />
                         <Cards2 icon='assets/images/marteloCards.png' text='Como posso legalizar meus documentos estrangeiros aqui?' />
                         <Cards2 icon='assets/images/prazo-final.png' text='Quais são os prazos para solicitar visto de trabalho ou residência?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/cpfCards.png' text='Onde posso solicitar a carteira de trabalho para estrangeiros?' />
+                        <Cards2 icon='assets/images/residenciaCards.png' text='Como faço para renovar meu visto temporário?' />
+                        <Cards2 icon='assets/images/marteloCards.png' text='Quais órgãos oferecem suporte para regularização de documentos?' />
+                        <Cards2 icon='assets/images/prazo-final.png' text='Há um atendimento específico para emissão de RG para estrangeiros?' />
+                    </section>
+
+                    <section className={'Sobre-cards mostrar'}>
+                        <Cards2 icon='assets/images/cpfCards.png' text='Qual o prazo para registrar minha entrada no país?' />
+                        <Cards2 icon='assets/images/residenciaCards.png' text='Onde encontro informações sobre revalidação de diplomas?' />
+                        <Cards2 icon='assets/images/marteloCards.png' text='Posso agendar online para legalizar meus papéis no consulado?' />
+                        <Cards2 icon='assets/images/prazo-final.png' text='Existe algum programa que facilite a naturalização de estrangeiros?' />
                     </section>
                 </>
             )}
