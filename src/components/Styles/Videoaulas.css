@@ -103,6 +103,8 @@
 .btn-gramatica:hover,
 .btn-frases:hover,
 .btn-verbos:hover {
+    background-color: var(--secondary-color);
+    color: #ffffff;
     transform: scale(1.05);
     opacity: 1;
 }
@@ -202,6 +204,7 @@
 }
 
 .load_more_button:hover {
+    background-color: var(--secondary-color);
     transform: scale(1.05);
 }
 
