@@ -44,9 +44,11 @@ function Pagina1() {
                     </span>de forma rápida e <br /> simples em qualquer <span className='idiomaa'><mark className='azull'>idioma.</mark></span>
                 </h1>
             </div>
-
+            <div>
+                <h2>Trocar Vozes</h2>
+            </div>
             <div className="seletor-voz">
-                <label className="voz-label">
+                <label  className={`voz-label ${vozSelecionada === 'feminina' ? 'selecionado' : ''}`}>
                     <input
                         type="radio"
                         name="voz"
@@ -57,15 +59,16 @@ function Pagina1() {
                     />
                     <span className="voz-texto">Feminina</span>
                 </label>
-                <label>
+                <label className={`voz-label ${vozSelecionada === 'masculina' ? 'selecionado' : ''}`}>
                     <input
                         type="radio"
                         name="voz"
                         value="masculina"
                         checked={vozSelecionada === 'masculina'}
                         onChange={(e) => setVozSelecionada(e.target.value)}
+                        className="voz-radio"
                     />
-                    Masculina
+                    <span className="voz-texto">Masculina</span>
                 </label>
             </div>
             <div className='button'>
@@ -153,30 +156,48 @@ function Pagina1() {
                         <h1>Hospital:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/hospi.mp3')}>
+                        <div onClick={() => playAudio('Hospital')}>
                             <Cards2 icon='assets/images/localCards.png' text='Onde fica o hospital mais próximo daqui?' />
                         </div>
-                        <Cards2 icon='assets/images/ambulanciaCards.png' text='Preciso de ajuda médica, pode me levar ao hospital?' />
-                        <Cards2 icon='assets/images/comunicacaoCards.png' text='Como faço para marcar uma consulta com um médico?' />
-                        <Cards2 icon='assets/images/injecao.png' text='Podem indicar um hospital especializado?' />
+                        <div onClick={() => playAudio('ajudamedica')}>
+                            <Cards2 icon='assets/images/ambulanciaCards.png' text='Preciso de ajuda médica, pode me levar ao hospital?' />
+                        </div >
+                        <div onClick={() => playAudio('marcarconsulta')}>
+                            <Cards2 icon='assets/images/comunicacaoCards.png' text='Como faço para marcar uma consulta com um médico?' />
+                        </div>
+                        <div onClick={() => playAudio('indicarhospita')}>
+                            <Cards2 icon='assets/images/injecao.png' text='Podem indicar um hospital especializado?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('checkup')}>
                             <Cards2 icon='assets/images/health-checkup.png' text='Quais exames preciso fazer para um check-up completo?' />
                         </div>
-                        <Cards2 icon='assets/images/tratamento.png' text='Pode me explicar como funciona esse tratamento?' />
-                        <Cards2 icon='assets/images/procedimento.png' text='Qual é o procedimento para solicitar um laudo médico?' />
-                        <Cards2 icon='assets/images/dificuldade-ao-respirar.png' text='É normal sentir esses sintomas? O que devo fazer?' />
+                        <div onClick={() => playAudio('funcionatratamento')}>
+                            <Cards2 icon='assets/images/tratamento.png' text='Pode me explicar como funciona esse tratamento?' />
+                        </div >
+                        <div onClick={() => playAudio('laudomedico')}>
+                            <Cards2 icon='assets/images/procedimento.png' text='Qual é o procedimento para solicitar um laudo médico?' />
+                        </div>
+                        <div onClick={() => playAudio('sintomas')}>
+                            <Cards2 icon='assets/images/dificuldade-ao-respirar.png' text='É normal sentir esses sintomas? O que devo fazer?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('assets/audio/')}>
+                        <div onClick={() => playAudio('recuperacao')}>
                             <Cards2 icon='assets/images/esperando.png' text='Qual é o tempo médio de recuperação para essa condição?' />
                         </div>
-                        <Cards2 icon='assets/images/pele.png' text='Existe algum cuidado especial que devo tomar após a alta?' />
-                        <Cards2 icon='assets/images/fisioterapia.png' text='Pode me orientar sobre os passos para iniciar uma fisioterapia?' />
-                        <Cards2 icon='assets/images/cuidados-com-a-pele.png' text='Que cuidados devo adotar no dia a dia?' />
+                        <div onClick={() => playAudio('cuidados')}>
+                            <Cards2 icon='assets/images/pele.png' text='Existe algum cuidado especial que devo tomar após a alta?' />
+                        </div>
+                        <div onClick={() => playAudio('fisioterapia')}>
+                            <Cards2 icon='assets/images/fisioterapia.png' text='Pode me orientar sobre os passos para iniciar uma fisioterapia?' />
+                        </div>
+                        <div onClick={() => playAudio('adotardiadia')}>
+                            <Cards2 icon='assets/images/cuidados-com-a-pele.png' text='Que cuidados devo adotar no dia a dia?' />
+                        </div>
                     </section>
                 </>
             )}
@@ -187,24 +208,50 @@ function Pagina1() {
                         <h1>Mercado:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/carrinhoCards.png' text='Onde posso encontrar um mercado?' />
-                        <Cards2 icon='assets/images/frutasCards.png' text='Quais são os melhores mercados para comprar alimentos frescos?' />
-                        <Cards2 icon='assets/images/cartaoCards.png' text='Este mercado aceita cartões internacionais?' />
-                        <Cards2 icon='assets/images/taco.png' text='Como encontrar um mercado com produtos típicos da minha cultura?' />
+                        <div onClick={() => playAudio('encontrarmercado')}>
+                            <Cards2 icon='assets/images/carrinhoCards.png' text='Onde posso encontrar um mercado?' />
+                        </div>
+                        <div onClick={() => playAudio('alimentosfrescos')}>
+                            <Cards2 icon='assets/images/frutasCards.png' text='Quais são os melhores mercados para comprar alimentos frescos?' />
+                        </div>
+                        <div onClick={() => playAudio('internacionais')}>
+                            <Cards2 icon='assets/images/cartaoCards.png' text='Este mercado aceita cartões internacionais?' />
+                        </div>
+                        <div onClick={() => playAudio('produtostipicos')}>
+                            <Cards2 icon='assets/images/taco.png' text='Como encontrar um mercado com produtos típicos da minha cultura?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/acougueiro.png' text='Onde posso encontrar um açougue por aqui?' />
-                        <Cards2 icon='assets/images/carne.png' text='Qual mercado tem a melhor seção de congelados?' />
-                        <Cards2 icon='assets/images/entrega-rapida.png' text='Esse mercado oferece delivery?' />
-                        <Cards2 icon='assets/images/vegan.png' text='Como posso saber se o mercado tem produtos veganos?' />
+                        <div onClick={() => playAudio('encontraracougue')}>
+                            <Cards2 icon='assets/images/acougueiro.png' text='Onde posso encontrar um açougue por aqui?' />
+                        </div>
+                        <div onClick={() => playAudio('secaocongelados')}>
+                            <Cards2 icon='assets/images/carne.png' text='Qual mercado tem a melhor seção de congelados?' />
+                        </div>
+                        <div onClick={() => playAudio('delivery')}>
+                            <Cards2 icon='assets/images/entrega-rapida.png' text='Esse mercado oferece delivery?' />
+                        </div>
+                        <div onClick={() => playAudio('veganos')}>
+                            <Cards2 icon='assets/images/vegan.png' text='Como posso saber se o mercado tem produtos veganos?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/picking.png' text='Onde posso comprar frutas e verduras recém-colhidas?' />
-                        <Cards2 icon='assets/images/produtos-artesanais.png' text='Esse mercado tem uma área de produtos artesanais?' />
-                        <Cards2 icon='assets/images/preco-baixo.png' text='Como posso encontrar mercados com preços mais acessíveis?' />
-                        <Cards2 icon='assets/images/tempero.png' text='Qual mercado tem maior variedade de temperos e especiarias?' />
+                        <div onClick={() => playAudio('frutaeverdura')}>
+                            <Cards2 icon='assets/images/picking.png' text='Onde posso comprar frutas e verduras recém-colhidas?' />
+
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/produtos-artesanais.png' text='Esse mercado tem uma área de produtos artesanais?' />
+                        </div>
+
+                        <div onClick={() => playAudio('precosacessiveis')}>
+                            <Cards2 icon='assets/images/preco-baixo.png' text='Como posso encontrar mercados com preços mais acessíveis?' />
+                        </div>
+                        <div onClick={() => playAudio('temperos')}>
+                            <Cards2 icon='assets/images/tempero.png' text='Qual mercado tem maior variedade de temperos e especiarias?' />
+                        </div>
                     </section>
                 </>
             )}

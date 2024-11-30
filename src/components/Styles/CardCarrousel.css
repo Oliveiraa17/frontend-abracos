@@ -5,10 +5,64 @@
     padding: 40px;
     border-radius: 8px;
 }
-.seletor-voz label {
+.voz-texto {
+    text-align: center;
+    margin: auto;
     padding: 10px;
-    font-weight: bold;
 }
+.seletor-voz {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.voz-label.selecionado {
+    background-color: #4b92db;
+    width: 120px;
+    color: white;
+}
+
+.voz-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.voz-label:hover {
+    color: #000;
+    
+    transform: scale(1.1);
+}
+
+.voz-radio {
+    display: none;
+}
+
+.voz-radio:checked + .voz-texto {
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 mark {
     background-color: #FF6926;
     color: #fff;
