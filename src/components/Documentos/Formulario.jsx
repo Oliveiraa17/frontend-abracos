@@ -83,6 +83,7 @@ const styles = {
     width: '1000px',
     height: '650px',
     margin: '0 auto',
+    marginBottom: '50px',
     textAlign: 'center',
     position: 'relative',
   },
@@ -135,7 +136,6 @@ const styles = {
     border: 'none',
     cursor: 'pointer',
     fontSize: '1em',
-
   },
 
   jhow: {
