@@ -262,24 +262,48 @@ function Pagina1() {
                         <h1>Transporte:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/localizacaoCards.png' text='Qual o caminho mais rápido ao centro com transporte público?' />
-                        <Cards2 icon='assets/images/bilheteCards.png' text='Como faço para comprar um bilhete de metrô?' />
-                        <Cards2 icon='assets/images/relogioCards.png' text='Quanto tempo o ônibus demora para passar aqui?' />
-                        <Cards2 icon='assets/images/cifrao.png' text='Qual o valor do transporte público?' />
+                        <div onClick={() => playAudio('caminho')}>
+                            <Cards2 icon='assets/images/localizacaoCards.png' text='Qual o caminho mais rápido ao centro com transporte público?' />
+                        </div>
+                        <div onClick={() => playAudio('comprarbilhete')}>
+                            <Cards2 icon='assets/images/bilheteCards.png' text='Como faço para comprar um bilhete de metrô?' />
+                        </div>
+                        <div onClick={() => playAudio('demoraonibus')}>
+                            <Cards2 icon='assets/images/relogioCards.png' text='Quanto tempo o ônibus demora para passar aqui?' />
+                        </div>
+                        <div onClick={() => playAudio('valortransporte')}>
+                            <Cards2 icon='assets/images/cifrao.png' text='Qual o valor do transporte público?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/metro.png' text='Qual linha de metrô vai direto para o centro?' />
-                        <Cards2 icon='assets/images/ponto-de-onibus.png' text='Onde posso pegar o ônibus mais próximo?' />
-                        <Cards2 icon='assets/images/passagem-de-nivel.png' text='Esse trem faz paradas em todos os bairros principais?' />
-                        <Cards2 icon='assets/images/checar.png' text='Como posso verificar os horários dos transportes públicos?' />
+                        <div onClick={() => playAudio('linhametro')}>
+                            <Cards2 icon='assets/images/metro.png' text='Qual linha de metrô vai direto para o centro?' />
+                        </div>
+                        <div onClick={() => playAudio('onibusproximo')}>
+                            <Cards2 icon='assets/images/ponto-de-onibus.png' text='Onde posso pegar o ônibus mais próximo?' />
+                        </div>
+                        <div onClick={() => playAudio('paradastrem')}>
+                            <Cards2 icon='assets/images/passagem-de-nivel.png' text='Esse trem faz paradas em todos os bairros principais?' />
+                        </div>
+                        <div onClick={() => playAudio('horariostransportes')}>
+                            <Cards2 icon='assets/images/checar.png' text='Como posso verificar os horários dos transportes públicos?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/aplicativo-movel.png' text='Existe algum aplicativo para planejar trajetos de ônibus?' />
-                        <Cards2 icon='assets/images/sinal-de-transito.png' text='Qual a melhor forma de evitar trânsito no transporte público?' />
-                        <Cards2 icon='assets/images/estacao-ferroviaria.png' text='Há alguma estação de metrô acessível por aqui?' />
-                        <Cards2 icon='assets/images/bilhete-de-trem.png' text='Como recarregar o cartão de transporte na minha cidade?' />
+                        <div onClick={() => playAudio('trajetosonibus')}>
+                            <Cards2 icon='assets/images/aplicativo-movel.png' text='Existe algum aplicativo para planejar trajetos de ônibus?' />
+                        </div>
+                        <div onClick={() => playAudio('evitartransito')}>
+                            <Cards2 icon='assets/images/sinal-de-transito.png' text='Qual a melhor forma de evitar trânsito no transporte público?' />
+                        </div>
+                        <div onClick={() => playAudio('estacaoacessivel')}>
+                            <Cards2 icon='assets/images/estacao-ferroviaria.png' text='Há alguma estação de metrô acessível por aqui?' />
+                        </div>
+                        <div onClick={() => playAudio('recarregarcartao')}>
+                            <Cards2 icon='assets/images/bilhete-de-trem.png' text='Como recarregar o cartão de transporte na minha cidade?' />
+                        </div>
                     </section>
                 </>
             )}
@@ -290,24 +314,48 @@ function Pagina1() {
                         <h1>Alimentação:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/restauranteCards.png' text='Você pode me indicar um restaurante que sirva comida halal?' />
-                        <Cards2 icon='assets/images/mundoCards.png' text='Onde posso encontrar comida típica do meu país?' />
-                        <Cards2 icon='assets/images/legumesCards.png' text='Existe algum lugar aqui que tenha opções vegetarianas?' />
-                        <Cards2 icon='assets/images/barraca-de-comida.png' text='Como posso encontrar alimentos frescos nas proximidades? ' />
+                        <div onClick={() => playAudio('comidahalal')}>
+                            <Cards2 icon='assets/images/restauranteCards.png' text='Você pode me indicar um restaurante que sirva comida halal?' />
+                        </div>
+                        <div onClick={() => playAudio('comidatipica')}>
+                            <Cards2 icon='assets/images/mundoCards.png' text='Onde posso encontrar comida típica do meu país?' />
+                        </div>
+                        <div onClick={() => playAudio('opcoesvegetariana')}>
+                            <Cards2 icon='assets/images/legumesCards.png' text='Existe algum lugar aqui que tenha opções vegetarianas?' />
+                        </div>
+                        <div onClick={() => playAudio('alimentosfrescos')}>
+                            <Cards2 icon='assets/images/barraca-de-comida.png' text='Como posso encontrar alimentos frescos nas proximidades? ' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/prato.png' text='Qual restaurante serve pratos tradicionais daqui?' />
-                        <Cards2 icon='assets/images/vegetariano.png' text='Onde posso comer algo rápido e saudável por aqui?' />
-                        <Cards2 icon='assets/images/comida-organica.png' text='Há algum lugar especializado em comida vegana?' />
-                        <Cards2 icon='assets/images/livre-de-laticinios.png' text='Conhece um café que tenha opções sem lactose? ' />
+                        <div onClick={() => playAudio('pratostradicionais')}>
+                            <Cards2 icon='assets/images/prato.png' text='Qual restaurante serve pratos tradicionais daqui?' />
+                        </div>
+                        <div onClick={() => playAudio('comerapido')}>
+                            <Cards2 icon='assets/images/vegetariano.png' text='Onde posso comer algo rápido e saudável por aqui?' />
+                        </div>
+                        <div onClick={() => playAudio('comidavegana')}>
+                            <Cards2 icon='assets/images/comida-organica.png' text='Há algum lugar especializado em comida vegana?' />
+                        </div>
+                        <div onClick={() => playAudio('cafesemlactose')}>
+                            <Cards2 icon='assets/images/livre-de-laticinios.png' text='Conhece um café que tenha opções sem lactose? ' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/sem-gluten.png' text='Existe algum restaurante com menu sem glúten nesta área?' />
-                        <Cards2 icon='assets/images/cozinhando.png' text='Onde encontro um bom lugar para experimentar culinária internacional?' />
-                        <Cards2 icon='assets/images/mercearia.png' text='Tem algum mercado com ingredientes típicos para cozinhar em casa?' />
-                        <Cards2 icon='assets/images/organico.png' text='Pode me recomendar um restaurante com opções orgânicas? ' />
+                        <div onClick={() => playAudio('semgluten')}>
+                            <Cards2 icon='assets/images/sem-gluten.png' text='Existe algum restaurante com menu sem glúten nesta área?' />
+                        </div>
+                        <div onClick={() => playAudio('culinariainter')}>
+                            <Cards2 icon='assets/images/cozinhando.png' text='Onde encontro um bom lugar para experimentar culinária internacional?' />
+                        </div>
+                        <div onClick={() => playAudio('cozinhaemcasa')}>
+                            <Cards2 icon='assets/images/mercearia.png' text='Tem algum mercado com ingredientes típicos para cozinhar em casa?' />
+                        </div>
+                        <div onClick={() => playAudio('organica')}>
+                            <Cards2 icon='assets/images/organico.png' text='Pode me recomendar um restaurante com opções orgânicas? ' />
+                        </div>
                     </section>
                 </>
             )}
@@ -318,24 +366,48 @@ function Pagina1() {
                         <h1>Banco:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/contabancariaCards.png' text='Como posso abrir uma conta bancária como imigrante?' />
-                        <Cards2 icon='assets/images/banco-suporte.svg' text='Nesse banco tem algum suporte?' />
-                        <Cards2 icon='assets/images/caixaeletrCards.png' text='Este caixa eletrônico aceita cartões de fora do Brasil?' />
-                        <Cards2 icon='assets/images/cartao-de-identidade.png' text='Quais documentos são necessários para usar os serviços bancários aqui?' />
+                        <div onClick={() => playAudio('abrirconta')}>
+                            <Cards2 icon='assets/images/contabancariaCards.png' text='Como posso abrir uma conta bancária como imigrante?' />
+                        </div>
+                        <div onClick={() => playAudio('suportebanco')}>
+                            <Cards2 icon='assets/images/banco-suporte.svg' text='Nesse banco tem algum suporte?' />
+                        </div>
+                        <div onClick={() => playAudio('cartoesdefora')}>
+                            <Cards2 icon='assets/images/caixaeletrCards.png' text='Este caixa eletrônico aceita cartões de fora do Brasil?' />
+                        </div>
+                        <div onClick={() => playAudio('usarservicos')}>
+                            <Cards2 icon='assets/images/cartao-de-identidade.png' text='Quais documentos são necessários para usar os serviços bancários aqui?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/estrangeiro.png' text='Qual banco é mais recomendado para estrangeiros?' />
-                        <Cards2 icon='assets/images/passapor.png' text='Posso usar meu passaporte para abrir uma conta?' />
-                        <Cards2 icon='assets/images/acesso-a-operacoes-bancarias-via-internet.png' text='Existe algum banco que tenha suporte em inglês ou espanhol?' />
-                        <Cards2 icon='assets/images/dinheiro.png' text='Há algum limite de saque para estrangeiros neste caixa eletrônico?' />
+                        <div onClick={() => playAudio('bancoestrangeiros')}>
+                            <Cards2 icon='assets/images/estrangeiro.png' text='Qual banco é mais recomendado para estrangeiros?' />
+                        </div>
+                        <div onClick={() => playAudio('passaporteconta')}>
+                            <Cards2 icon='assets/images/passapor.png' text='Posso usar meu passaporte para abrir uma conta?' />
+                        </div>
+                        <div onClick={() => playAudio('suporteinglespa')}>
+                            <Cards2 icon='assets/images/acesso-a-operacoes-bancarias-via-internet.png' text='Existe algum banco que tenha suporte em inglês ou espanhol?' />
+                        </div>
+                        <div onClick={() => playAudio('limitesaque')}>
+                            <Cards2 icon='assets/images/dinheiro.png' text='Há algum limite de saque para estrangeiros neste caixa eletrônico?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/troca-de-dinheiro.png' text='Como faço para transferir dinheiro para outro país?' />
-                        <Cards2 icon='assets/images/fatura.png' text='Posso abrir uma conta online ou preciso ir até uma agência?' />
-                        <Cards2 icon='assets/images/agente.png' text='Este banco oferece contas específicas para residentes temporários?' />
-                        <Cards2 icon='assets/images/troca-de-dinhe.png' text='Onde encontro um banco que troque moeda estrangeira?' />
+                        <div onClick={() => playAudio('transferirdinheiro')}>
+                            <Cards2 icon='assets/images/troca-de-dinheiro.png' text='Como faço para transferir dinheiro para outro país?' />
+                        </div>
+                        <div onClick={() => playAudio('abrircontaonline')}>
+                            <Cards2 icon='assets/images/fatura.png' text='Posso abrir uma conta online ou preciso ir até uma agência?' />
+                        </div>
+                        <div onClick={() => playAudio('residentestemporarios')}>
+                            <Cards2 icon='assets/images/agente.png' text='Este banco oferece contas específicas para residentes temporários?' />
+                        </div>
+                        <div onClick={() => playAudio('trocarmoeda')}>
+                            <Cards2 icon='assets/images/troca-de-dinhe.png' text='Onde encontro um banco que troque moeda estrangeira?' />
+                        </div>
                     </section>
                 </>
             )}
@@ -345,24 +417,48 @@ function Pagina1() {
                         <h1>Polícia:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/sireneCards.png' text='Onde é a delegacia de polícia mais próxima?' />
-                        <Cards2 icon='assets/images/ocorrenciaCards.png' text='Como faço para registrar uma ocorrência?' />
-                        <Cards2 icon='assets/images/telefoneCards.png' text='Preciso de ajuda, você pode chamar a polícia?' />
-                        <Cards2 icon='assets/images/apoio-suporte.png' text='Existe um canal de apoio da polícia para imigrantes na minha situação?' />
+                        <div onClick={() => playAudio('delegaciaproxima')}>
+                            <Cards2 icon='assets/images/sireneCards.png' text='Onde é a delegacia de polícia mais próxima?' />
+                        </div>
+                        <div onClick={() => playAudio('registrar')}>
+                            <Cards2 icon='assets/images/ocorrenciaCards.png' text='Como faço para registrar uma ocorrência?' />
+                        </div>
+                        <div onClick={() => playAudio('chamapolicia')}>
+                            <Cards2 icon='assets/images/telefoneCards.png' text='Preciso de ajuda, você pode chamar a polícia?' />
+                        </div>
+                        <div onClick={() => playAudio('canaldeapoio')}>
+                            <Cards2 icon='assets/images/apoio-suporte.png' text='Existe um canal de apoio da polícia para imigrantes na minha situação?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/alarme.png' text='Qual o número de emergência para chamar a polícia aqui?' />
-                        <Cards2 icon='assets/images/informacoes.png' text='Como posso obter informações sobre uma ocorrência registrada?' />
-                        <Cards2 icon='assets/images/estupro.png' text='Onde fica a delegacia de polícia especializada em casos de violência doméstica?' />
-                        <Cards2 icon='assets/images/vitima.png' text='A polícia oferece algum tipo de assistência a vítimas de crimes?' />
+                        <div onClick={() => playAudio('chamapolicia')}>
+                            <Cards2 icon='assets/images/alarme.png' text='Qual o número de emergência para chamar a polícia aqui?' />
+                        </div>
+                        <div onClick={() => playAudio('infocorrencia')}>
+                            <Cards2 icon='assets/images/informacoes.png' text='Como posso obter informações sobre uma ocorrência registrada?' />
+                        </div>
+                        <div onClick={() => playAudio('violenciadome')}>
+                            <Cards2 icon='assets/images/estupro.png' text='Onde fica a delegacia de polícia especializada em casos de violência doméstica?' />
+                        </div>
+                        <div onClick={() => playAudio('assistencia')}>
+                            <Cards2 icon='assets/images/vitima.png' text='A polícia oferece algum tipo de assistência a vítimas de crimes?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/boletim-de-noticias.png' text='Como posso solicitar uma cópia do boletim de ocorrência?' />
-                        <Cards2 icon='assets/images/escolha-de-idioma.png' text='A delegacia tem atendimento em outros idiomas para estrangeiros?' />
-                        <Cards2 icon='assets/images/atendimento-ao-cliente.png' text='Quais são os horários de atendimento da delegacia mais próxima?' />
-                        <Cards2 icon='assets/images/servico-de-atendimento-ao-consumidor.png' text='Existe algum centro de apoio legal para imigrantes que precisem de ajuda policial?' />
+                        <div onClick={() => playAudio('copiaboletim')}>
+                            <Cards2 icon='assets/images/boletim-de-noticias.png' text='Como posso solicitar uma cópia do boletim de ocorrência?' />
+                        </div>
+                        <div onClick={() => playAudio('atendimentoidiomas')}>
+                            <Cards2 icon='assets/images/escolha-de-idioma.png' text='A delegacia tem atendimento em outros idiomas para estrangeiros?' />
+                        </div>
+                        <div onClick={() => playAudio('horariodelega')}>
+                            <Cards2 icon='assets/images/atendimento-ao-cliente.png' text='Quais são os horários de atendimento da delegacia mais próxima?' />
+                        </div>
+                        <div onClick={() => playAudio('imigrantesajudapoli')}>
+                            <Cards2 icon='assets/images/servico-de-atendimento-ao-consumidor.png' text='Existe algum centro de apoio legal para imigrantes que precisem de ajuda policial?' />
+                        </div>
                     </section>
                 </>
 
@@ -373,24 +469,48 @@ function Pagina1() {
                         <h1>Compras:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/camisetaCards.png' text='Onde posso encontrar uma loja de roupas com preços acessíveis?' />
-                        <Cards2 icon='assets/images/moveisCards.png' text='Qual o melhor lugar para comprar móveis usados?' />
-                        <Cards2 icon='assets/images/moedasCards.png' text='Este shopping aceita moedas internacionais?' />
-                        <Cards2 icon='assets/images/localizacao.png' text='Quais são os melhores shoppings ou lojas de rua nesta região?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/camisetaCards.png' text='Onde posso encontrar uma loja de roupas com preços acessíveis?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/moveisCards.png' text='Qual o melhor lugar para comprar móveis usados?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/moedasCards.png' text='Este shopping aceita moedas internacionais?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/localizacao.png' text='Quais são os melhores shoppings ou lojas de rua nesta região?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/carrinho-de-carrinho.png' text='Existe algum mercado de pulgas por aqui?' />
-                        <Cards2 icon='assets/images/roupass.png' text='Onde encontro lojas especializadas em roupas de segunda mão?' />
-                        <Cards2 icon='assets/images/entrega-rapidaaa.png' text='Tem alguma loja de móveis que faça entrega rápida?' />
-                        <Cards2 icon='assets/images/promocoes.png' text='Quais lojas oferecem promoções nesta época do ano?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/carrinho-de-carrinho.png' text='Existe algum mercado de pulgas por aqui?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/roupass.png' text='Onde encontro lojas especializadas em roupas de segunda mão?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/entrega-rapidaaa.png' text='Tem alguma loja de móveis que faça entrega rápida?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/promocoes.png' text='Quais lojas oferecem promoções nesta época do ano?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/eletronico.png' text='Onde posso encontrar eletrônicos com bons preços?' />
-                        <Cards2 icon='assets/images/mercadooo.png' text='Este shopping tem área de desconto ou outlet?' />
-                        <Cards2 icon='assets/images/artesanal.png' text='Qual loja daqui vende produtos artesanais ou locais?' />
-                        <Cards2 icon='assets/images/pagamento-movel.png' text='Como posso encontrar lojas que aceitem pagamentos digitais?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/eletronico.png' text='Onde posso encontrar eletrônicos com bons preços?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/mercadooo.png' text='Este shopping tem área de desconto ou outlet?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/artesanal.png' text='Qual loja daqui vende produtos artesanais ou locais?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/pagamento-movel.png' text='Como posso encontrar lojas que aceitem pagamentos digitais?' />
+                        </div>
                     </section>
                 </>
             )}
@@ -400,24 +520,48 @@ function Pagina1() {
                         <h1>Escola:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/escolaCards.png' text='Quais escolas públicas aceitam matrículas de crianças imigrantes?' />
-                        <Cards2 icon='assets/images/cursoportuguesCards.png' text='Existe algum curso de português oferecido por essa escola?' />
-                        <Cards2 icon='assets/images/matriculaCards.png' text='Como faço para matricular meu filho nesta escola?' />
-                        <Cards2 icon='assets/images/aprendizagem-por-reforco.png' text='Como posso inscrever meus filhos em aulas de reforço escolar?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/escolaCards.png' text='Quais escolas públicas aceitam matrículas de crianças imigrantes?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/cursoportuguesCards.png' text='Existe algum curso de português oferecido por essa escola?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/matriculaCards.png' text='Como faço para matricular meu filho nesta escola?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/aprendizagem-por-reforco.png' text='Como posso inscrever meus filhos em aulas de reforço escolar?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/miudo.png' text='Há vagas disponíveis para crianças estrangeiras nesta escola?' />
-                        <Cards2 icon='assets/images/carteira-de-identidade.png' text='Quais documentos preciso apresentar para a matrícula?' />
-                        <Cards2 icon='assets/images/lingua-estrangeira.png' text='Essa escola oferece apoio pedagógico para crianças que não falam português?' />
-                        <Cards2 icon='assets/images/extracurricular.png' text='Existem atividades extracurriculares abertas a todos os alunos?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/miudo.png' text='Há vagas disponíveis para crianças estrangeiras nesta escola?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/carteira-de-identidade.png' text='Quais documentos preciso apresentar para a matrícula?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/lingua-estrangeira.png' text='Essa escola oferece apoio pedagógico para crianças que não falam português?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/extracurricular.png' text='Existem atividades extracurriculares abertas a todos os alunos?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/transferindo.png' text='Qual o processo para transferir uma criança de outra escola?' />
-                        <Cards2 icon='assets/images/diversidade-cultural.png' text='Essa escola tem programas de integração cultural para alunos imigrantes?' />
-                        <Cards2 icon='assets/images/bilingue.png' text='Há opções de ensino bilíngue ou de idiomas nesta região?' />
-                        <Cards2 icon='assets/images/inclusividade.png' text='Onde encontro informações sobre escolas inclusivas para crianças estrangeiras?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/transferindo.png' text='Qual o processo para transferir uma criança de outra escola?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/diversidade-cultural.png' text='Essa escola tem programas de integração cultural para alunos imigrantes?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/bilingue.png' text='Há opções de ensino bilíngue ou de idiomas nesta região?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/inclusividade.png' text='Onde encontro informações sobre escolas inclusivas para crianças estrangeiras?' />
+                        </div>
                     </section>
                 </>
             )}
@@ -427,24 +571,48 @@ function Pagina1() {
                         <h1>Documentos:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/cpfCards.png' text='Onde posso tirar meu CPF?' />
-                        <Cards2 icon='assets/images/residenciaCards.png' text='Qual o procedimento para solicitar a residência permanente?' />
-                        <Cards2 icon='assets/images/marteloCards.png' text='Como posso legalizar meus documentos estrangeiros aqui?' />
-                        <Cards2 icon='assets/images/prazo-final.png' text='Quais são os prazos para solicitar visto de trabalho ou residência?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/cpfCards.png' text='Onde posso tirar meu CPF?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/residenciaCards.png' text='Qual o procedimento para solicitar a residência permanente?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/marteloCards.png' text='Como posso legalizar meus documentos estrangeiros aqui?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/prazo-final.png' text='Quais são os prazos para solicitar visto de trabalho ou residência?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/homem-de-negocios.png' text='Onde posso solicitar a carteira de trabalho para estrangeiros?' />
-                        <Cards2 icon='assets/images/visto.png' text='Como faço para renovar meu visto temporário?' />
-                        <Cards2 icon='assets/images/pergunta.png' text='Quais órgãos oferecem suporte para regularização de documentos?' />
-                        <Cards2 icon='assets/images/RG.png' text='Há um atendimento específico para emissão de RG para estrangeiros?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/homem-de-negocios.png' text='Onde posso solicitar a carteira de trabalho para estrangeiros?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/visto.png' text='Como faço para renovar meu visto temporário?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/pergunta.png' text='Quais órgãos oferecem suporte para regularização de documentos?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/RG.png' text='Há um atendimento específico para emissão de RG para estrangeiros?' />
+                        </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <Cards2 icon='assets/images/paises.png' text='Qual o prazo para registrar minha entrada no país?' />
-                        <Cards2 icon='assets/images/diplo.png' text='Onde encontro informações sobre revalidação de diplomas?' />
-                        <Cards2 icon='assets/images/agendamento-on-line.png' text='Posso agendar online para legalizar meus papéis no consulado?' />
-                        <Cards2 icon='assets/images/naturalizacao.png' text='Existe algum programa que facilite a naturalização de estrangeiros?' />
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/paises.png' text='Qual o prazo para registrar minha entrada no país?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/diplo.png' text='Onde encontro informações sobre revalidação de diplomas?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/agendamento-on-line.png' text='Posso agendar online para legalizar meus papéis no consulado?' />
+                        </div>
+                        <div onClick={() => playAudio('produtosartesanais')}>
+                            <Cards2 icon='assets/images/naturalizacao.png' text='Existe algum programa que facilite a naturalização de estrangeiros?' />
+                        </div>
                     </section>
                 </>
             )}
