@@ -57,26 +57,62 @@ function Videoaulas() {
 
             <section className="videos_section">
                 <div className="video_list">
-                    <div className="video_item">
-                        <img src="assets/images/thumb.svg" alt="Aula 1" className="video_thumbnail" />
-                        <p className="video_hashtag">#aula 1</p>
-                    </div>
-                    <div className="video_item">
-                        <img src="assets/images/thumb.svg" alt="Aula 2" className="video_thumbnail" />
-                        <p className="video_hashtag">#aula 2</p>
-                    </div>
-                    <div className="video_item">
-                        <img src="assets/images/thumb.svg" alt="Aula 3" className="video_thumbnail" />
-                        <p className="video_hashtag">#aula 3</p>
-                    </div>
-                    <div className="video_item">
-                        <img src="assets/images/thumb.svg" alt="Aula 4" className="video_thumbnail" />
-                        <p className="video_hashtag">#aula 4</p>
-                    </div>
-                    <div className="video_item">
-                        <img src="assets/images/thumb.svg" alt="Aula 5" className="video_thumbnail" />
-                        <p className="video_hashtag">#aula 5</p>
-                    </div>
+                <div className="video_item">
+                    <iframe
+                        className="video_thumbnail"
+                        src="https://www.youtube.com/embed/234w70OtF2U"
+                        title="Aula 1"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                    <p className="video_hashtag">Aula 01</p>
+                </div>         
+
+                <div className="video_item">
+                    <iframe
+                        className="video_thumbnail"
+                        src="https://www.youtube.com/embed/91Hdk9Adp5U"
+                        title="Aula 2"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                    <p className="video_hashtag">Aula 02</p>
+                </div>
+                <div className="video_item">
+                    <iframe
+                        className="video_thumbnail"
+                        src="https://www.youtube.com/embed/arNjiddVXCk"
+                        title="Aula 3"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                    <p className="video_hashtag">Aula 03</p>
+                </div>
+                <div className="video_item">
+                    <iframe
+                        className="video_thumbnail"
+                        src="https://www.youtube.com/embed/X8e1u1slZqM"
+                        title="Aula 4"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                    <p className="video_hashtag">Aula 04</p>
+                </div>
+                <div className="video_item">
+                    <iframe
+                        className="video_thumbnail"
+                        src="https://www.youtube.com/embed/pVa6qzgO1Hs"
+                        title="Aula 5"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                    <p className="video_hashtag">Aula 05</p>
+                </div>
                 </div>
                 <button className="load_more_button">Carregar mais vídeos</button>
             </section>
