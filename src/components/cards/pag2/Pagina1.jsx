@@ -469,46 +469,46 @@ function Pagina1() {
                         <h1>Compras:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('lojaacessivel')}>
                             <Cards2 icon='assets/images/camisetaCards.png' text='Onde posso encontrar uma loja de roupas com preços acessíveis?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('comprarusados')}>
                             <Cards2 icon='assets/images/moveisCards.png' text='Qual o melhor lugar para comprar móveis usados?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('moedainter')}>
                             <Cards2 icon='assets/images/moedasCards.png' text='Este shopping aceita moedas internacionais?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('shoppingnesta')}>
                             <Cards2 icon='assets/images/localizacao.png' text='Quais são os melhores shoppings ou lojas de rua nesta região?' />
                         </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('mercadopulgas')}>
                             <Cards2 icon='assets/images/carrinho-de-carrinho.png' text='Existe algum mercado de pulgas por aqui?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('roupasegunda')}>
                             <Cards2 icon='assets/images/roupass.png' text='Onde encontro lojas especializadas em roupas de segunda mão?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('entregarapida')}>
                             <Cards2 icon='assets/images/entrega-rapidaaa.png' text='Tem alguma loja de móveis que faça entrega rápida?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('promocoesano')}>
                             <Cards2 icon='assets/images/promocoes.png' text='Quais lojas oferecem promoções nesta época do ano?' />
                         </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('eletronicosprecos')}>
                             <Cards2 icon='assets/images/eletronico.png' text='Onde posso encontrar eletrônicos com bons preços?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('outlet')}>
                             <Cards2 icon='assets/images/mercadooo.png' text='Este shopping tem área de desconto ou outlet?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('locaisartesanaiz')}>
                             <Cards2 icon='assets/images/artesanal.png' text='Qual loja daqui vende produtos artesanais ou locais?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('pagamentosdigitais')}>
                             <Cards2 icon='assets/images/pagamento-movel.png' text='Como posso encontrar lojas que aceitem pagamentos digitais?' />
                         </div>
                     </section>
@@ -520,46 +520,46 @@ function Pagina1() {
                         <h1>Escola:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('matriculaimigra')}>
                             <Cards2 icon='assets/images/escolaCards.png' text='Quais escolas públicas aceitam matrículas de crianças imigrantes?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('cursoportu')}>
                             <Cards2 icon='assets/images/cursoportuguesCards.png' text='Existe algum curso de português oferecido por essa escola?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('matricularescola')}>
                             <Cards2 icon='assets/images/matriculaCards.png' text='Como faço para matricular meu filho nesta escola?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('aulareforco')}>
                             <Cards2 icon='assets/images/aprendizagem-por-reforco.png' text='Como posso inscrever meus filhos em aulas de reforço escolar?' />
                         </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('vagasescola')}>
                             <Cards2 icon='assets/images/miudo.png' text='Há vagas disponíveis para crianças estrangeiras nesta escola?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('apresentardocu')}>
                             <Cards2 icon='assets/images/carteira-de-identidade.png' text='Quais documentos preciso apresentar para a matrícula?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('apoiopeda')}>
                             <Cards2 icon='assets/images/lingua-estrangeira.png' text='Essa escola oferece apoio pedagógico para crianças que não falam português?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('atividadesabertas')}>
                             <Cards2 icon='assets/images/extracurricular.png' text='Existem atividades extracurriculares abertas a todos os alunos?' />
                         </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('transferirescola')}>
                             <Cards2 icon='assets/images/transferindo.png' text='Qual o processo para transferir uma criança de outra escola?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('integracaocult')}>
                             <Cards2 icon='assets/images/diversidade-cultural.png' text='Essa escola tem programas de integração cultural para alunos imigrantes?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('opcoesbilingue')}>
                             <Cards2 icon='assets/images/bilingue.png' text='Há opções de ensino bilíngue ou de idiomas nesta região?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('escolasinclusivas')}>
                             <Cards2 icon='assets/images/inclusividade.png' text='Onde encontro informações sobre escolas inclusivas para crianças estrangeiras?' />
                         </div>
                     </section>
@@ -571,46 +571,46 @@ function Pagina1() {
                         <h1>Documentos:</h1>
                     </div>
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('tiracpf')}>
                             <Cards2 icon='assets/images/cpfCards.png' text='Onde posso tirar meu CPF?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('solicitaresidencia')}>
                             <Cards2 icon='assets/images/residenciaCards.png' text='Qual o procedimento para solicitar a residência permanente?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('legalizardocu')}>
                             <Cards2 icon='assets/images/marteloCards.png' text='Como posso legalizar meus documentos estrangeiros aqui?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('vistotrabalho')}>
                             <Cards2 icon='assets/images/prazo-final.png' text='Quais são os prazos para solicitar visto de trabalho ou residência?' />
                         </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('carteiratrabalho')}>
                             <Cards2 icon='assets/images/homem-de-negocios.png' text='Onde posso solicitar a carteira de trabalho para estrangeiros?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('renovarvisto')}>
                             <Cards2 icon='assets/images/visto.png' text='Como faço para renovar meu visto temporário?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('orgaosuporte')}>
                             <Cards2 icon='assets/images/pergunta.png' text='Quais órgãos oferecem suporte para regularização de documentos?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('emissaorg')}>
                             <Cards2 icon='assets/images/RG.png' text='Há um atendimento específico para emissão de RG para estrangeiros?' />
                         </div>
                     </section>
 
                     <section className={'Sobre-cards mostrar'}>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('entradapais')}>
                             <Cards2 icon='assets/images/paises.png' text='Qual o prazo para registrar minha entrada no país?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('revalidacaodiplo')}>
                             <Cards2 icon='assets/images/diplo.png' text='Onde encontro informações sobre revalidação de diplomas?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('consulado')}>
                             <Cards2 icon='assets/images/agendamento-on-line.png' text='Posso agendar online para legalizar meus papéis no consulado?' />
                         </div>
-                        <div onClick={() => playAudio('produtosartesanais')}>
+                        <div onClick={() => playAudio('naturalizacao')}>
                             <Cards2 icon='assets/images/naturalizacao.png' text='Existe algum programa que facilite a naturalização de estrangeiros?' />
                         </div>
                     </section>
