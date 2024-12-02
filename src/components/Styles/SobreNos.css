@@ -142,7 +142,7 @@
     .Fundoslaranja {
         background-color: var(--primary-color);
         height: 300px;
-        width: 400px;
+        width: 350px;
         display: flex;
         border-radius: 70px;
         color: white;
@@ -161,13 +161,13 @@
         width: 100%;
         display: flex;
         margin-bottom: 100px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .imgdescricao img {
         width: 80px;
     }
     .devs > div{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .dentro-laranja > div > img {
         margin: 0px;
@@ -183,5 +183,8 @@
     }
     .dentro-laranja > div {
         display: flex;
+    }
+    .titulodev h1 {
+        font-size: 1.3em;
     }
 }

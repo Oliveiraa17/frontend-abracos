@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/Acolhimento.css';
 
 import venezuela from '../../../public/assets/images/venezu.svg';
@@ -12,6 +12,7 @@ import fraternidade from '../../../public/assets/images/fraternidade.svg';
 function Acolhimento() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedCountry, setSelectedCountry] = useState(null);
+    const [itemsVisible, setItemsVisible] = useState(3);
 
     const countries = [
         { name: "Venezuela", flag: venezuela },
@@ -48,6 +49,19 @@ function Acolhimento() {
         ]
     };
 
+    useEffect(() => {
+        const updateItemsVisible = () => {
+            setItemsVisible(window.innerWidth <= 500 ? 2 : 3);
+        };
+
+        updateItemsVisible(); // Chamada inicial
+        window.addEventListener('resize', updateItemsVisible);
+
+        return () => {
+            window.removeEventListener('resize', updateItemsVisible);
+        };
+    }, []);
+
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % countries.length);
     };
@@ -58,7 +72,7 @@ function Acolhimento() {
 
     const getVisibleCountries = () => {
         const start = currentIndex;
-        const end = (currentIndex + 3) % countries.length;
+        const end = (currentIndex + itemsVisible) % countries.length;
         if (end > start) {
             return countries.slice(start, end);
         } else {
@@ -69,7 +83,7 @@ function Acolhimento() {
     return (
         <section className='sect_acolher'>
             <section className='acolher'>
-                <h1>Acolher é um ato de <span>amor!</span></h1>
+                <h1>Acolher é um ato de <span><mark>amor!</mark></span></h1>
             </section>
 
             <section className='sect_acolher2'>
@@ -91,7 +105,7 @@ function Acolhimento() {
                             </div>
                         ))}
                     </div>
-                    <button className='nav-button' onClick={handleNext}>▶</button>
+                    <button className='nav-butto ' onClick={handleNext}>▶</button>
                 </div>
             </section>
 

@@ -116,8 +116,22 @@
     font-size: 1.2rem;
     transition: background-color 0.3s;
 }
+.nav-butto {
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #FF6926;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
 
 .nav-button:hover {
+    background-color: #3574b5;
+}
+.nav-butto:hover {
     background-color: #3574b5;
 }
 
@@ -130,15 +144,14 @@
 
 @media (max-width: 500px) {
     .acolher {
-        height: auto; 
+        height: 300px; 
         padding: 20px;
-        background-size: contain;
         background-position: center;
     }
 
     .acolher h1 {
-        font-size: 2rem;
-        padding: 50px 0 0 10px;
+        font-size: 1.5em;
+        padding: 170px 0 0 5px;
     }
 
     .naci {
@@ -149,14 +162,14 @@
 
     .carousel {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
 
     .carousel-container {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 20px;
         flex-grow: 1;
     }
 
@@ -170,7 +183,7 @@
     }
 
     .carousel-item img {
-        width: 100px;
+        width: 120px;
         height: auto;
     }
 
@@ -186,7 +199,12 @@
         color: white;
         border-radius: 5px;
         cursor: pointer;
+        margin-left: 10px;
         transition: background-color 0.3s;
+    }
+    .nav-button{
+        margin-left: 0px;
+        
     }
     .nav-button:hover {
         background-color: #3574b5;
